@@ -91,6 +91,6 @@ The backend verifies TLS, constrains the model to the checked-in fictional knowl
 - With Fabric IQ versus Without Fabric IQ artifact comparison
 - CIO Houseview, activity evidence, candidate suppression, and paragraph-cited controls
 - Authenticated Teams bot and captured agent-run transparency
-- Production web/API image `frontier-rm-api:0.8.0`
+- Production web/API image `frontier-rm-api:0.8.1`
 
 The workstation currently cannot establish TLS with `registry.npmjs.org`. React/Vite and Agents Toolkit package scaffolding remain blocked; TLS verification has not been disabled. The current web implementation uses browser modules so product work and local validation can continue without unsafe network changes.
