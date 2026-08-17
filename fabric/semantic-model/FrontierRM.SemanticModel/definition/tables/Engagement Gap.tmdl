@@ -1,0 +1,48 @@
+/// Latest relationship interaction used to identify engagement gaps and preferred channels.
+table 'Engagement Gap'
+
+	/// Customer foreign key used to filter engagement context.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Customer name associated with the interaction.
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	/// Timestamp of the latest recorded relationship interaction.
+	column 'Last Interaction At'
+		dataType: dateTime
+		formatString: dd mmm yyyy hh:mm
+		summarizeBy: none
+		sourceColumn: last_interaction_at
+
+	/// Channel used for the latest relationship interaction.
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	/// Concise business summary of the latest interaction.
+	column Summary
+		dataType: string
+		summarizeBy: none
+		sourceColumn: summary
+
+	/// Relationship manager assigned to the customer.
+	column 'Relationship Manager ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: rm_id
+
+	partition 'Engagement Gap' = entity
+		mode: directLake
+		source
+			entityName: engagement_gap
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

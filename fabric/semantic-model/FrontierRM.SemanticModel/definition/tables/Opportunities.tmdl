@@ -1,0 +1,102 @@
+/// One row per open relationship opportunity prepared for RM prioritisation.
+table Opportunities
+
+	/// Total estimated opportunity value in Singapore dollars.
+	measure 'Opportunity Pipeline' = SUM(Opportunities[Estimated Value])
+		formatString: S$#,##0
+		displayFolder: Measures\Value
+
+	/// Number of open opportunities in the selected context.
+	measure '# Open Opportunities' = CALCULATE(COUNTROWS(Opportunities), Opportunities[Status] = "OPEN")
+		formatString: #,##0
+		displayFolder: Measures\Counts
+
+	/// Average model confidence score for selected opportunities.
+	measure 'Average Confidence' = DIVIDE(AVERAGE(Opportunities[Confidence Score]), 100)
+		formatString: 0.0%
+		displayFolder: Measures\Quality
+
+	/// Stable opportunity identifier.
+	column 'Opportunity ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: opportunity_id
+
+	/// Source event that caused this opportunity to be created.
+	column 'Event ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: event_id
+
+	/// Customer foreign key used to filter opportunities by relationship.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Customer name repeated for convenient opportunity review.
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	/// Human-readable opportunity title.
+	column Opportunity
+		dataType: string
+		summarizeBy: none
+		sourceColumn: title
+
+	/// Business category of the customer need.
+	column 'Opportunity Type'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: opportunity_type
+
+	/// Current urgency assigned to the opportunity.
+	column Priority
+		dataType: string
+		summarizeBy: none
+		sourceColumn: priority
+
+	/// Current opportunity lifecycle status.
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status
+
+	/// Estimated conversation value in Singapore dollars; use Opportunity Pipeline for aggregation.
+	column 'Estimated Value'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: estimated_value
+
+	/// ISO currency code for opportunity value.
+	column Currency
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency
+
+	/// Confidence score from zero to one hundred.
+	column 'Confidence Score'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: confidence_score
+
+	/// Relationship manager assigned to the opportunity.
+	column 'Relationship Manager ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: rm_id
+
+	partition Opportunities = entity
+		mode: directLake
+		source
+			entityName: rm_opportunity_snapshot
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

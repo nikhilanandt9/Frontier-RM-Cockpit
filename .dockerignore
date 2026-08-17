@@ -1,0 +1,9 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+apps/teams/appPackage/build
+devTools
+docs
+infra
+tests

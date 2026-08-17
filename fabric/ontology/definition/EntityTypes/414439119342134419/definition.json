@@ -1,0 +1,59 @@
+{
+  "id": "414439119342134419",
+  "namespace": "usertypes",
+  "name": "Account",
+  "entityIdParts": [
+    "559319449796961205"
+  ],
+  "displayNamePropertyId": "559319449796961205",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "559319449796961205",
+      "name": "AccountId",
+      "valueType": "String"
+    },
+    {
+      "id": "171543760754346560",
+      "name": "AccountCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "328142141150221532",
+      "name": "AccountHouseholdId",
+      "valueType": "String"
+    },
+    {
+      "id": "652706865030418568",
+      "name": "AccountProductId",
+      "valueType": "String"
+    },
+    {
+      "id": "102820413874429665",
+      "name": "AccountType",
+      "valueType": "String"
+    },
+    {
+      "id": "116017921276064255",
+      "name": "AccountStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "279151480163790372",
+      "name": "AccountBalance",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "519126737665090961",
+      "name": "AccountCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "232284417234518449",
+      "name": "AccountOpenedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "23908502075095012",
+  "namespace": "usertypes",
+  "name": "MarketSignal",
+  "entityIdParts": [
+    "772843186888843437"
+  ],
+  "displayNamePropertyId": "47376411197607743",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "772843186888843437",
+      "name": "MarketSignalId",
+      "valueType": "String"
+    },
+    {
+      "id": "684096976125130357",
+      "name": "MarketSignalProductId",
+      "valueType": "String"
+    },
+    {
+      "id": "47376411197607743",
+      "name": "MarketSignalName",
+      "valueType": "String"
+    },
+    {
+      "id": "773738060155149677",
+      "name": "MarketSignalRefValue",
+      "valueType": "Double"
+    },
+    {
+      "id": "729914899918160115",
+      "name": "MarketSignalCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "37220238662399118",
+      "name": "MarketSignalCapturedAt",
+      "valueType": "String"
+    },
+    {
+      "id": "880372536211948876",
+      "name": "MarketSignalSynthetic",
+      "valueType": "Boolean"
+    }
+  ],
+  "timeseriesProperties": []
+}

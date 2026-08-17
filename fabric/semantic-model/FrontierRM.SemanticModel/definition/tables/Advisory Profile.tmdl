@@ -1,0 +1,82 @@
+/// Current declared Investment Risk Profile, observed behaviour indicator and advisory review state.
+table 'Advisory Profile'
+
+	/// Number of client advisory profiles requiring review.
+	measure '# Risk Reviews Due' = CALCULATE(COUNTROWS('Advisory Profile'), 'Advisory Profile'[Risk Review Status] <> "CURRENT")
+		formatString: #,##0
+		displayFolder: Measures\Counts
+
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column 'Employment Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: employment_status
+
+	column 'Retirement Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: retirement_status
+
+	column 'Declared Risk Score'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: declared_risk_score
+
+	column 'Declared Risk Label'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: declared_risk_label
+
+	column 'Observed Behaviour Indicator'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: observed_behaviour_indicator
+
+	column 'Observed Behaviour Label'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: observed_behaviour_label
+
+	column 'Risk Review Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: risk_review_status
+
+	column 'Profile Effective At'
+		dataType: dateTime
+		formatString: dd mmm yyyy
+		summarizeBy: none
+		sourceColumn: profile_effective_at
+
+	column 'Indicator Calculated At'
+		dataType: dateTime
+		formatString: dd mmm yyyy hh:mm
+		summarizeBy: none
+		sourceColumn: indicator_calculated_at
+
+	column 'Knowledge Experience Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: knowledge_experience_status
+
+	column 'CKA Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: cka_status
+
+	column 'CAR Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: car_status
+
+	partition 'Advisory Profile' = entity
+		mode: directLake
+		source
+			entityName: client_advisory_context
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

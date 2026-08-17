@@ -1,0 +1,73 @@
+/// Material client investment activity used as explainable evidence without changing the declared profile.
+table 'Activity Evidence'
+
+	/// Number of material client investment activities.
+	measure '# Material Activities' = COUNTROWS('Activity Evidence')
+		formatString: #,##0
+		displayFolder: Measures\Counts
+
+	column 'Activity ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: investment_activity_id
+
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column 'Activity Type'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: activity_type
+
+	column 'Asset Class'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: asset_class
+
+	column Amount
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: amount
+
+	column Currency
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency
+
+	column 'Activity At'
+		dataType: dateTime
+		formatString: dd mmm yyyy hh:mm
+		summarizeBy: none
+		sourceColumn: activity_at
+
+	column Explanation
+		dataType: string
+		summarizeBy: none
+		sourceColumn: explanation
+
+	column 'Previous Indicator'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: previous_indicator
+
+	column 'Observed Indicator'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: observed_indicator
+
+	column 'Declared Profile Changed'
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: declared_profile_changed
+
+	partition 'Activity Evidence' = entity
+		mode: directLake
+		source
+			entityName: client_activity_evidence
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

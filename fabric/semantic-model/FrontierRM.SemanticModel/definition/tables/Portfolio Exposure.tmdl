@@ -1,0 +1,40 @@
+/// Customer portfolio value summarized by asset class.
+table 'Portfolio Exposure'
+
+	/// Total portfolio market value in Singapore dollars.
+	measure 'Portfolio Market Value' = SUM('Portfolio Exposure'[Market Value])
+		formatString: S$#,##0
+		displayFolder: Measures\Value
+
+	/// Customer foreign key used to filter exposure by relationship.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Broad asset class used for portfolio allocation analysis.
+	column 'Asset Class'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: asset_class
+
+	/// ISO currency code for market value.
+	column Currency
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency
+
+	/// Current market value; use Portfolio Market Value for aggregation.
+	column 'Market Value'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: market_value
+
+	partition 'Portfolio Exposure' = entity
+		mode: directLake
+		source
+			entityName: portfolio_exposure
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "404534124854033793",
+  "name": "HAS_RISK_ASSESSMENT",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "21886248324559301"
+  },
+  "target": {
+    "entityTypeId": "84089968733081369"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "69659569-0694-50a6-bf79-87da3912782c",
+  "dataBindingTable": {
+    "sourceType": "LakehouseTable",
+    "workspaceId": "<FABRIC_WORKSPACE_ID>",
+    "itemId": "<FABRIC_LAKEHOUSE_ID>",
+    "sourceTableName": "client_investment_activity",
+    "sourceSchema": "silver"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "customer_id",
+      "targetPropertyId": "628999339852629699"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "investment_activity_id",
+      "targetPropertyId": "72371750823685493"
+    }
+  ]
+}

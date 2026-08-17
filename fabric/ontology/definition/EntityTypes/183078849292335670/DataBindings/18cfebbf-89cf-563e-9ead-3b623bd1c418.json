@@ -1,0 +1,59 @@
+{
+  "id": "18cfebbf-89cf-563e-9ead-3b623bd1c418",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "event_id",
+        "targetPropertyId": "754977298198172459"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "823739587291414438"
+      },
+      {
+        "sourceColumnName": "account_id",
+        "targetPropertyId": "852823112831590425"
+      },
+      {
+        "sourceColumnName": "event_type",
+        "targetPropertyId": "792101215216746818"
+      },
+      {
+        "sourceColumnName": "event_value",
+        "targetPropertyId": "607900129210605544"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "842038975902421584"
+      },
+      {
+        "sourceColumnName": "event_at",
+        "targetPropertyId": "537978076419340111"
+      },
+      {
+        "sourceColumnName": "source",
+        "targetPropertyId": "510952200057787939"
+      },
+      {
+        "sourceColumnName": "maturity_date",
+        "targetPropertyId": "773833728767946951"
+      },
+      {
+        "sourceColumnName": "observation_days",
+        "targetPropertyId": "73233439846667684"
+      },
+      {
+        "sourceColumnName": "window_opens_date",
+        "targetPropertyId": "261594827090787346"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "customer_events",
+      "sourceSchema": "silver"
+    }
+  }
+}

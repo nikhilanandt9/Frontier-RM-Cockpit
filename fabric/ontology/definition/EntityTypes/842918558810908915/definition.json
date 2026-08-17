@@ -1,0 +1,49 @@
+{
+  "id": "842918558810908915",
+  "namespace": "usertypes",
+  "name": "Product",
+  "entityIdParts": [
+    "56374541494025152"
+  ],
+  "displayNamePropertyId": "177838244422504473",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "56374541494025152",
+      "name": "ProductId",
+      "valueType": "String"
+    },
+    {
+      "id": "177838244422504473",
+      "name": "ProductName",
+      "valueType": "String"
+    },
+    {
+      "id": "809432228362070923",
+      "name": "ProductType",
+      "valueType": "String"
+    },
+    {
+      "id": "843581476851236857",
+      "name": "ProductAssetClass",
+      "valueType": "String"
+    },
+    {
+      "id": "9413428391532581",
+      "name": "ProductCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "425467205443687807",
+      "name": "ProductSynthetic",
+      "valueType": "Boolean"
+    },
+    {
+      "id": "123779452081881326",
+      "name": "ProductEffectiveAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

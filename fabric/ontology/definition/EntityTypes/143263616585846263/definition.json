@@ -1,0 +1,54 @@
+{
+  "id": "143263616585846263",
+  "namespace": "usertypes",
+  "name": "Household",
+  "entityIdParts": [
+    "263660513157867434"
+  ],
+  "displayNamePropertyId": "129643148893195047",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "263660513157867434",
+      "name": "HouseholdId",
+      "valueType": "String"
+    },
+    {
+      "id": "129643148893195047",
+      "name": "HouseholdName",
+      "valueType": "String"
+    },
+    {
+      "id": "580684582813238382",
+      "name": "HouseholdRmId",
+      "valueType": "String"
+    },
+    {
+      "id": "649640640556689010",
+      "name": "HouseholdPrimaryCustId",
+      "valueType": "String"
+    },
+    {
+      "id": "750168732702041153",
+      "name": "HouseholdMemberCount",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "15352894739962489",
+      "name": "HouseholdRelValue",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "899363512618124502",
+      "name": "HouseholdCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "802561685315683236",
+      "name": "HouseholdSnapshotAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

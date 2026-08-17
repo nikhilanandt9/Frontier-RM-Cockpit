@@ -1,0 +1,101 @@
+/// One row per synthetic Premier customer with household, profile, consent and relationship context.
+table Customer
+
+	/// Number of customers in the selected context.
+	measure '# Customers' = COUNTROWS(Customer)
+		formatString: #,##0
+		displayFolder: Measures\Counts
+
+	/// Total customer relationship value in Singapore dollars.
+	measure 'Assets Under Care' = SUM(Customer[Relationship Value])
+		formatString: S$#,##0
+		displayFolder: Measures\Value
+
+	/// Stable technical customer identifier used for relationships.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Stable relationship-manager identifier assigned to the customer.
+	column 'Relationship Manager ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: rm_id
+
+	/// Customer name used to identify the relationship in business questions.
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+		isDefaultLabel
+
+	/// Premier service segment assigned to the relationship.
+	column Segment
+		dataType: string
+		summarizeBy: none
+		sourceColumn: segment
+
+	/// Household name associated with the customer.
+	column Household
+		dataType: string
+		summarizeBy: none
+		sourceColumn: household_name
+
+	/// Relationship value in Singapore dollars; use the Assets Under Care measure for aggregation.
+	column 'Relationship Value'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: relationship_value
+
+	/// ISO currency code for monetary values.
+	column Currency
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency
+
+	/// Current customer investment risk profile.
+	column 'Risk Profile'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: risk_profile
+
+	/// Recorded channel preference for relationship-manager contact.
+	column 'Contact Preference'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: contact_preference
+
+	/// Current client contact-consent status and timing restriction.
+	column 'Consent Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: consent_status
+
+	/// Current know-your-customer profile status.
+	column 'KYC Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: kyc_status
+
+	/// Date when the customer profile is next due for review.
+	column 'KYC Due Date'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: kyc_due_date
+
+	/// Whether the current profile supports personalised suitability discussion.
+	column 'Suitability Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: suitability_status
+
+	partition Customer = entity
+		mode: directLake
+		source
+			entityName: customer_360
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

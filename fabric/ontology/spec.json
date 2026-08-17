@@ -1,0 +1,274 @@
+{
+  "displayName": "Frontier_RM_Ontology",
+  "workspaceId": "<FABRIC_WORKSPACE_ID>",
+  "lakehouseId": "<FABRIC_LAKEHOUSE_ID>",
+  "sourceSchema": "silver",
+  "entityTypes": [
+    {
+      "name": "RelationshipManager",
+      "sourceTableName": "relationship_managers",
+      "keyColumn": "rm_id",
+      "displayNameColumn": "display_name",
+      "properties": [
+        {"name": "RmId", "sourceColumnName": "rm_id", "valueType": "String"},
+        {"name": "RmDisplayName", "sourceColumnName": "display_name", "valueType": "String"},
+        {"name": "RmInitials", "sourceColumnName": "initials", "valueType": "String"},
+        {"name": "RmRole", "sourceColumnName": "role", "valueType": "String"},
+        {"name": "RmTeam", "sourceColumnName": "team", "valueType": "String"},
+        {"name": "RmLocation", "sourceColumnName": "location", "valueType": "String"},
+        {"name": "RmActive", "sourceColumnName": "active", "valueType": "Boolean"},
+        {"name": "RmCreatedAt", "sourceColumnName": "created_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Customer",
+      "sourceTableName": "customers",
+      "keyColumn": "customer_id",
+      "displayNameColumn": "full_name",
+      "properties": [
+        {"name": "CustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "CustomerHouseholdId", "sourceColumnName": "household_id", "valueType": "String"},
+        {"name": "CustomerRmId", "sourceColumnName": "rm_id", "valueType": "String"},
+        {"name": "CustomerFullName", "sourceColumnName": "full_name", "valueType": "String"},
+        {"name": "CustomerSegment", "sourceColumnName": "segment", "valueType": "String"},
+        {"name": "CustomerRiskProfile", "sourceColumnName": "risk_profile", "valueType": "String"},
+        {"name": "CustomerContactPref", "sourceColumnName": "contact_preference", "valueType": "String"},
+        {"name": "CustomerConsentStatus", "sourceColumnName": "consent_status", "valueType": "String"},
+        {"name": "CustomerRelValue", "sourceColumnName": "relationship_value", "valueType": "BigInt"},
+        {"name": "CustomerCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "CustomerCountryCode", "sourceColumnName": "country_code", "valueType": "String"},
+        {"name": "CustomerSynthetic", "sourceColumnName": "synthetic", "valueType": "Boolean"},
+        {"name": "CustomerCreatedAt", "sourceColumnName": "created_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Household",
+      "sourceTableName": "households",
+      "keyColumn": "household_id",
+      "displayNameColumn": "household_name",
+      "properties": [
+        {"name": "HouseholdId", "sourceColumnName": "household_id", "valueType": "String"},
+        {"name": "HouseholdName", "sourceColumnName": "household_name", "valueType": "String"},
+        {"name": "HouseholdRmId", "sourceColumnName": "rm_id", "valueType": "String"},
+        {"name": "HouseholdPrimaryCustId", "sourceColumnName": "primary_customer_id", "valueType": "String"},
+        {"name": "HouseholdMemberCount", "sourceColumnName": "member_count", "valueType": "BigInt"},
+        {"name": "HouseholdRelValue", "sourceColumnName": "relationship_value", "valueType": "BigInt"},
+        {"name": "HouseholdCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "HouseholdSnapshotAt", "sourceColumnName": "snapshot_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Account",
+      "sourceTableName": "accounts",
+      "keyColumn": "account_id",
+      "displayNameColumn": "account_id",
+      "properties": [
+        {"name": "AccountId", "sourceColumnName": "account_id", "valueType": "String"},
+        {"name": "AccountCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "AccountHouseholdId", "sourceColumnName": "household_id", "valueType": "String"},
+        {"name": "AccountProductId", "sourceColumnName": "product_id", "valueType": "String"},
+        {"name": "AccountType", "sourceColumnName": "account_type", "valueType": "String"},
+        {"name": "AccountStatus", "sourceColumnName": "status", "valueType": "String"},
+        {"name": "AccountBalance", "sourceColumnName": "balance", "valueType": "BigInt"},
+        {"name": "AccountCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "AccountOpenedAt", "sourceColumnName": "opened_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Holding",
+      "sourceTableName": "holdings",
+      "keyColumn": "holding_id",
+      "displayNameColumn": "holding_id",
+      "properties": [
+        {"name": "HoldingId", "sourceColumnName": "holding_id", "valueType": "String"},
+        {"name": "HoldingAccountId", "sourceColumnName": "account_id", "valueType": "String"},
+        {"name": "HoldingProductId", "sourceColumnName": "product_id", "valueType": "String"},
+        {"name": "HoldingQuantity", "sourceColumnName": "quantity", "valueType": "BigInt"},
+        {"name": "HoldingMarketValue", "sourceColumnName": "market_value", "valueType": "BigInt"},
+        {"name": "HoldingCostValue", "sourceColumnName": "cost_value", "valueType": "BigInt"},
+        {"name": "HoldingCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "HoldingValuedAt", "sourceColumnName": "valued_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Product",
+      "sourceTableName": "products",
+      "keyColumn": "product_id",
+      "displayNameColumn": "product_name",
+      "properties": [
+        {"name": "ProductId", "sourceColumnName": "product_id", "valueType": "String"},
+        {"name": "ProductName", "sourceColumnName": "product_name", "valueType": "String"},
+        {"name": "ProductType", "sourceColumnName": "product_type", "valueType": "String"},
+        {"name": "ProductAssetClass", "sourceColumnName": "asset_class", "valueType": "String"},
+        {"name": "ProductCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "ProductSynthetic", "sourceColumnName": "synthetic", "valueType": "Boolean"},
+        {"name": "ProductEffectiveAt", "sourceColumnName": "effective_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Interaction",
+      "sourceTableName": "interactions",
+      "keyColumn": "interaction_id",
+      "displayNameColumn": "interaction_id",
+      "properties": [
+        {"name": "InteractionId", "sourceColumnName": "interaction_id", "valueType": "String"},
+        {"name": "InteractionCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "InteractionRmId", "sourceColumnName": "rm_id", "valueType": "String"},
+        {"name": "InteractionChannel", "sourceColumnName": "channel", "valueType": "String"},
+        {"name": "InteractionType", "sourceColumnName": "interaction_type", "valueType": "String"},
+        {"name": "InteractionSummary", "sourceColumnName": "summary", "valueType": "String"},
+        {"name": "InteractionOccurredAt", "sourceColumnName": "occurred_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "ComplianceProfile",
+      "sourceTableName": "compliance_profiles",
+      "keyColumn": "compliance_profile_id",
+      "displayNameColumn": "compliance_profile_id",
+      "properties": [
+        {"name": "ComplianceProfileId", "sourceColumnName": "compliance_profile_id", "valueType": "String"},
+        {"name": "ComplianceCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "ComplianceKycStatus", "sourceColumnName": "kyc_status", "valueType": "String"},
+        {"name": "ComplianceKycDueDate", "sourceColumnName": "kyc_due_date", "valueType": "String"},
+        {"name": "ComplianceAmlRisk", "sourceColumnName": "aml_risk_rating", "valueType": "String"},
+        {"name": "ComplianceSuitability", "sourceColumnName": "suitability_status", "valueType": "String"},
+        {"name": "ComplianceReviewedAt", "sourceColumnName": "reviewed_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "Opportunity",
+      "sourceTableName": "opportunities",
+      "keyColumn": "opportunity_id",
+      "displayNameColumn": "title",
+      "properties": [
+        {"name": "OpportunityId", "sourceColumnName": "opportunity_id", "valueType": "String"},
+        {"name": "OpportunityCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "OpportunityEventId", "sourceColumnName": "event_id", "valueType": "String"},
+        {"name": "OpportunityRmId", "sourceColumnName": "rm_id", "valueType": "String"},
+        {"name": "OpportunityType", "sourceColumnName": "opportunity_type", "valueType": "String"},
+        {"name": "OpportunityTitle", "sourceColumnName": "title", "valueType": "String"},
+        {"name": "OpportunityStatus", "sourceColumnName": "status", "valueType": "String"},
+        {"name": "OpportunityPriority", "sourceColumnName": "priority", "valueType": "String"},
+        {"name": "OpportunityEstValue", "sourceColumnName": "estimated_value", "valueType": "BigInt"},
+        {"name": "OpportunityCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "OpportunityConfidence", "sourceColumnName": "confidence_score", "valueType": "BigInt"},
+        {"name": "OpportunityCreatedAt", "sourceColumnName": "created_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "CustomerEvent",
+      "sourceTableName": "customer_events",
+      "keyColumn": "event_id",
+      "displayNameColumn": "event_type",
+      "properties": [
+        {"name": "EventId", "sourceColumnName": "event_id", "valueType": "String"},
+        {"name": "EventCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "EventAccountId", "sourceColumnName": "account_id", "valueType": "String"},
+        {"name": "EventType", "sourceColumnName": "event_type", "valueType": "String"},
+        {"name": "EventValue", "sourceColumnName": "event_value", "valueType": "BigInt"},
+        {"name": "EventCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "EventAt", "sourceColumnName": "event_at", "valueType": "String"},
+        {"name": "EventSource", "sourceColumnName": "source", "valueType": "String"},
+        {"name": "EventMaturityDate", "sourceColumnName": "maturity_date", "valueType": "String"},
+        {"name": "EventObservationDays", "sourceColumnName": "observation_days", "valueType": "BigInt"},
+        {"name": "EventWindowOpensDate", "sourceColumnName": "window_opens_date", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "MarketSignal",
+      "sourceTableName": "market_snapshots",
+      "keyColumn": "market_snapshot_id",
+      "displayNameColumn": "market_name",
+      "properties": [
+        {"name": "MarketSignalId", "sourceColumnName": "market_snapshot_id", "valueType": "String"},
+        {"name": "MarketSignalProductId", "sourceColumnName": "product_id", "valueType": "String"},
+        {"name": "MarketSignalName", "sourceColumnName": "market_name", "valueType": "String"},
+        {"name": "MarketSignalRefValue", "sourceColumnName": "reference_value", "valueType": "Double"},
+        {"name": "MarketSignalCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "MarketSignalCapturedAt", "sourceColumnName": "captured_at", "valueType": "String"},
+        {"name": "MarketSignalSynthetic", "sourceColumnName": "synthetic", "valueType": "Boolean"}
+      ]
+    },
+    {
+      "name": "RiskAssessment",
+      "sourceTableName": "client_advisory_profiles",
+      "keyColumn": "advisory_profile_id",
+      "displayNameColumn": "declared_risk_label",
+      "properties": [
+        {"name": "RiskAssessmentId", "sourceColumnName": "advisory_profile_id", "valueType": "String"},
+        {"name": "RiskAssessmentCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "RiskDeclaredScore", "sourceColumnName": "declared_risk_score", "valueType": "BigInt"},
+        {"name": "RiskDeclaredLabel", "sourceColumnName": "declared_risk_label", "valueType": "String"},
+        {"name": "RiskObservedIndicator", "sourceColumnName": "observed_behaviour_indicator", "valueType": "BigInt"},
+        {"name": "RiskObservedLabel", "sourceColumnName": "observed_behaviour_label", "valueType": "String"},
+        {"name": "RiskReviewStatus", "sourceColumnName": "risk_review_status", "valueType": "String"},
+        {"name": "RiskEmploymentStatus", "sourceColumnName": "employment_status", "valueType": "String"},
+        {"name": "RiskRetirementStatus", "sourceColumnName": "retirement_status", "valueType": "String"},
+        {"name": "RiskProfileEffectiveAt", "sourceColumnName": "profile_effective_at", "valueType": "String"},
+        {"name": "RiskIndicatorCalculatedAt", "sourceColumnName": "indicator_calculated_at", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "ClientActivity",
+      "sourceTableName": "client_investment_activity",
+      "keyColumn": "investment_activity_id",
+      "displayNameColumn": "activity_type",
+      "properties": [
+        {"name": "ClientActivityId", "sourceColumnName": "investment_activity_id", "valueType": "String"},
+        {"name": "ClientActivityCustomerId", "sourceColumnName": "customer_id", "valueType": "String"},
+        {"name": "ClientActivityAccountId", "sourceColumnName": "account_id", "valueType": "String"},
+        {"name": "ClientActivityType", "sourceColumnName": "activity_type", "valueType": "String"},
+        {"name": "ClientActivityAssetClass", "sourceColumnName": "asset_class", "valueType": "String"},
+        {"name": "ClientActivityAmount", "sourceColumnName": "amount", "valueType": "BigInt"},
+        {"name": "ClientActivityCurrency", "sourceColumnName": "currency", "valueType": "String"},
+        {"name": "ClientActivityAt", "sourceColumnName": "activity_at", "valueType": "String"},
+        {"name": "ClientActivityExplanation", "sourceColumnName": "explanation", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "HouseviewReport",
+      "sourceTableName": "cio_houseview_reports",
+      "keyColumn": "houseview_id",
+      "displayNameColumn": "title",
+      "properties": [
+        {"name": "HouseviewReportId", "sourceColumnName": "houseview_id", "valueType": "String"},
+        {"name": "HouseviewReportTitle", "sourceColumnName": "title", "valueType": "String"},
+        {"name": "HouseviewReportAsOfDate", "sourceColumnName": "as_of_date", "valueType": "String"},
+        {"name": "HouseviewReportStatus", "sourceColumnName": "status", "valueType": "String"},
+        {"name": "HouseviewReportCioStance", "sourceColumnName": "cio_stance", "valueType": "String"},
+        {"name": "HouseviewReportSummary", "sourceColumnName": "executive_summary", "valueType": "String"},
+        {"name": "HouseviewReportDocumentPath", "sourceColumnName": "document_path", "valueType": "String"}
+      ]
+    },
+    {
+      "name": "RegulatoryRule",
+      "sourceTableName": "regulatory_rules",
+      "keyColumn": "regulatory_rule_id",
+      "displayNameColumn": "title",
+      "properties": [
+        {"name": "RegulatoryRuleId", "sourceColumnName": "regulatory_rule_id", "valueType": "String"},
+        {"name": "RegulatoryRuleDocumentId", "sourceColumnName": "regulatory_document_id", "valueType": "String"},
+        {"name": "RegulatoryRuleParagraph", "sourceColumnName": "paragraph", "valueType": "String"},
+        {"name": "RegulatoryRuleTitle", "sourceColumnName": "title", "valueType": "String"},
+        {"name": "RegulatoryRuleSummary", "sourceColumnName": "summary", "valueType": "String"},
+        {"name": "RegulatoryRuleAppliesTo", "sourceColumnName": "applies_to", "valueType": "String"},
+        {"name": "RegulatoryRuleGate", "sourceColumnName": "gate", "valueType": "String"}
+      ]
+    }
+  ],
+  "relationshipTypes": [
+    {"name": "MANAGES", "sourceEntityType": "RelationshipManager", "targetEntityType": "Customer", "sourceTableName": "customers", "sourceKeyColumn": "rm_id", "targetKeyColumn": "customer_id"},
+    {"name": "MEMBER_OF", "sourceEntityType": "Customer", "targetEntityType": "Household", "sourceTableName": "customers", "sourceKeyColumn": "customer_id", "targetKeyColumn": "household_id"},
+    {"name": "OWNS", "sourceEntityType": "Customer", "targetEntityType": "Account", "sourceTableName": "accounts", "sourceKeyColumn": "customer_id", "targetKeyColumn": "account_id"},
+    {"name": "CONTAINS", "sourceEntityType": "Account", "targetEntityType": "Holding", "sourceTableName": "holdings", "sourceKeyColumn": "account_id", "targetKeyColumn": "holding_id"},
+    {"name": "REFERENCES", "sourceEntityType": "Holding", "targetEntityType": "Product", "sourceTableName": "holdings", "sourceKeyColumn": "holding_id", "targetKeyColumn": "product_id"},
+    {"name": "HAS_INTERACTION", "sourceEntityType": "Customer", "targetEntityType": "Interaction", "sourceTableName": "interactions", "sourceKeyColumn": "customer_id", "targetKeyColumn": "interaction_id"},
+    {"name": "HAS_PROFILE", "sourceEntityType": "Customer", "targetEntityType": "ComplianceProfile", "sourceTableName": "compliance_profiles", "sourceKeyColumn": "customer_id", "targetKeyColumn": "compliance_profile_id"},
+    {"name": "HAS_OPPORTUNITY", "sourceEntityType": "Customer", "targetEntityType": "Opportunity", "sourceTableName": "opportunities", "sourceKeyColumn": "customer_id", "targetKeyColumn": "opportunity_id"},
+    {"name": "HAS_EVENT", "sourceEntityType": "Customer", "targetEntityType": "CustomerEvent", "sourceTableName": "customer_events", "sourceKeyColumn": "customer_id", "targetKeyColumn": "event_id"},
+    {"name": "TRIGGERED_BY", "sourceEntityType": "Opportunity", "targetEntityType": "CustomerEvent", "sourceTableName": "opportunities", "sourceKeyColumn": "opportunity_id", "targetKeyColumn": "event_id"},
+    {"name": "AFFECTED_BY", "sourceEntityType": "Product", "targetEntityType": "MarketSignal", "sourceTableName": "market_snapshots", "sourceKeyColumn": "product_id", "targetKeyColumn": "market_snapshot_id"},
+    {"name": "HAS_RISK_ASSESSMENT", "sourceEntityType": "Customer", "targetEntityType": "RiskAssessment", "sourceTableName": "client_advisory_profiles", "sourceKeyColumn": "customer_id", "targetKeyColumn": "advisory_profile_id"},
+    {"name": "HAS_ACTIVITY", "sourceEntityType": "Customer", "targetEntityType": "ClientActivity", "sourceTableName": "client_investment_activity", "sourceKeyColumn": "customer_id", "targetKeyColumn": "investment_activity_id"}
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "144660155648581102",
+  "namespace": "usertypes",
+  "name": "Interaction",
+  "entityIdParts": [
+    "371104685805089994"
+  ],
+  "displayNamePropertyId": "371104685805089994",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "371104685805089994",
+      "name": "InteractionId",
+      "valueType": "String"
+    },
+    {
+      "id": "789318254634462234",
+      "name": "InteractionCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "672947764943196131",
+      "name": "InteractionRmId",
+      "valueType": "String"
+    },
+    {
+      "id": "600917968783642100",
+      "name": "InteractionChannel",
+      "valueType": "String"
+    },
+    {
+      "id": "320573625524993329",
+      "name": "InteractionType",
+      "valueType": "String"
+    },
+    {
+      "id": "416617169723907300",
+      "name": "InteractionSummary",
+      "valueType": "String"
+    },
+    {
+      "id": "823092281073339414",
+      "name": "InteractionOccurredAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

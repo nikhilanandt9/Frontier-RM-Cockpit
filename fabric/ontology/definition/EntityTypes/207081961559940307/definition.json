@@ -1,0 +1,49 @@
+{
+  "id": "207081961559940307",
+  "namespace": "usertypes",
+  "name": "HouseviewReport",
+  "entityIdParts": [
+    "573936983146564151"
+  ],
+  "displayNamePropertyId": "744990856677224396",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "573936983146564151",
+      "name": "HouseviewReportId",
+      "valueType": "String"
+    },
+    {
+      "id": "744990856677224396",
+      "name": "HouseviewReportTitle",
+      "valueType": "String"
+    },
+    {
+      "id": "652958079430015688",
+      "name": "HouseviewReportAsOfDate",
+      "valueType": "String"
+    },
+    {
+      "id": "203551932051945313",
+      "name": "HouseviewReportStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "329735630583824983",
+      "name": "HouseviewReportCioStance",
+      "valueType": "String"
+    },
+    {
+      "id": "595415191056178527",
+      "name": "HouseviewReportSummary",
+      "valueType": "String"
+    },
+    {
+      "id": "869786526400467221",
+      "name": "HouseviewReportDocumentPath",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

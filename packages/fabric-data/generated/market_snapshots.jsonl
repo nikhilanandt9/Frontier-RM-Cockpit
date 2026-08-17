@@ -1,0 +1,3 @@
+{"captured_at":"2026-08-12T08:30:00+08:00","currency":"SGD","market_name":"Synthetic Singapore Market Reference","market_snapshot_id":"market-snapshot-01","product_id":"product-fixed-deposit-sgd","reference_value":101.75,"synthetic":true}
+{"captured_at":"2026-08-12T08:30:00+08:00","currency":"SGD","market_name":"Synthetic Singapore Market Reference","market_snapshot_id":"market-snapshot-02","product_id":"product-investment-sgd","reference_value":103.5,"synthetic":true}
+{"captured_at":"2026-08-12T08:30:00+08:00","currency":"SGD","market_name":"Synthetic Singapore Market Reference","market_snapshot_id":"market-snapshot-03","product_id":"product-unit-trust-sgd","reference_value":105.25,"synthetic":true}

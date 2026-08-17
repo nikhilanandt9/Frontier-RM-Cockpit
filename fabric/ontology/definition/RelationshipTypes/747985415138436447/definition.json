@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "747985415138436447",
+  "name": "HAS_OPPORTUNITY",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "21886248324559301"
+  },
+  "target": {
+    "entityTypeId": "756945612746866904"
+  }
+}

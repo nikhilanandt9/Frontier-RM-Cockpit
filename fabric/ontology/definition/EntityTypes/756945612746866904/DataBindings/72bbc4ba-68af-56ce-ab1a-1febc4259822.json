@@ -1,0 +1,63 @@
+{
+  "id": "72bbc4ba-68af-56ce-ab1a-1febc4259822",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "opportunity_id",
+        "targetPropertyId": "689845508083681329"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "420583508887029060"
+      },
+      {
+        "sourceColumnName": "event_id",
+        "targetPropertyId": "653040362903641411"
+      },
+      {
+        "sourceColumnName": "rm_id",
+        "targetPropertyId": "787240477246906342"
+      },
+      {
+        "sourceColumnName": "opportunity_type",
+        "targetPropertyId": "866943574536147455"
+      },
+      {
+        "sourceColumnName": "title",
+        "targetPropertyId": "421019782181965377"
+      },
+      {
+        "sourceColumnName": "status",
+        "targetPropertyId": "371583432844519096"
+      },
+      {
+        "sourceColumnName": "priority",
+        "targetPropertyId": "619027520143902428"
+      },
+      {
+        "sourceColumnName": "estimated_value",
+        "targetPropertyId": "684825846205561762"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "210875828231381639"
+      },
+      {
+        "sourceColumnName": "confidence_score",
+        "targetPropertyId": "393161490598188577"
+      },
+      {
+        "sourceColumnName": "created_at",
+        "targetPropertyId": "345847959181981860"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "opportunities",
+      "sourceSchema": "silver"
+    }
+  }
+}

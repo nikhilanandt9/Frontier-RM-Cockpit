@@ -1,0 +1,8 @@
+{"asset_class":"CASH","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-current-sgd","product_name":"Current Account","product_type":"DEPOSIT","synthetic":true}
+{"asset_class":"CASH","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-savings-sgd","product_name":"Premier Savings","product_type":"DEPOSIT","synthetic":true}
+{"asset_class":"FIXED_INCOME","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-fixed-deposit-sgd","product_name":"Fixed Deposit","product_type":"TERM_DEPOSIT","synthetic":true}
+{"asset_class":"MULTI_ASSET","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-investment-sgd","product_name":"Investment Portfolio","product_type":"INVESTMENT","synthetic":true}
+{"asset_class":"MULTI_ASSET","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-unit-trust-sgd","product_name":"Unit Trust Portfolio","product_type":"INVESTMENT","synthetic":true}
+{"asset_class":"PROPERTY","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-mortgage-sgd","product_name":"Residential Mortgage","product_type":"LENDING","synthetic":true}
+{"asset_class":"CASH","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-multicurrency-sgd","product_name":"Multi-Currency Account","product_type":"DEPOSIT","synthetic":true}
+{"asset_class":"CREDIT","currency":"SGD","effective_at":"2026-08-01T00:00:00+08:00","product_id":"product-card-sgd","product_name":"Premier Card","product_type":"CARD","synthetic":true}

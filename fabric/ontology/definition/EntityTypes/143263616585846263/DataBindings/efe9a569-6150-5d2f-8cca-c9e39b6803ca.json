@@ -1,0 +1,47 @@
+{
+  "id": "efe9a569-6150-5d2f-8cca-c9e39b6803ca",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "household_id",
+        "targetPropertyId": "263660513157867434"
+      },
+      {
+        "sourceColumnName": "household_name",
+        "targetPropertyId": "129643148893195047"
+      },
+      {
+        "sourceColumnName": "rm_id",
+        "targetPropertyId": "580684582813238382"
+      },
+      {
+        "sourceColumnName": "primary_customer_id",
+        "targetPropertyId": "649640640556689010"
+      },
+      {
+        "sourceColumnName": "member_count",
+        "targetPropertyId": "750168732702041153"
+      },
+      {
+        "sourceColumnName": "relationship_value",
+        "targetPropertyId": "15352894739962489"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "899363512618124502"
+      },
+      {
+        "sourceColumnName": "snapshot_at",
+        "targetPropertyId": "802561685315683236"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "households",
+      "sourceSchema": "silver"
+    }
+  }
+}

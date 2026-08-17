@@ -1,0 +1,4 @@
+database FrontierRM
+	compatibilityLevel: 1702
+	compatibilityMode: powerBI
+	language: 1033

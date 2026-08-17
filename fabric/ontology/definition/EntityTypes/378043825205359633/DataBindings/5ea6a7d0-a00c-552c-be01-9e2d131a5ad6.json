@@ -1,0 +1,43 @@
+{
+  "id": "5ea6a7d0-a00c-552c-be01-9e2d131a5ad6",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "regulatory_rule_id",
+        "targetPropertyId": "791314692358332941"
+      },
+      {
+        "sourceColumnName": "regulatory_document_id",
+        "targetPropertyId": "165049369869380853"
+      },
+      {
+        "sourceColumnName": "paragraph",
+        "targetPropertyId": "623954887001071182"
+      },
+      {
+        "sourceColumnName": "title",
+        "targetPropertyId": "797793101054740829"
+      },
+      {
+        "sourceColumnName": "summary",
+        "targetPropertyId": "572838560999723459"
+      },
+      {
+        "sourceColumnName": "applies_to",
+        "targetPropertyId": "498474849991333005"
+      },
+      {
+        "sourceColumnName": "gate",
+        "targetPropertyId": "615140180633963185"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "regulatory_rules",
+      "sourceSchema": "silver"
+    }
+  }
+}

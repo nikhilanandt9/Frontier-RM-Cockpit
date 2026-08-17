@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b00020">
+    <title>Frontier RM Cockpit</title>
+    <link rel="icon" type="image/png" href="/apps/teams/appPackage/color.png">
+    <link rel="stylesheet" href="/apps/web/styles.css">
+  </head>
+  <body>
+    <div class="demo-banner">INTERNAL EBC DEMO <span>Fictional clients and data</span></div>
+    <div id="signal-ticker" class="signal-ticker" aria-live="polite"></div>
+    <header class="topbar">
+      <a class="brand" href="#today" aria-label="Frontier RM Cockpit home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span><strong>Frontier RM</strong><small>Intelligent relationship workspace</small></span>
+      </a>
+      <nav id="primary-nav" aria-label="Primary navigation"></nav>
+      <div class="topbar-actions">
+        <button class="present-button" id="present-button" type="button">▶ Guided story <span>60s</span></button>
+        <button class="mode-switch" id="mode-switch" type="button" aria-label="Toggle AI mode">
+          <span class="status-dot"></span><span id="mode-label">Demo mode</span>
+        </button>
+        <button class="avatar" type="button" aria-label="Open John Doe profile">JD</button>
+      </div>
+    </header>
+    <main id="app" tabindex="-1">
+      <div class="loading-state"><span class="loader"></span> Preparing your portfolio view...</div>
+    </main>
+    <button id="copilot-toggle" class="copilot-toggle" type="button" aria-expanded="false" aria-controls="copilot-panel" aria-label="Open Frontier Copilot">F</button>
+    <aside id="copilot-panel" class="copilot-panel" aria-label="Frontier Copilot" aria-hidden="true"></aside>
+    <div id="presentation-root"></div>
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/apps/web/app-v2.js"></script>
+  </body>
+</html>

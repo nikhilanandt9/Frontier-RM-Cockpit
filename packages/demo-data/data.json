@@ -1,0 +1,187 @@
+{
+  "asOf": "2026-08-12T08:30:00+08:00",
+  "rm": {
+    "name": "John Doe",
+    "initials": "JD",
+    "role": "Premier Relationship Manager",
+    "team": "Premier Banking, Singapore",
+    "portfolioHouseholds": 128
+  },
+  "metrics": [
+    { "label": "Assets under care", "value": "S$184.6M", "change": "+2.8% this quarter", "tone": "neutral" },
+    { "label": "Opportunity pipeline", "value": "S$6.8M", "change": "8 active needs", "tone": "positive" },
+    { "label": "Reviews due", "value": "12", "change": "4 this week", "tone": "attention" },
+    { "label": "Client coverage", "value": "86%", "change": "+7 pts vs last month", "tone": "positive" }
+  ],
+  "clients": [
+    {
+      "id": "client-lim",
+      "name": "Daniel Lim",
+      "initials": "DL",
+      "segment": "Premier Private Client",
+      "household": "Lim Household",
+      "assets": "S$4.8M",
+      "riskProfile": "Balanced Growth",
+      "kycStatus": "Current to Mar 2027",
+      "contactPreference": "Secure message, then call",
+      "consent": "Current",
+      "nextMeeting": "Today, 11:30",
+      "products": ["Current account", "Fixed deposit", "Investment portfolio", "Mortgage"],
+      "signals": ["S$650K fixed deposit matures in 12 days", "S$210K average idle cash for 90 days", "Portfolio review scheduled today"],
+      "recentInteraction": "Requested a consolidated portfolio view yesterday"
+    },
+    {
+      "id": "client-tan",
+      "name": "Mei Tan",
+      "initials": "MT",
+      "segment": "Premier Banking",
+      "household": "Tan Household",
+      "assets": "S$2.3M",
+      "riskProfile": "Moderate",
+      "kycStatus": "Refresh due in 21 days",
+      "contactPreference": "Phone",
+      "consent": "Current",
+      "nextMeeting": "Thursday, 15:00",
+      "products": ["Savings", "Unit trusts", "Time deposit"],
+      "signals": ["KYC refresh due in 21 days", "Recent beneficiary change", "Portfolio equity exposure above agreed range"],
+      "recentInteraction": "Asked about market volatility two weeks ago"
+    },
+    {
+      "id": "client-ng",
+      "name": "Jonathan Ng",
+      "initials": "JN",
+      "segment": "Premier Banking",
+      "household": "Ng Household",
+      "assets": "S$1.7M",
+      "riskProfile": "Conservative",
+      "kycStatus": "Current to Nov 2026",
+      "contactPreference": "Email",
+      "consent": "Current",
+      "nextMeeting": "No meeting booked",
+      "products": ["Current account", "Mortgage", "Time deposit"],
+      "signals": ["Mortgage repricing window opens in 30 days", "Salary credit increased 14%", "No portfolio conversation in 8 months"],
+      "recentInteraction": "Completed a digital service request last month"
+    },
+    {
+      "id": "client-lee",
+      "name": "Priya Lee",
+      "initials": "PL",
+      "segment": "Premier Banking",
+      "household": "Lee Household",
+      "assets": "S$3.1M",
+      "riskProfile": "Growth",
+      "kycStatus": "Current to Jul 2027",
+      "contactPreference": "Secure message",
+      "consent": "Do not call before 10:00",
+      "nextMeeting": "Friday, 10:30",
+      "products": ["Multi-currency account", "Investment portfolio", "Card"],
+      "signals": ["Recurring cross-border transfers increased", "Travel notification filed for UK", "Large SGD balance after asset sale"],
+      "recentInteraction": "Asked for GBP transfer documentation"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-fd-maturity",
+      "clientId": "client-lim",
+      "type": "Maturity conversation",
+      "priority": "Now",
+      "title": "Prepare Daniel's maturity and portfolio review",
+      "summary": "Bring the maturing deposit, idle cash, and existing portfolio into one needs-led conversation.",
+      "confidence": 94,
+      "value": "S$860K conversation scope",
+      "channel": "In-person meeting",
+      "time": "Today, 11:30",
+      "evidence": ["S$650K fixed deposit matures in 12 days", "S$210K average idle cash for 90 days", "Client requested a consolidated view"],
+      "checks": ["Confirm objectives and liquidity needs", "Reconfirm risk profile before discussing investments", "Present alternatives without implying guaranteed returns"],
+      "opening": "Daniel, I have brought your upcoming maturity and the cash across your accounts into one view so we can decide what should remain liquid and what should support your longer-term goals."
+    },
+    {
+      "id": "opp-kyc-risk",
+      "clientId": "client-tan",
+      "type": "Review and compliance",
+      "priority": "Today",
+      "title": "Combine Mei's portfolio review with KYC refresh",
+      "summary": "Resolve the upcoming profile refresh before discussing a portfolio allocation that has moved outside the agreed range.",
+      "confidence": 88,
+      "value": "Protect S$2.3M relationship",
+      "channel": "Phone",
+      "time": "Today, 16:00",
+      "evidence": ["KYC refresh due in 21 days", "Equity exposure above agreed range", "Client previously asked about volatility"],
+      "checks": ["Complete identity and profile refresh first", "Validate investment objectives and risk capacity", "Escalate unexplained beneficiary changes"],
+      "opening": "Mei, I would like to update your profile and then review how recent markets have shifted your portfolio from the range we agreed."
+    },
+    {
+      "id": "opp-mortgage",
+      "clientId": "client-ng",
+      "type": "Proactive service",
+      "priority": "This week",
+      "title": "Contact Jonathan before his repricing window",
+      "summary": "Offer an early mortgage review and reconnect on broader financial priorities after an extended engagement gap.",
+      "confidence": 82,
+      "value": "S$1.1M lending relationship",
+      "channel": "Email",
+      "time": "Tomorrow, 09:45",
+      "evidence": ["Mortgage repricing opens in 30 days", "No portfolio conversation in 8 months", "Salary credit increased 14%"],
+      "checks": ["Use current approved mortgage information", "Do not promise a rate before assessment", "Confirm preferred meeting channel"],
+      "opening": "Jonathan, your mortgage review window is approaching. I would like to map the available next steps and make sure the structure still fits your current priorities."
+    },
+    {
+      "id": "opp-cross-border",
+      "clientId": "client-lee",
+      "type": "Life and liquidity event",
+      "priority": "This week",
+      "title": "Prepare Priya's cross-border liquidity conversation",
+      "summary": "Understand the purpose and timing of increased international transfers before discussing currency and liquidity options.",
+      "confidence": 76,
+      "value": "S$540K liquid balance",
+      "channel": "Secure message",
+      "time": "Today, 14:30",
+      "evidence": ["Cross-border transfers increased", "UK travel notification", "Large SGD balance after asset sale"],
+      "checks": ["Confirm source and purpose of funds", "Check transfer documentation requirements", "Avoid currency forecasts or return promises"],
+      "opening": "Priya, I noticed your upcoming UK activity and would like to make sure your liquidity and transfer setup supports what you are planning."
+    }
+  ],
+  "agenda": [
+    { "time": "09:00", "type": "Preparation", "title": "Review overnight portfolio movements", "clientId": null, "status": "complete" },
+    { "time": "10:00", "type": "Compliance", "title": "Prepare Mei Tan profile refresh", "clientId": "client-tan", "status": "next" },
+    { "time": "11:30", "type": "Client meeting", "title": "Daniel Lim portfolio and maturity review", "clientId": "client-lim", "status": "scheduled" },
+    { "time": "14:30", "type": "Outreach", "title": "Secure message to Priya Lee", "clientId": "client-lee", "status": "scheduled" },
+    { "time": "16:00", "type": "Client call", "title": "Mei Tan market and profile review", "clientId": "client-tan", "status": "scheduled" }
+  ],
+  "knowledge": [
+    {
+      "id": "KNOW-KYC-014",
+      "title": "Client profile refresh before suitability discussion",
+      "keywords": ["kyc", "profile", "suitability", "expired", "refresh"],
+      "answer": "Complete an overdue or materially changed client profile before making a personalised investment recommendation. Confirm identity information, objectives, financial situation, risk capacity, and relevant changes. Escalate discrepancies through the approved compliance channel.",
+      "source": "Fictional Premier Advisory Standard, section 4.1"
+    },
+    {
+      "id": "KNOW-FD-008",
+      "title": "Fixed-deposit maturity conversation",
+      "keywords": ["fixed deposit", "maturity", "deposit", "renew", "reinvest"],
+      "answer": "Start with the client's liquidity needs, time horizon, and upcoming commitments. Present deposit renewal, liquidity, and investment alternatives as separate choices. Do not imply that investment returns are guaranteed or equivalent to deposit protection.",
+      "source": "Fictional Maturity Conversation Guide, section 2.3"
+    },
+    {
+      "id": "KNOW-CONSENT-005",
+      "title": "Client contact preference and consent",
+      "keywords": ["consent", "contact", "call", "message", "preference"],
+      "answer": "Use the client's recorded permitted channel and timing preference before initiating outreach. If consent is missing, unclear, or contradicted by a recent request, pause campaign-style contact and confirm the permitted method through an approved service interaction.",
+      "source": "Fictional Client Contact Standard, section 3.2"
+    },
+    {
+      "id": "KNOW-FX-011",
+      "title": "Cross-border transfer preparation",
+      "keywords": ["cross-border", "transfer", "remittance", "currency", "funds", "gbp"],
+      "answer": "Confirm the source, purpose, destination, timing, and required supporting documents before discussing transfer execution. Explain fees and exchange-rate mechanics using current approved information, and do not forecast currency movements.",
+      "source": "Fictional Cross-Border Service Guide, section 5.4"
+    }
+  ],
+  "signals": [
+    { "time": "08:24", "label": "Maturity", "text": "A fixed deposit entered its 14-day review window", "client": "Daniel Lim" },
+    { "time": "08:12", "label": "Compliance", "text": "A client profile refresh moved into the 30-day window", "client": "Mei Tan" },
+    { "time": "07:58", "label": "Service", "text": "Mortgage repricing eligibility window detected", "client": "Jonathan Ng" },
+    { "time": "07:42", "label": "Liquidity", "text": "Sustained balance change passed scenario threshold", "client": "Priya Lee" }
+  ]
+}

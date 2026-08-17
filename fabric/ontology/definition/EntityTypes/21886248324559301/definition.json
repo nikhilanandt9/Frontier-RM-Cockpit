@@ -1,0 +1,79 @@
+{
+  "id": "21886248324559301",
+  "namespace": "usertypes",
+  "name": "Customer",
+  "entityIdParts": [
+    "628999339852629699"
+  ],
+  "displayNamePropertyId": "136655844867336129",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "628999339852629699",
+      "name": "CustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "93815147546080680",
+      "name": "CustomerHouseholdId",
+      "valueType": "String"
+    },
+    {
+      "id": "794735377298186104",
+      "name": "CustomerRmId",
+      "valueType": "String"
+    },
+    {
+      "id": "136655844867336129",
+      "name": "CustomerFullName",
+      "valueType": "String"
+    },
+    {
+      "id": "774137244316884434",
+      "name": "CustomerSegment",
+      "valueType": "String"
+    },
+    {
+      "id": "348474951919785903",
+      "name": "CustomerRiskProfile",
+      "valueType": "String"
+    },
+    {
+      "id": "53689416740557353",
+      "name": "CustomerContactPref",
+      "valueType": "String"
+    },
+    {
+      "id": "289902977687150945",
+      "name": "CustomerConsentStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "155219931288423200",
+      "name": "CustomerRelValue",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "885181090260695143",
+      "name": "CustomerCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "362533942396809993",
+      "name": "CustomerCountryCode",
+      "valueType": "String"
+    },
+    {
+      "id": "791763995262156147",
+      "name": "CustomerSynthetic",
+      "valueType": "Boolean"
+    },
+    {
+      "id": "330631424094198050",
+      "name": "CustomerCreatedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

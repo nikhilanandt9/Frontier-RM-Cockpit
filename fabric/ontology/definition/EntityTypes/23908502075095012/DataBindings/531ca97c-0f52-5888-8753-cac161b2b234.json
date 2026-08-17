@@ -1,0 +1,43 @@
+{
+  "id": "531ca97c-0f52-5888-8753-cac161b2b234",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "market_snapshot_id",
+        "targetPropertyId": "772843186888843437"
+      },
+      {
+        "sourceColumnName": "product_id",
+        "targetPropertyId": "684096976125130357"
+      },
+      {
+        "sourceColumnName": "market_name",
+        "targetPropertyId": "47376411197607743"
+      },
+      {
+        "sourceColumnName": "reference_value",
+        "targetPropertyId": "773738060155149677"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "729914899918160115"
+      },
+      {
+        "sourceColumnName": "captured_at",
+        "targetPropertyId": "37220238662399118"
+      },
+      {
+        "sourceColumnName": "synthetic",
+        "targetPropertyId": "880372536211948876"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "market_snapshots",
+      "sourceSchema": "silver"
+    }
+  }
+}

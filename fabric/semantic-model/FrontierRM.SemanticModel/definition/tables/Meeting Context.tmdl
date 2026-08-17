@@ -1,0 +1,124 @@
+/// Governed meeting-preparation context combining relationship, opportunity, event and planned-action evidence.
+table 'Meeting Context'
+
+	/// Customer foreign key used to retrieve one governed meeting context.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Customer name for the meeting context.
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	/// Household name associated with the customer.
+	column Household
+		dataType: string
+		summarizeBy: none
+		sourceColumn: household_name
+
+	/// Total customer relationship value in Singapore dollars.
+	column 'Relationship Value'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: relationship_value
+
+	/// ISO currency code for relationship value.
+	column Currency
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency
+
+	/// Current customer investment risk profile.
+	column 'Risk Profile'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: risk_profile
+
+	/// Recorded channel preference for RM contact.
+	column 'Contact Preference'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: contact_preference
+
+	/// Current contact-consent status and timing restriction.
+	column 'Consent Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: consent_status
+
+	/// Current know-your-customer profile status.
+	column 'KYC Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: kyc_status
+
+	/// Opportunity selected for the next needs-led conversation.
+	column 'Opportunity ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: opportunity_id
+
+	/// Source lifecycle event that caused the opportunity.
+	column 'Event ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: event_id
+
+	/// Business title of the selected opportunity.
+	column 'Opportunity Title'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: opportunity_title
+
+	/// Current urgency assigned to the opportunity.
+	column Priority
+		dataType: string
+		summarizeBy: none
+		sourceColumn: priority
+
+	/// Confidence score from zero to one hundred.
+	column 'Confidence Score'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: confidence_score
+
+	/// Distinct customer lifecycle-event types included in preparation.
+	column 'Event Types'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: event_types
+
+	/// Planned RM action associated with the opportunity.
+	column 'Action Type'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: action_type
+
+	/// Date and time when the planned RM action is due.
+	column 'Action Due At'
+		dataType: dateTime
+		formatString: dd mmm yyyy hh:mm
+		summarizeBy: none
+		sourceColumn: due_at
+
+	/// Relationship manager assigned to the customer.
+	column 'Relationship Manager ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: rm_id
+
+	partition 'Meeting Context' = entity
+		mode: directLake
+		source
+			entityName: meeting_context
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "790540907226079361",
+  "name": "HAS_PROFILE",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "21886248324559301"
+  },
+  "target": {
+    "entityTypeId": "279911975760105251"
+  }
+}

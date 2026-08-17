@@ -1,0 +1,22 @@
+{
+  "id": "0f780304-7355-5197-a443-7a06d01f1c7c",
+  "dataBindingTable": {
+    "sourceType": "LakehouseTable",
+    "workspaceId": "<FABRIC_WORKSPACE_ID>",
+    "itemId": "<FABRIC_LAKEHOUSE_ID>",
+    "sourceTableName": "market_snapshots",
+    "sourceSchema": "silver"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "product_id",
+      "targetPropertyId": "56374541494025152"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "market_snapshot_id",
+      "targetPropertyId": "772843186888843437"
+    }
+  ]
+}

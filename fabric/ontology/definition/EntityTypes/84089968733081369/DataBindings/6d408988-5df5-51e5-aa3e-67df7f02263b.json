@@ -1,0 +1,59 @@
+{
+  "id": "6d408988-5df5-51e5-aa3e-67df7f02263b",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "advisory_profile_id",
+        "targetPropertyId": "337222262036082226"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "430166845037998384"
+      },
+      {
+        "sourceColumnName": "declared_risk_score",
+        "targetPropertyId": "893851099568930667"
+      },
+      {
+        "sourceColumnName": "declared_risk_label",
+        "targetPropertyId": "746689213397686528"
+      },
+      {
+        "sourceColumnName": "observed_behaviour_indicator",
+        "targetPropertyId": "178383827544613425"
+      },
+      {
+        "sourceColumnName": "observed_behaviour_label",
+        "targetPropertyId": "646745910086245407"
+      },
+      {
+        "sourceColumnName": "risk_review_status",
+        "targetPropertyId": "587178219987489908"
+      },
+      {
+        "sourceColumnName": "employment_status",
+        "targetPropertyId": "201867503310551316"
+      },
+      {
+        "sourceColumnName": "retirement_status",
+        "targetPropertyId": "722619699464680652"
+      },
+      {
+        "sourceColumnName": "profile_effective_at",
+        "targetPropertyId": "387626772491166027"
+      },
+      {
+        "sourceColumnName": "indicator_calculated_at",
+        "targetPropertyId": "671724607440131525"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "client_advisory_profiles",
+      "sourceSchema": "silver"
+    }
+  }
+}

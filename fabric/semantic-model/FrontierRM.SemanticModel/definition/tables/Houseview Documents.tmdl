@@ -1,0 +1,66 @@
+/// CIO Houseview reports and section-level citations available for recommendation grounding.
+table 'Houseview Documents'
+
+	/// Number of active CIO Houseview reports.
+	measure '# Active Houseview Reports' = CALCULATE(DISTINCTCOUNT('Houseview Documents'[Houseview ID]), 'Houseview Documents'[Status] = "ACTIVE")
+		formatString: #,##0
+		displayFolder: Measures\Counts
+
+	column 'Houseview ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: houseview_id
+
+	column 'Houseview Section ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: houseview_section_id
+
+	column Title
+		dataType: string
+		summarizeBy: none
+		sourceColumn: report_title
+
+	column 'Section Title'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: section_title
+
+	column 'As Of Date'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: as_of_date
+
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: status
+
+	column 'CIO Stance'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: cio_stance
+
+	column View
+		dataType: string
+		summarizeBy: none
+		sourceColumn: view
+
+	column Positioning
+		dataType: string
+		summarizeBy: none
+		sourceColumn: positioning
+
+	column Risks
+		dataType: string
+		summarizeBy: none
+		sourceColumn: risks
+
+	partition 'Houseview Documents' = entity
+		mode: directLake
+		source
+			entityName: houseview_document_index
+			schemaName: gold
+			expressionSource: 'DirectLake - <FABRIC_LAKEHOUSE_NAME>'

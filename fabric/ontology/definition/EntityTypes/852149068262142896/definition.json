@@ -1,0 +1,59 @@
+{
+  "id": "852149068262142896",
+  "namespace": "usertypes",
+  "name": "ClientActivity",
+  "entityIdParts": [
+    "72371750823685493"
+  ],
+  "displayNamePropertyId": "327419931670379831",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "72371750823685493",
+      "name": "ClientActivityId",
+      "valueType": "String"
+    },
+    {
+      "id": "18427645403778188",
+      "name": "ClientActivityCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "862598502907662646",
+      "name": "ClientActivityAccountId",
+      "valueType": "String"
+    },
+    {
+      "id": "327419931670379831",
+      "name": "ClientActivityType",
+      "valueType": "String"
+    },
+    {
+      "id": "701062534213221175",
+      "name": "ClientActivityAssetClass",
+      "valueType": "String"
+    },
+    {
+      "id": "105998095578545406",
+      "name": "ClientActivityAmount",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "847021966521360221",
+      "name": "ClientActivityCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "820244245317136367",
+      "name": "ClientActivityAt",
+      "valueType": "String"
+    },
+    {
+      "id": "381611800201297552",
+      "name": "ClientActivityExplanation",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

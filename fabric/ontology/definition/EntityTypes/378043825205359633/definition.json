@@ -1,0 +1,49 @@
+{
+  "id": "378043825205359633",
+  "namespace": "usertypes",
+  "name": "RegulatoryRule",
+  "entityIdParts": [
+    "791314692358332941"
+  ],
+  "displayNamePropertyId": "797793101054740829",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "791314692358332941",
+      "name": "RegulatoryRuleId",
+      "valueType": "String"
+    },
+    {
+      "id": "165049369869380853",
+      "name": "RegulatoryRuleDocumentId",
+      "valueType": "String"
+    },
+    {
+      "id": "623954887001071182",
+      "name": "RegulatoryRuleParagraph",
+      "valueType": "String"
+    },
+    {
+      "id": "797793101054740829",
+      "name": "RegulatoryRuleTitle",
+      "valueType": "String"
+    },
+    {
+      "id": "572838560999723459",
+      "name": "RegulatoryRuleSummary",
+      "valueType": "String"
+    },
+    {
+      "id": "498474849991333005",
+      "name": "RegulatoryRuleAppliesTo",
+      "valueType": "String"
+    },
+    {
+      "id": "615140180633963185",
+      "name": "RegulatoryRuleGate",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

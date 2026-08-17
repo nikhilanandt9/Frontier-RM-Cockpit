@@ -1,0 +1,35 @@
+relationship 'Opportunities to Customer'
+	fromColumn: Opportunities.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Portfolio Exposure to Customer'
+	fromColumn: 'Portfolio Exposure'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Maturity Watchlist to Customer'
+	fromColumn: 'Maturity Watchlist'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Engagement Gap to Customer'
+	fromColumn: 'Engagement Gap'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Compliance Due to Customer'
+	fromColumn: 'Compliance Due'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Meeting Context to Customer'
+	fromColumn: 'Meeting Context'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Advisory Profile to Customer'
+	fromColumn: 'Advisory Profile'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Activity Evidence to Customer'
+	fromColumn: 'Activity Evidence'.'Customer ID'
+	toColumn: Customer.'Customer ID'
+
+relationship 'Recommendation Context to Customer'
+	fromColumn: 'Recommendation Context'.'Customer ID'
+	toColumn: Customer.'Customer ID'

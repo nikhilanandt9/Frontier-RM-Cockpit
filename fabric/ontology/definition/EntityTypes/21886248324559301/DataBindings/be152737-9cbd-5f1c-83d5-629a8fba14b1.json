@@ -1,0 +1,67 @@
+{
+  "id": "be152737-9cbd-5f1c-83d5-629a8fba14b1",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "628999339852629699"
+      },
+      {
+        "sourceColumnName": "household_id",
+        "targetPropertyId": "93815147546080680"
+      },
+      {
+        "sourceColumnName": "rm_id",
+        "targetPropertyId": "794735377298186104"
+      },
+      {
+        "sourceColumnName": "full_name",
+        "targetPropertyId": "136655844867336129"
+      },
+      {
+        "sourceColumnName": "segment",
+        "targetPropertyId": "774137244316884434"
+      },
+      {
+        "sourceColumnName": "risk_profile",
+        "targetPropertyId": "348474951919785903"
+      },
+      {
+        "sourceColumnName": "contact_preference",
+        "targetPropertyId": "53689416740557353"
+      },
+      {
+        "sourceColumnName": "consent_status",
+        "targetPropertyId": "289902977687150945"
+      },
+      {
+        "sourceColumnName": "relationship_value",
+        "targetPropertyId": "155219931288423200"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "885181090260695143"
+      },
+      {
+        "sourceColumnName": "country_code",
+        "targetPropertyId": "362533942396809993"
+      },
+      {
+        "sourceColumnName": "synthetic",
+        "targetPropertyId": "791763995262156147"
+      },
+      {
+        "sourceColumnName": "created_at",
+        "targetPropertyId": "330631424094198050"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "customers",
+      "sourceSchema": "silver"
+    }
+  }
+}

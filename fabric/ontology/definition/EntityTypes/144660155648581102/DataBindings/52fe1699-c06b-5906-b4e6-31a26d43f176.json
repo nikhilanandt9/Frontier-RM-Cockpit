@@ -1,0 +1,43 @@
+{
+  "id": "52fe1699-c06b-5906-b4e6-31a26d43f176",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "interaction_id",
+        "targetPropertyId": "371104685805089994"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "789318254634462234"
+      },
+      {
+        "sourceColumnName": "rm_id",
+        "targetPropertyId": "672947764943196131"
+      },
+      {
+        "sourceColumnName": "channel",
+        "targetPropertyId": "600917968783642100"
+      },
+      {
+        "sourceColumnName": "interaction_type",
+        "targetPropertyId": "320573625524993329"
+      },
+      {
+        "sourceColumnName": "summary",
+        "targetPropertyId": "416617169723907300"
+      },
+      {
+        "sourceColumnName": "occurred_at",
+        "targetPropertyId": "823092281073339414"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "itemId": "<FABRIC_LAKEHOUSE_ID>",
+      "sourceTableName": "interactions",
+      "sourceSchema": "silver"
+    }
+  }
+}
