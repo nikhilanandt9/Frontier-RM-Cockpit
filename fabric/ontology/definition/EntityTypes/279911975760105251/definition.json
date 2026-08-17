@@ -1,0 +1,49 @@
+{
+  "id": "279911975760105251",
+  "namespace": "usertypes",
+  "name": "ComplianceProfile",
+  "entityIdParts": [
+    "731348199846842914"
+  ],
+  "displayNamePropertyId": "731348199846842914",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "731348199846842914",
+      "name": "ComplianceProfileId",
+      "valueType": "String"
+    },
+    {
+      "id": "358398509045760207",
+      "name": "ComplianceCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "659991057523810946",
+      "name": "ComplianceKycStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "446084124057299932",
+      "name": "ComplianceKycDueDate",
+      "valueType": "String"
+    },
+    {
+      "id": "445600580513348382",
+      "name": "ComplianceAmlRisk",
+      "valueType": "String"
+    },
+    {
+      "id": "760174587166828860",
+      "name": "ComplianceSuitability",
+      "valueType": "String"
+    },
+    {
+      "id": "166132608519103132",
+      "name": "ComplianceReviewedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

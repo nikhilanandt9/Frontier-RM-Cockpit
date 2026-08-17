@@ -1,0 +1,51 @@
+{
+  "id": "ef1a0238-4a44-554a-91f5-00bdcf4ff697",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "account_id",
+        "targetPropertyId": "559319449796961205"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "171543760754346560"
+      },
+      {
+        "sourceColumnName": "household_id",
+        "targetPropertyId": "328142141150221532"
+      },
+      {
+        "sourceColumnName": "product_id",
+        "targetPropertyId": "652706865030418568"
+      },
+      {
+        "sourceColumnName": "account_type",
+        "targetPropertyId": "102820413874429665"
+      },
+      {
+        "sourceColumnName": "status",
+        "targetPropertyId": "116017921276064255"
+      },
+      {
+        "sourceColumnName": "balance",
+        "targetPropertyId": "279151480163790372"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "519126737665090961"
+      },
+      {
+        "sourceColumnName": "opened_at",
+        "targetPropertyId": "232284417234518449"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "accounts",
+      "sourceSchema": "silver"
+    }
+  }
+}

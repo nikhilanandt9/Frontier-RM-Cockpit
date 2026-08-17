@@ -1,0 +1,54 @@
+{
+  "id": "474926621781242308",
+  "namespace": "usertypes",
+  "name": "Holding",
+  "entityIdParts": [
+    "251735022553682740"
+  ],
+  "displayNamePropertyId": "251735022553682740",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "251735022553682740",
+      "name": "HoldingId",
+      "valueType": "String"
+    },
+    {
+      "id": "590782075567661362",
+      "name": "HoldingAccountId",
+      "valueType": "String"
+    },
+    {
+      "id": "417565070632701179",
+      "name": "HoldingProductId",
+      "valueType": "String"
+    },
+    {
+      "id": "137324196961106434",
+      "name": "HoldingQuantity",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "448478438982426290",
+      "name": "HoldingMarketValue",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "589860036675335961",
+      "name": "HoldingCostValue",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "612013498783783383",
+      "name": "HoldingCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "33846104685047908",
+      "name": "HoldingValuedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

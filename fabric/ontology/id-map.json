@@ -1,0 +1,282 @@
+{
+  "ontologyName": "Frontier_RM_Ontology",
+  "entityTypes": {
+    "RelationshipManager": {
+      "id": "190718777497630740",
+      "properties": {
+        "RmId": "344933184946449000",
+        "RmDisplayName": "532755591626321238",
+        "RmInitials": "213482656189264867",
+        "RmRole": "698813549354139544",
+        "RmTeam": "220104663479414784",
+        "RmLocation": "677032038615403704",
+        "RmActive": "562612003702804640",
+        "RmCreatedAt": "32959545909201562"
+      }
+    },
+    "Customer": {
+      "id": "21886248324559301",
+      "properties": {
+        "CustomerId": "628999339852629699",
+        "CustomerHouseholdId": "93815147546080680",
+        "CustomerRmId": "794735377298186104",
+        "CustomerFullName": "136655844867336129",
+        "CustomerSegment": "774137244316884434",
+        "CustomerRiskProfile": "348474951919785903",
+        "CustomerContactPref": "53689416740557353",
+        "CustomerConsentStatus": "289902977687150945",
+        "CustomerRelValue": "155219931288423200",
+        "CustomerCurrency": "885181090260695143",
+        "CustomerCountryCode": "362533942396809993",
+        "CustomerSynthetic": "791763995262156147",
+        "CustomerCreatedAt": "330631424094198050"
+      }
+    },
+    "Household": {
+      "id": "143263616585846263",
+      "properties": {
+        "HouseholdId": "263660513157867434",
+        "HouseholdName": "129643148893195047",
+        "HouseholdRmId": "580684582813238382",
+        "HouseholdPrimaryCustId": "649640640556689010",
+        "HouseholdMemberCount": "750168732702041153",
+        "HouseholdRelValue": "15352894739962489",
+        "HouseholdCurrency": "899363512618124502",
+        "HouseholdSnapshotAt": "802561685315683236"
+      }
+    },
+    "Account": {
+      "id": "414439119342134419",
+      "properties": {
+        "AccountId": "559319449796961205",
+        "AccountCustomerId": "171543760754346560",
+        "AccountHouseholdId": "328142141150221532",
+        "AccountProductId": "652706865030418568",
+        "AccountType": "102820413874429665",
+        "AccountStatus": "116017921276064255",
+        "AccountBalance": "279151480163790372",
+        "AccountCurrency": "519126737665090961",
+        "AccountOpenedAt": "232284417234518449"
+      }
+    },
+    "Holding": {
+      "id": "474926621781242308",
+      "properties": {
+        "HoldingId": "251735022553682740",
+        "HoldingAccountId": "590782075567661362",
+        "HoldingProductId": "417565070632701179",
+        "HoldingQuantity": "137324196961106434",
+        "HoldingMarketValue": "448478438982426290",
+        "HoldingCostValue": "589860036675335961",
+        "HoldingCurrency": "612013498783783383",
+        "HoldingValuedAt": "33846104685047908"
+      }
+    },
+    "Product": {
+      "id": "842918558810908915",
+      "properties": {
+        "ProductId": "56374541494025152",
+        "ProductName": "177838244422504473",
+        "ProductType": "809432228362070923",
+        "ProductAssetClass": "843581476851236857",
+        "ProductCurrency": "9413428391532581",
+        "ProductSynthetic": "425467205443687807",
+        "ProductEffectiveAt": "123779452081881326"
+      }
+    },
+    "Interaction": {
+      "id": "144660155648581102",
+      "properties": {
+        "InteractionId": "371104685805089994",
+        "InteractionCustomerId": "789318254634462234",
+        "InteractionRmId": "672947764943196131",
+        "InteractionChannel": "600917968783642100",
+        "InteractionType": "320573625524993329",
+        "InteractionSummary": "416617169723907300",
+        "InteractionOccurredAt": "823092281073339414"
+      }
+    },
+    "ComplianceProfile": {
+      "id": "279911975760105251",
+      "properties": {
+        "ComplianceProfileId": "731348199846842914",
+        "ComplianceCustomerId": "358398509045760207",
+        "ComplianceKycStatus": "659991057523810946",
+        "ComplianceKycDueDate": "446084124057299932",
+        "ComplianceAmlRisk": "445600580513348382",
+        "ComplianceSuitability": "760174587166828860",
+        "ComplianceReviewedAt": "166132608519103132"
+      }
+    },
+    "Opportunity": {
+      "id": "756945612746866904",
+      "properties": {
+        "OpportunityId": "689845508083681329",
+        "OpportunityCustomerId": "420583508887029060",
+        "OpportunityEventId": "653040362903641411",
+        "OpportunityRmId": "787240477246906342",
+        "OpportunityType": "866943574536147455",
+        "OpportunityTitle": "421019782181965377",
+        "OpportunityStatus": "371583432844519096",
+        "OpportunityPriority": "619027520143902428",
+        "OpportunityEstValue": "684825846205561762",
+        "OpportunityCurrency": "210875828231381639",
+        "OpportunityConfidence": "393161490598188577",
+        "OpportunityCreatedAt": "345847959181981860"
+      }
+    },
+    "CustomerEvent": {
+      "id": "183078849292335670",
+      "properties": {
+        "EventId": "754977298198172459",
+        "EventCustomerId": "823739587291414438",
+        "EventAccountId": "852823112831590425",
+        "EventType": "792101215216746818",
+        "EventValue": "607900129210605544",
+        "EventCurrency": "842038975902421584",
+        "EventAt": "537978076419340111",
+        "EventSource": "510952200057787939",
+        "EventMaturityDate": "773833728767946951",
+        "EventObservationDays": "73233439846667684",
+        "EventWindowOpensDate": "261594827090787346"
+      }
+    },
+    "MarketSignal": {
+      "id": "23908502075095012",
+      "properties": {
+        "MarketSignalId": "772843186888843437",
+        "MarketSignalProductId": "684096976125130357",
+        "MarketSignalName": "47376411197607743",
+        "MarketSignalRefValue": "773738060155149677",
+        "MarketSignalCurrency": "729914899918160115",
+        "MarketSignalCapturedAt": "37220238662399118",
+        "MarketSignalSynthetic": "880372536211948876"
+      }
+    },
+    "RiskAssessment": {
+      "id": "84089968733081369",
+      "properties": {
+        "RiskAssessmentId": "337222262036082226",
+        "RiskAssessmentCustomerId": "430166845037998384",
+        "RiskDeclaredScore": "893851099568930667",
+        "RiskDeclaredLabel": "746689213397686528",
+        "RiskObservedIndicator": "178383827544613425",
+        "RiskObservedLabel": "646745910086245407",
+        "RiskReviewStatus": "587178219987489908",
+        "RiskEmploymentStatus": "201867503310551316",
+        "RiskRetirementStatus": "722619699464680652",
+        "RiskProfileEffectiveAt": "387626772491166027",
+        "RiskIndicatorCalculatedAt": "671724607440131525"
+      }
+    },
+    "ClientActivity": {
+      "id": "852149068262142896",
+      "properties": {
+        "ClientActivityId": "72371750823685493",
+        "ClientActivityCustomerId": "18427645403778188",
+        "ClientActivityAccountId": "862598502907662646",
+        "ClientActivityType": "327419931670379831",
+        "ClientActivityAssetClass": "701062534213221175",
+        "ClientActivityAmount": "105998095578545406",
+        "ClientActivityCurrency": "847021966521360221",
+        "ClientActivityAt": "820244245317136367",
+        "ClientActivityExplanation": "381611800201297552"
+      }
+    },
+    "HouseviewReport": {
+      "id": "207081961559940307",
+      "properties": {
+        "HouseviewReportId": "573936983146564151",
+        "HouseviewReportTitle": "744990856677224396",
+        "HouseviewReportAsOfDate": "652958079430015688",
+        "HouseviewReportStatus": "203551932051945313",
+        "HouseviewReportCioStance": "329735630583824983",
+        "HouseviewReportSummary": "595415191056178527",
+        "HouseviewReportDocumentPath": "869786526400467221"
+      }
+    },
+    "RegulatoryRule": {
+      "id": "378043825205359633",
+      "properties": {
+        "RegulatoryRuleId": "791314692358332941",
+        "RegulatoryRuleDocumentId": "165049369869380853",
+        "RegulatoryRuleParagraph": "623954887001071182",
+        "RegulatoryRuleTitle": "797793101054740829",
+        "RegulatoryRuleSummary": "572838560999723459",
+        "RegulatoryRuleAppliesTo": "498474849991333005",
+        "RegulatoryRuleGate": "615140180633963185"
+      }
+    }
+  },
+  "relationshipTypes": {
+    "MANAGES": {
+      "id": "862215837415506656",
+      "contextualizationId": "798ec515-8434-5b16-82ec-189abedf1fd1"
+    },
+    "MEMBER_OF": {
+      "id": "44455802186246806",
+      "contextualizationId": "8b53885e-0f1d-58e3-803c-a0eee18f4f90"
+    },
+    "OWNS": {
+      "id": "11132659351230779",
+      "contextualizationId": "6d1058fa-1afc-5edb-ae84-f2d55bb7f506"
+    },
+    "CONTAINS": {
+      "id": "307969913450796790",
+      "contextualizationId": "bbb87adb-a41d-5658-87cb-d300a7b1f42c"
+    },
+    "REFERENCES": {
+      "id": "662137665006295920",
+      "contextualizationId": "4e0a77f5-4ede-5120-a23c-3f5d7d972f73"
+    },
+    "HAS_INTERACTION": {
+      "id": "57744833586521782",
+      "contextualizationId": "3e0219f5-ebc7-51f1-8ca1-3364ab1d5b30"
+    },
+    "HAS_PROFILE": {
+      "id": "790540907226079361",
+      "contextualizationId": "8486f3b5-3edb-5af8-9d95-1fe762647bb4"
+    },
+    "HAS_OPPORTUNITY": {
+      "id": "747985415138436447",
+      "contextualizationId": "d465f03d-9db9-5991-a98d-af36c0634cdc"
+    },
+    "HAS_EVENT": {
+      "id": "552073050436985191",
+      "contextualizationId": "9f4db86b-b397-5b30-a593-bacb073f27f1"
+    },
+    "TRIGGERED_BY": {
+      "id": "448774672855991295",
+      "contextualizationId": "73a8f2fd-609d-5514-bebd-01cbecf71cde"
+    },
+    "AFFECTED_BY": {
+      "id": "8759359531285065",
+      "contextualizationId": "0f780304-7355-5197-a443-7a06d01f1c7c"
+    },
+    "HAS_RISK_ASSESSMENT": {
+      "id": "404534124854033793",
+      "contextualizationId": "57bfd7de-3c04-5d44-a83b-96ba6664d8e6"
+    },
+    "HAS_ACTIVITY": {
+      "id": "429751065695060949",
+      "contextualizationId": "69659569-0694-50a6-bf79-87da3912782c"
+    }
+  },
+  "bindings": {
+    "RelationshipManager": "8978a756-d634-55bd-9f53-8a5670b1b14b",
+    "Customer": "be152737-9cbd-5f1c-83d5-629a8fba14b1",
+    "Household": "efe9a569-6150-5d2f-8cca-c9e39b6803ca",
+    "Account": "ef1a0238-4a44-554a-91f5-00bdcf4ff697",
+    "Holding": "84853579-4c36-5dc8-aae3-4f18deb59301",
+    "Product": "80b4e587-08c4-5679-b717-fd30f43b460f",
+    "Interaction": "52fe1699-c06b-5906-b4e6-31a26d43f176",
+    "ComplianceProfile": "1226be07-7f1d-576b-aa81-7a3a3d542d4b",
+    "Opportunity": "72bbc4ba-68af-56ce-ab1a-1febc4259822",
+    "CustomerEvent": "18cfebbf-89cf-563e-9ead-3b623bd1c418",
+    "MarketSignal": "531ca97c-0f52-5888-8753-cac161b2b234",
+    "RiskAssessment": "6d408988-5df5-51e5-aa3e-67df7f02263b",
+    "ClientActivity": "d79f92e7-5a8a-5511-9513-fe9aede63246",
+    "HouseviewReport": "23808b6e-9fa2-5b3c-a476-561a1d65312e",
+    "RegulatoryRule": "5ea6a7d0-a00c-552c-be01-9e2d131a5ad6"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "id": "run-daniel-lim-live-20260812172824-revision",
+    "clientId": "client-lim",
+    "clientName": "Daniel Lim",
+    "status": "revision-requested",
+    "mode": "captured-live",
+    "startedAt": "2026-08-12T17:27:11.323530Z",
+    "completedAt": "2026-08-12T17:28:24.283872Z",
+    "dataSnapshotAt": "2026-08-12T08:30:00+08:00",
+    "provider": "microsoft-foundry+fabric-data-agent",
+    "traceId": "resp_07a698522c2e15ae006a7cad3676008197a65e98aadd489ecc"
+  },
+  "agents": [
+    {
+      "id": "orchestrator",
+      "name": "RM Orchestrator",
+      "role": "Plans, delegates and verifies",
+      "status": "completed"
+    },
+    {
+      "id": "customer-intelligence",
+      "name": "Customer Intelligence",
+      "role": "Retrieves governed relationship context",
+      "status": "completed"
+    },
+    {
+      "id": "market-context",
+      "name": "Market Context",
+      "role": "Frames relevant market considerations",
+      "status": "completed"
+    },
+    {
+      "id": "meeting-preparation",
+      "name": "Meeting Preparation",
+      "role": "Builds the human-reviewed brief",
+      "status": "completed"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Run.Status",
+      "agentId": "orchestrator",
+      "summary": "Controlled meeting-preparation capture started."
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Plan",
+      "agentId": "orchestrator",
+      "summary": "Planned governed retrieval, context, preparation, and verification."
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Delegation",
+      "agentId": "orchestrator",
+      "summary": "Delegated governed customer retrieval to Customer Intelligence."
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.ToolCall",
+      "agentId": "customer-intelligence",
+      "summary": "Invoked the published Microsoft Fabric Data Agent.",
+      "evidenceIds": [
+        "fabric-data-agent:ffb990f5-ea48-43fb-82b4-bc9c91a056c1"
+      ]
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Evidence",
+      "agentId": "customer-intelligence",
+      "summary": "Retrieved Daniel Lim visible relationship, event, opportunity, consent, and compliance context.",
+      "evidenceIds": [
+        "foundry:customer-intelligence:resp_0fa5ccb598fd447e006a7cacf73e288195b2ad79547bb4f46e"
+      ]
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Evidence",
+      "agentId": "customer-intelligence",
+      "summary": "Validated hidden identifiers, causal event linkage, and monetary values with direct DAX.",
+      "evidenceIds": [
+        "foundry:semantic-model:execute-query"
+      ]
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Delegation",
+      "agentId": "orchestrator",
+      "summary": "Delegated bounded context framing to Market Context."
+    },
+    {
+      "sequence": 8,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Output",
+      "agentId": "market-context",
+      "summary": "Produced conversation boundaries without forecasts or guarantees.",
+      "evidenceIds": [
+        "foundry:market-context:resp_0b06118035d9897b006a7cad2b4fd4819481ab326afd93c9a3"
+      ]
+    },
+    {
+      "sequence": 9,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Delegation",
+      "agentId": "orchestrator",
+      "summary": "Delegated supplied evidence to Meeting Preparation."
+    },
+    {
+      "sequence": 10,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Output",
+      "agentId": "meeting-preparation",
+      "summary": "Produced a human-review meeting brief or missing-evidence response.",
+      "evidenceIds": [
+        "foundry:meeting-preparation:resp_002074ee2eedaf97006a7cad303344819782e41ea2fac85de2"
+      ]
+    },
+    {
+      "sequence": 11,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Agent.Status",
+      "agentId": "orchestrator",
+      "summary": "Verified evidence coverage and mandatory safeguards.",
+      "evidenceIds": [
+        "foundry:orchestrator:resp_07a698522c2e15ae006a7cad3676008197a65e98aadd489ecc"
+      ]
+    },
+    {
+      "sequence": 12,
+      "timestamp": "2026-08-12T17:28:24.283872Z",
+      "type": "Run.Status",
+      "agentId": "orchestrator",
+      "summary": "Capture completed with status revision-requested."
+    }
+  ],
+  "outcome": {
+    "verificationStatus": "revision-requested",
+    "evidenceCount": 6,
+    "meetingBrief": "Meeting Brief for John Doe \u2014 Client: Daniel Lim Opening (editable): \"Hello Daniel, I\u2019d like to review your upcoming fixed deposit maturity along with your portfolio\u2019s current cash position to ensure we align your assets with your ongoing financial goals.\" What Changed: - Daniel Lim has a fixed deposit maturing soon valued at 650,000. - There is a noted issue of sustained idle cash within his portfolio, which totals approximately 37,225,000 in value. - Daniel\u2019s total assets stand at about 4,800,000. - An opportunity related to the maturity and portfolio review is valued at 860,000 within a broader pipeline of 9,310,000. - KYC status is current, allowing continued relationship management activities. Unresolved Questions: - No client consent evidence is available; confirm consent status before proceeding with certain discussions or data usage. - Clarify Daniel\u2019s intentions or preferences regarding allocations of matured funds and idle cash. - Determine if Daniel wishes to adjust portfolio allocations within his risk profile given the maturity event. Recommended Discussion Actions: - Review the fixed deposit maturity details and timing with Daniel. - Discuss the presence of sustained idle cash and explore reasons or preferences for current cash allocations. - Align on potential portfolio adjustments or reinvestment strategies consistent with Daniel\u2019s risk parameters, avoiding any projections or speculative market commentary. - Confirm KYC compliance and ensure that the conversation adheres fully to compliance standards and client data handling policies. - Document consent status explicitly to resolve outstanding compliance requirements before further engagement on detailed financial advice. Compliance Note: Proceed with caution given lack of consent evidence; ensure all data handling and communication strictly comply with regulatory and internal policies. Avoid discussing projections, guaranteed returns, or any forward-looking statements. This briefing focuses on addres",
+    "unresolvedQuestions": [
+      "Consent evidence was intentionally withheld for verifier validation."
+    ],
+    "recommendedActions": [
+      "Review the captured brief and retained evidence before client communication.",
+      "Resolve every listed evidence gap before personalised discussion."
+    ]
+  }
+}

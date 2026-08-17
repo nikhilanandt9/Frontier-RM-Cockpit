@@ -1,0 +1,15 @@
+version: v1.11
+
+environmentFolderPath: ./env
+
+provision: []
+
+deploy:
+  - uses: file/createOrUpdateEnvironmentFile
+    with:
+      target: ./.localConfigs.playground
+      envs:
+        PORT: 3978
+        BOT_ENDPOINT: ${{BOT_ENDPOINT}}
+        FRONTIER_API_URL: http://127.0.0.1:8080
+        FRONTIER_BOT_AUTH_MODE: playground

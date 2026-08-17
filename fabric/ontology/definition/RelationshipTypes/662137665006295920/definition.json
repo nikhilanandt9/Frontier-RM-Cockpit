@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "662137665006295920",
+  "name": "REFERENCES",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "474926621781242308"
+  },
+  "target": {
+    "entityTypeId": "842918558810908915"
+  }
+}

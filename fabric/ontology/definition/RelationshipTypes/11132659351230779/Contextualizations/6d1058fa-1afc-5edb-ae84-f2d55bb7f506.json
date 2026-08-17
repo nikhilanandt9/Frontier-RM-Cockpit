@@ -1,0 +1,22 @@
+{
+  "id": "6d1058fa-1afc-5edb-ae84-f2d55bb7f506",
+  "dataBindingTable": {
+    "sourceType": "LakehouseTable",
+    "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+    "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+    "sourceTableName": "accounts",
+    "sourceSchema": "silver"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "customer_id",
+      "targetPropertyId": "628999339852629699"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "account_id",
+      "targetPropertyId": "559319449796961205"
+    }
+  ]
+}

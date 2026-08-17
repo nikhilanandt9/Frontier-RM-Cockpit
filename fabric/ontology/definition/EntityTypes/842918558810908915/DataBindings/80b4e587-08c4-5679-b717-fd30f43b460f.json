@@ -1,0 +1,43 @@
+{
+  "id": "80b4e587-08c4-5679-b717-fd30f43b460f",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "product_id",
+        "targetPropertyId": "56374541494025152"
+      },
+      {
+        "sourceColumnName": "product_name",
+        "targetPropertyId": "177838244422504473"
+      },
+      {
+        "sourceColumnName": "product_type",
+        "targetPropertyId": "809432228362070923"
+      },
+      {
+        "sourceColumnName": "asset_class",
+        "targetPropertyId": "843581476851236857"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "9413428391532581"
+      },
+      {
+        "sourceColumnName": "synthetic",
+        "targetPropertyId": "425467205443687807"
+      },
+      {
+        "sourceColumnName": "effective_at",
+        "targetPropertyId": "123779452081881326"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "products",
+      "sourceSchema": "silver"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "84853579-4c36-5dc8-aae3-4f18deb59301",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "holding_id",
+        "targetPropertyId": "251735022553682740"
+      },
+      {
+        "sourceColumnName": "account_id",
+        "targetPropertyId": "590782075567661362"
+      },
+      {
+        "sourceColumnName": "product_id",
+        "targetPropertyId": "417565070632701179"
+      },
+      {
+        "sourceColumnName": "quantity",
+        "targetPropertyId": "137324196961106434"
+      },
+      {
+        "sourceColumnName": "market_value",
+        "targetPropertyId": "448478438982426290"
+      },
+      {
+        "sourceColumnName": "cost_value",
+        "targetPropertyId": "589860036675335961"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "612013498783783383"
+      },
+      {
+        "sourceColumnName": "valued_at",
+        "targetPropertyId": "33846104685047908"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "holdings",
+      "sourceSchema": "silver"
+    }
+  }
+}

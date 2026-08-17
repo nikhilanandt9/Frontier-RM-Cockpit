@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "448774672855991295",
+  "name": "TRIGGERED_BY",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "756945612746866904"
+  },
+  "target": {
+    "entityTypeId": "183078849292335670"
+  }
+}

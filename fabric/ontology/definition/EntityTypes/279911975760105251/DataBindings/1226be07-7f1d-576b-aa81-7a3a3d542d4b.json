@@ -1,0 +1,43 @@
+{
+  "id": "1226be07-7f1d-576b-aa81-7a3a3d542d4b",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "compliance_profile_id",
+        "targetPropertyId": "731348199846842914"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "358398509045760207"
+      },
+      {
+        "sourceColumnName": "kyc_status",
+        "targetPropertyId": "659991057523810946"
+      },
+      {
+        "sourceColumnName": "kyc_due_date",
+        "targetPropertyId": "446084124057299932"
+      },
+      {
+        "sourceColumnName": "aml_risk_rating",
+        "targetPropertyId": "445600580513348382"
+      },
+      {
+        "sourceColumnName": "suitability_status",
+        "targetPropertyId": "760174587166828860"
+      },
+      {
+        "sourceColumnName": "reviewed_at",
+        "targetPropertyId": "166132608519103132"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "compliance_profiles",
+      "sourceSchema": "silver"
+    }
+  }
+}

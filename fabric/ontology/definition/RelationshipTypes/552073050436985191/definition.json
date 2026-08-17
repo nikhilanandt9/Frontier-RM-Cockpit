@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "552073050436985191",
+  "name": "HAS_EVENT",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "21886248324559301"
+  },
+  "target": {
+    "entityTypeId": "183078849292335670"
+  }
+}

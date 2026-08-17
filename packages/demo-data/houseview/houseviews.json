@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": "Fictional CIO research authored for the Frontier RM internal demonstration. Not a forecast or investment advice.",
+  "reports": [
+    {
+      "id": "houseview-2026-h2",
+      "title": "2026 H2 CIO Houseview — Quality Carry, Selective Risk",
+      "asOf": "2026-07-01",
+      "status": "superseded",
+      "cioStance": "Quality carry with selective risk-taking",
+      "executiveSummary": "Growth remains positive but uneven. Prefer resilient income, quality fixed income and diversified balanced exposure while retaining liquidity for volatility.",
+      "sections": [
+        {"id":"hv-h2-macro","title":"Macro regime","view":"Moderating growth and gradually easing inflation support carry, but policy and geopolitical uncertainty keep dispersion elevated.","positioning":"Avoid broad risk-on positioning; emphasize quality and diversification.","risks":["Inflation reacceleration","Policy error","Geopolitical escalation"]},
+        {"id":"hv-h2-fixed-income","title":"Fixed income","view":"High-quality short and intermediate duration offers attractive carry relative to recent history.","positioning":"Overweight quality income; add duration selectively rather than chasing yield.","risks":["Rate volatility","Credit spread widening","Reinvestment risk"]},
+        {"id":"hv-h2-equities","title":"Equities","view":"Earnings remain supportive, but valuations and concentration call for selectivity.","positioning":"Neutral overall; prefer quality balance sheets and diversified exposure.","risks":["Valuation compression","Earnings disappointment","Concentration"]},
+        {"id":"hv-h2-cash","title":"Cash and liquidity","view":"Cash remains useful for near-term commitments but carries reinvestment and opportunity-cost risk.","positioning":"Match cash reserves to known commitments; avoid treating all liquidity as investable.","risks":["Reinvestment risk","Inflation erosion","Opportunity cost"]}
+      ],
+      "watchItems":["Inflation trend","Central-bank guidance","Credit spreads","Earnings revisions"],
+      "disclaimer":"Fictional internal demonstration report. Market views may change and do not constitute a recommendation."
+    },
+    {
+      "id": "houseview-2026-q4",
+      "title": "2026 Q4 CIO Tactical Update — Resilient Income, Measured Growth",
+      "asOf": "2026-08-19",
+      "status": "active",
+      "cioStance": "Resilient income first, measured growth second",
+      "executiveSummary": "A softer but stable growth path supports income assets. Keep equity exposure measured, broaden diversification and preserve client-specific liquidity buffers.",
+      "sections": [
+        {"id":"hv-q4-regime","title":"Regime update","view":"Disinflation is progressing, but growth sensitivity and event risk justify balanced positioning.","positioning":"Build portfolios around resilience rather than a single macro outcome.","risks":["Growth shock","Inflation persistence","Event volatility"]},
+        {"id":"hv-q4-income","title":"Income assets","view":"Quality bonds and diversified income remain the preferred portfolio anchor.","positioning":"Favor high-quality carry and staggered duration; avoid concentrated credit risk.","risks":["Duration loss","Issuer deterioration","Income variability"]},
+        {"id":"hv-q4-growth","title":"Growth assets","view":"Growth exposure remains appropriate for suitable long-horizon clients, but expected returns require selectivity.","positioning":"Use diversified balanced or quality-growth exposure within confirmed risk and liquidity limits.","risks":["Drawdown risk","Valuation risk","Currency risk"]},
+        {"id":"hv-q4-liquidity","title":"Liquidity discipline","view":"Volatility creates optionality only when essential cash needs are already protected.","positioning":"Ring-fence near-term commitments before allocating to market risk.","risks":["Forced selling","Cash drag","Timing uncertainty"]}
+      ],
+      "watchItems":["Labor-market resilience","Default cycle","Currency volatility","Liquidity conditions"],
+      "disclaimer":"Fictional internal demonstration report. Market views may change and do not constitute a recommendation."
+    }
+  ]
+}

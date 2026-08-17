@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "id": "run-daniel-lim-live-20260812173016-success",
+    "clientId": "client-lim",
+    "clientName": "Daniel Lim",
+    "status": "completed",
+    "mode": "captured-live",
+    "startedAt": "2026-08-12T17:29:09.399102Z",
+    "completedAt": "2026-08-12T17:30:16.498293Z",
+    "dataSnapshotAt": "2026-08-12T08:30:00+08:00",
+    "provider": "microsoft-foundry+fabric-data-agent",
+    "traceId": "resp_0826c8e97e046bf6006a7cada5fdfc8193819e3bc8d6de22c0"
+  },
+  "agents": [
+    {
+      "id": "orchestrator",
+      "name": "RM Orchestrator",
+      "role": "Plans, delegates and verifies",
+      "status": "completed"
+    },
+    {
+      "id": "customer-intelligence",
+      "name": "Customer Intelligence",
+      "role": "Retrieves governed relationship context",
+      "status": "completed"
+    },
+    {
+      "id": "market-context",
+      "name": "Market Context",
+      "role": "Frames relevant market considerations",
+      "status": "completed"
+    },
+    {
+      "id": "meeting-preparation",
+      "name": "Meeting Preparation",
+      "role": "Builds the human-reviewed brief",
+      "status": "completed"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 1,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Run.Status",
+      "agentId": "orchestrator",
+      "summary": "Controlled meeting-preparation capture started."
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Plan",
+      "agentId": "orchestrator",
+      "summary": "Planned governed retrieval, context, preparation, and verification."
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Delegation",
+      "agentId": "orchestrator",
+      "summary": "Delegated governed customer retrieval to Customer Intelligence."
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.ToolCall",
+      "agentId": "customer-intelligence",
+      "summary": "Invoked the published Microsoft Fabric Data Agent.",
+      "evidenceIds": [
+        "fabric-data-agent:ffb990f5-ea48-43fb-82b4-bc9c91a056c1"
+      ]
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Evidence",
+      "agentId": "customer-intelligence",
+      "summary": "Retrieved Daniel Lim visible relationship, event, opportunity, consent, and compliance context.",
+      "evidenceIds": [
+        "foundry:customer-intelligence:resp_04dc16604d1948e9006a7cad6de80881959cf103bbbeed3428"
+      ]
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Evidence",
+      "agentId": "customer-intelligence",
+      "summary": "Validated hidden identifiers, causal event linkage, and monetary values with direct DAX.",
+      "evidenceIds": [
+        "foundry:semantic-model:execute-query"
+      ]
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Delegation",
+      "agentId": "orchestrator",
+      "summary": "Delegated bounded context framing to Market Context."
+    },
+    {
+      "sequence": 8,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Output",
+      "agentId": "market-context",
+      "summary": "Produced conversation boundaries without forecasts or guarantees.",
+      "evidenceIds": [
+        "foundry:market-context:resp_0bf2b1b1e10f910d006a7cad96e798819080831d21c6649cff"
+      ]
+    },
+    {
+      "sequence": 9,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Delegation",
+      "agentId": "orchestrator",
+      "summary": "Delegated supplied evidence to Meeting Preparation."
+    },
+    {
+      "sequence": 10,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Output",
+      "agentId": "meeting-preparation",
+      "summary": "Produced a human-review meeting brief or missing-evidence response.",
+      "evidenceIds": [
+        "foundry:meeting-preparation:resp_0061c562ed835267006a7cad9bfe1481978024412b94cbfe06"
+      ]
+    },
+    {
+      "sequence": 11,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Agent.Status",
+      "agentId": "orchestrator",
+      "summary": "Verified evidence coverage and mandatory safeguards.",
+      "evidenceIds": [
+        "foundry:orchestrator:resp_0826c8e97e046bf6006a7cada5fdfc8193819e3bc8d6de22c0"
+      ]
+    },
+    {
+      "sequence": 12,
+      "timestamp": "2026-08-12T17:30:16.498293Z",
+      "type": "Run.Status",
+      "agentId": "orchestrator",
+      "summary": "Capture completed with status verified."
+    }
+  ],
+  "outcome": {
+    "verificationStatus": "verified",
+    "evidenceCount": 6,
+    "meetingBrief": "**Meeting Brief for John Doe \u2013 Daniel Lim Portfolio Review** --- **Customer Profile Summary:** - Name: Daniel Lim - Household: Lim Household - Risk Profile: Balanced Growth - Contact Preference: Secure message, then call - Consent, KYC, Suitability Status: Current - Portfolio Value: 37,225,000 - Fixed Deposit Maturity: 650,000 - Idle Cash Present: Yes (sustained idle cash) - Compliance Reviews: Up to date --- **What Has Changed:** - A fixed deposit maturing soon totaling 650,000 requires review. - Sustained idle cash has been identified within Daniel\u2019s portfolio, presenting an opportunity to optimize liquidity and returns. - An active, high-priority opportunity titled \u201cPrepare Daniel\u2019s maturity and portfolio review\u201d is open for immediate action. --- **Unresolved Questions:** - What are Daniel\u2019s current liquidity needs related to the maturing amount and idle cash? - Does Daniel intend to reinvest the fixed deposit proceeds, redeploy idle cash, or require partial withdrawal? - Are there any upcoming financial goals or cash flow requirements that should influence portfolio adjustments now? - Does Daniel have a preference or appetite for alternatives within his Balanced Growth risk profile to manage idle cash? --- **Recommended Discussion Actions:** 1. Initiate contact via secure message summarizing the fixed deposit maturity and query liquidity needs. 2. Arrange a follow-up call to discuss portfolio optimization options consistent with Balanced Growth risk tolerance. 3. Review suitability and KYC status confirming ongoing appropriateness of portfolio options. 4. Explore strategies to manage sustained idle cash effectively, considering Mr. Lim\u2019s preference for balanced growth. 5. Confirm compliance and consent alignment before any portfolio adjustments are proposed or executed. --- **Editable Opening to Use:** \u201cHello Daniel, I hope you\u2019re well. I\u2019m reaching out to inform you that your fixed deposit of 650,000 is nearing maturity. I\u2019d like to review this along with some ",
+    "unresolvedQuestions": [],
+    "recommendedActions": [
+      "Review the captured brief and retained evidence before client communication.",
+      "Resolve every listed evidence gap before personalised discussion."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "84089968733081369",
+  "namespace": "usertypes",
+  "name": "RiskAssessment",
+  "entityIdParts": [
+    "337222262036082226"
+  ],
+  "displayNamePropertyId": "746689213397686528",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "337222262036082226",
+      "name": "RiskAssessmentId",
+      "valueType": "String"
+    },
+    {
+      "id": "430166845037998384",
+      "name": "RiskAssessmentCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "893851099568930667",
+      "name": "RiskDeclaredScore",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "746689213397686528",
+      "name": "RiskDeclaredLabel",
+      "valueType": "String"
+    },
+    {
+      "id": "178383827544613425",
+      "name": "RiskObservedIndicator",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "646745910086245407",
+      "name": "RiskObservedLabel",
+      "valueType": "String"
+    },
+    {
+      "id": "587178219987489908",
+      "name": "RiskReviewStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "201867503310551316",
+      "name": "RiskEmploymentStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "722619699464680652",
+      "name": "RiskRetirementStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "387626772491166027",
+      "name": "RiskProfileEffectiveAt",
+      "valueType": "String"
+    },
+    {
+      "id": "671724607440131525",
+      "name": "RiskIndicatorCalculatedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

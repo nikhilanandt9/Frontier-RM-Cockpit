@@ -1,0 +1,68 @@
+/// Client, profile, activity, Houseview and control context used to ground positioning candidates.
+table 'Recommendation Context'
+
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	column 'Opportunity ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: opportunity_id
+
+	column 'Houseview ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: houseview_id
+
+	column 'Declared Risk Score'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: declared_risk_score
+
+	column 'Observed Behaviour Indicator'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: observed_behaviour_indicator
+
+	column 'Risk Review Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: risk_review_status
+
+	column 'Employment Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: employment_status
+
+	column 'Latest Activity ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: investment_activity_id
+
+	column 'Latest Activity Type'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: activity_type
+
+	column 'Latest Asset Class'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: asset_class
+
+	partition 'Recommendation Context' = entity
+		mode: directLake
+		source
+			entityName: recommendation_grounding_context
+			schemaName: gold
+			expressionSource: 'DirectLake - FrontierRMLakehouse'

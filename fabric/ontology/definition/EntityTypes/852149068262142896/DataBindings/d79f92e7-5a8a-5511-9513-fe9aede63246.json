@@ -1,0 +1,51 @@
+{
+  "id": "d79f92e7-5a8a-5511-9513-fe9aede63246",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "investment_activity_id",
+        "targetPropertyId": "72371750823685493"
+      },
+      {
+        "sourceColumnName": "customer_id",
+        "targetPropertyId": "18427645403778188"
+      },
+      {
+        "sourceColumnName": "account_id",
+        "targetPropertyId": "862598502907662646"
+      },
+      {
+        "sourceColumnName": "activity_type",
+        "targetPropertyId": "327419931670379831"
+      },
+      {
+        "sourceColumnName": "asset_class",
+        "targetPropertyId": "701062534213221175"
+      },
+      {
+        "sourceColumnName": "amount",
+        "targetPropertyId": "105998095578545406"
+      },
+      {
+        "sourceColumnName": "currency",
+        "targetPropertyId": "847021966521360221"
+      },
+      {
+        "sourceColumnName": "activity_at",
+        "targetPropertyId": "820244245317136367"
+      },
+      {
+        "sourceColumnName": "explanation",
+        "targetPropertyId": "381611800201297552"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "client_investment_activity",
+      "sourceSchema": "silver"
+    }
+  }
+}

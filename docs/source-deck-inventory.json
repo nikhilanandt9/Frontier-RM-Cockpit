@@ -1,0 +1,742 @@
+[
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 1,
+    "title": "Guidance",
+    "body": "1 | Microsoft Fabric",
+    "shapeCount": 9,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "1"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 2,
+    "title": "Fabric IQ – Unified intelligence",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "2"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 3,
+    "title": "Content",
+    "body": "Content | 01 | 05 | The challenge | Fabric IQ Capabilities | 06 | 02 | Fabric IQ – from data to decisions | Getting started | 03 | 07 | The Fabric IQ Advantage | Appendix | 04 | Fabric IQ in action",
+    "shapeCount": 17,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "3"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 4,
+    "title": "The challenge",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Businesses are constantly striving to improve decision-making and streamline operations. But today’s data landscape is fragmented, with information spread across countless systems, flowing in real time, and rarely speaking the same language across teams. As a result, connection is lost, and meaning breaks down. Understanding what the data actually means is now the next major challenge. 4"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 5,
+    "title": "Data powers AI",
+    "body": "Data powers AI But that alone isn’t enough Shared understanding, meaning, and business connection makes it intelligent | 5 | Microsoft Fabric",
+    "shapeCount": 6,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Every organization wants to make smarter decisions and improve how it operates. The problem isn’t data scarcity – there’s more data than ever before. The real challenge is that this data is scattered across systems, tools, and teams, constantly changing, and rarely connected by a shared understanding. Without common meaning, every team interprets data in its own way. Insights fragment, decisions drift, and the organization loses alignment. Data may power AI, but meaning is what makes it intelligent. When organizations connect data with shared understanding and business context, it transform..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 6,
+    "title": "The reality of business",
+    "body": "There’s more data than ever before, scattered across systems, tools, and teams – constantly changing and rarely connected | An airline’s challenge: connecting the dots across disparate systems: Properties: plane models, weight, locations, and sensor data Relationships: links between the pilot, crew, passengers, baggage, and flights Actions: rerouting a plane, alerting its pilot, scheduling repairs, and communicating delays Policies: compliance needs around weight limits, crew qualifications, and maintenance checks Objectives: maintaining safety, customer satisfaction, and profitability | 6 | Microsoft Fabric",
+    "shapeCount": 11,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "We can see this challenge clearly in how an airline operates. An airline’s success depends on connecting countless moving parts from aircraft and crews to routes, weather, and passengers. Each of these elements carries its own data: properties like plane models, weight, and sensor readings; relationships between pilots, crews, and flights; actions like rerouting or rescheduling; and policies that ensure safety, compliance, and efficiency. To operate effectively, airlines combine real-time flight information, maintenance schedules, and geospatial data from planes, routes, and weather systems..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 7,
+    "title": "Massive amounts of data, fragmented meaning",
+    "body": "Exponential data growth has created a wider gap in business understanding and teams are falling further behind | People are reliant on disparate systems | All questions require experts | Decision-making is slow and subjective | Data is stuck in files, tables, columns, and formulas, and teams only have a view of their own slice of the business | Experts are needed to interpret information across systems and insights are shaped by their own contextualized understanding of the business | Each new question requires a new expert to build a new report, leading to reactive, limited decision-making and missed opportunities | 7 | Microsoft Fabric",
+    "shapeCount": 13,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Data is expanding faster than ever, across systems, sources, formats, and knowledgebases. But as the volume and variety of data grow, most teams are struggling to keep up. They’re working in silos, relying on experts to make sense of disconnected data, and reacting slowly to change. People are reliant on disparate systems. Data is stuck in files, tables, and dashboards, giving each team only a partial view of the business. All questions require experts. Because data is fragmented, every new question requires translation across systems, often shaped by individual assumptions or context. Deci..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 8,
+    "title": "Without shared context, every team has a different view",
+    "body": "When “active plane” means something different to everyone: Maintenance sees it as “not in the hangar” Operations sees it as “assigned to a flight” Leadership asks, “How many active planes do we have?” – and gets conflicting answers | The result: Fragmented views lead to misalignment, slowing decisions and blocking effective action. | 8 | Microsoft Fabric",
+    "shapeCount": 11,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "This challenge becomes clear at the individual team level. Without shared context, each group interprets data in its own way. For maintenance, an “active plane” means it’s in the hangar. For operations, it means the plane is currently flying. And when leadership asks how many active planes they have, every team gives a different answer. They’re all looking at valid data, but none of it connects. Meaning gets lost between teams, and what should be one shared reality becomes a set of conflicting truths. And when every team is working from its own version of the truth, those gaps ripple upward..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 9,
+    "title": "For many businesses today, connection is lost",
+    "body": "Individual teams | Business units | Enterprise | Struggle to interpret or trust data | Can’t see beyond their own area of expertise | Lacking alignment and a holistic view of entire business | Without shared connection across enterprise systems, data, and processes, organizations can’t optimize their full operations | 9 | Microsoft Fabric",
+    "shapeCount": 24,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "What starts as confusion at the individual level quickly scales across the business. At the individual team level, employees are surrounded by data but struggle to interpret or trust it. Each system tells a different story, and without shared meaning, teams rely on personal judgment or incomplete reports to make decisions. At the business unit level, those challenges deepen. Each group works from its own tools and definitions, shaping narrow views of what’s happening across the operation. For example, when one team says a plane is “active,” maintenance might mean it’s in the hangar, while o..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 10,
+    "title": "AI inherits the same challenges humans face",
+    "body": "AI inherits the same challenges If people can’t see the full picture AI can’t either, and modeling outputs won’t be adequate or trustworthy | 10 | Microsoft Fabric",
+    "shapeCount": 6,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "The same challenges that limit people also limit AI. If people can’t see the full picture across systems and processes, AI can’t either. It learns from the same fragmented data, so outputs are only as good as the information it’s given. Data is growing exponentially, coming from real-time signals, sensors, and unstructured sources across countless systems. Yet most of it remains disconnected, making it difficult for AI to understand the full context of the business. When data lives in silos, AI models mirror those silos. They miss the relationships, patterns, and business context that conne..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 11,
+    "title": "Model your business, not just your data",
+    "body": "Create a shared understanding Unify fragmented data, systems, and processes into a shared model of meaning for people and AI | Reason with data in the language of business Create a framework of rules, relationships, and business meaning to connect data and action | Activate and evolve AI intelligence Ground AI agents on connected enterprise context, for more trustworthy, impactful outputs | 11 | Microsoft Fabric",
+    "shapeCount": 13,
+    "pictureCount": 3,
+    "hasNotes": true,
+    "notes": "To move beyond fragmented data and disconnected decisions, the era of AI requires a new kind of data foundation built on shared meaning and live context. Organizations need to create a shared understanding by unifying fragmented data, including streaming, historical, and location-based sources, into a single model of meaning that both people and AI can understand. They can then reason with data in the language of the business they’re familiar with, linking relationships, timelines, and rules that connect insight to action. Finally, they can activate and evolve AI intelligence by grounding A..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 12,
+    "title": "One shared view. Smarter, synchronized operations.",
+    "body": "When systems, data, and teams connect: Teams share the same real-time view of planes, routes and crews Live weather and location data drive automatic updates to flight paths, gates, and maintenance People and AI collaborate from a unified context to predict disruptions, adjust in real time Leaders make faster, aligned decisions with a trusted, enterprise-wide view | 12 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "Now returning to our airline example, once that shared context across data, systems, and processes is in place, something powerful happens. All teams can now see the same real-time view of operations, with live geospatial insights showing where planes, crew, and equipment are at any given moment. Weather patterns, flight routes, and location data automatically inform updates to schedules and priorities. People and AI work from the same shared context. They can predict disruptions before they happen, adjust operations in real time, and keep things running smoothly. Leaders gain a single, tru..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 13,
+    "title": "Fabric IQ – from data to decisions",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Every intelligent system needs a shared language. Fabric provides the semantic foundation that gives data meaning and connects it across the enterprise. 13"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 14,
+    "title": "Microsoft Fabric",
+    "body": "Power your AI transformation with a complete data platform | AI-powered data platform | Open and AI-ready data lake | AI-enabled business users | Unified, SaaS-ified | Multi-cloud and on-prem | Familiar and intuitive | Operational and analytical | Open ecosystem | Insights to action | Autonomous | Data catalog | Built into Microsoft 365 | Mission critical foundation | Leading performance | Universal security and governance | Built-in resilience | 14 | Microsoft Fabric",
+    "shapeCount": 34,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "With Microsoft Fabric, we’re introducing a unified data platform designed to power the era of AI. Fabric brings together everything organizations need across analytics, data, and AI into a single end-to-end solution. It delivers four core capabilities that address the very challenges we discussed earlier: An AI-powered data platform that unifies operational and analytical workloads in one SaaS-optimized experience, giving developers, data scientists, engineers, and BI teams the tools they need without stitching together multiple products. An open and AI-ready data lake with OneLake at the c..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 15,
+    "title": "Microsoft Fabric",
+    "body": "The unified data platform for AI transformation | Data Factory | Real-Time Intelligence | Analytics | IQ | Databases | Power BI | Fabric Platform | Copilot | OneLake | Governance | 15 | Microsoft Fabric",
+    "shapeCount": 35,
+    "pictureCount": 6,
+    "hasNotes": true,
+    "notes": "Fabric combines the best of Microsoft Power BI, Azure Synapse Analytics, and Azure Data Factory to create a single, unified software as a service (SaaS) platform with core workloads – each purpose-built for specific personas and specific tasks.​ Now introducing the Fabric IQ workload. IQ elevates how organizations work, creating a consistent semantic foundation that powers trustworthy agentic experiences and accelerates time-to-insight, continuously shaping how businesses operate in real time. _______________________________ Seller guidance; optional Let’s explore how all these experiences ..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 16,
+    "title": "16",
+    "body": "Microsoft Fabric",
+    "shapeCount": 3,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Fabric IQ unifies all your data with operational systems under a semantic model of business entities and their relationships—providing a live, connected view of the enterprise. This holistic view of the enterprise empowers teams and AI agents to understand and act on live, context-rich insights, driving smarter decisions, and better business outcomes. Teams define this model once and reuse everywhere across analytics, apps and agents improving reasoning quality while preserving governance and lineage. Since all the data resides in OneLake either natively or through shortcuts and mirroring, ..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 17,
+    "title": "Fabric IQ",
+    "body": "Semantic foundation to power your business and AI | Unify business semantics across data, models, rules and actions | Understand and act on live, context-rich insights | Power AI agents in Foundry and Fabric | 17 | Microsoft Fabric",
+    "shapeCount": 12,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Fabric IQ elevates how organizations work by creating a consistent semantic foundation that connects people, data, and AI. It powers trustworthy, agentic experiences and accelerates time-to-insight by continuously shaping how the business operates in real time. With no-code tools built into the solutions people already use, IQ makes it easy for anyone to contribute to a shared semantic foundation. Teams can align data, models, and systems in real time – removing barriers between business and technical users. From there, everyone can work from a shared system of intelligence. People and AI u..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 18,
+    "title": "Unify business semantics with no-code tools",
+    "body": "Accelerate results by building on what you have: fast-track ontology creation by building off of thousands of existing Microsoft Power BI semantic models, quickly unlocking value as your business grows Breakdown silos with a unified semantic foundation: align data, models, and systems around an ontology that connects business entities, relationships, rules, and actions Empower teams with no-code modeling: provide domain experts with intelligent, no- code experiences to define and evolve ontologies themselves, enabling collaboration across the business | 18 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "Fabric IQ makes it easier than ever to build a connected semantic foundation for your business. Because Fabric has built-in ontology creation experiences, organizations don’t have to start from scratch, they can build on what they already have. Microsoft leads the world in semantic modeling, with Power BI powering thousands of enterprise semantic models in use today. Fabric IQ builds on this foundation, helping organizations fast-track ontology creation and quickly unlock value as their business grows. With this shared foundation in place, IQ helps break down silos by aligning data, models,..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 19,
+    "title": "Understand and act on context-rich insights",
+    "body": "Accelerate insight-to-action with less friction: speed insight discovery using context-rich dashboards and agents that streamline data exploration, so users can work directly with the business concepts they know best Gain richer, more contextual intelligence: use context-driven experiences to reveal how data points relate, what matters most, and the next best actions to take Drive alignment with a consistent view of business: work from a trusted data foundation that removes ambiguity and strengthens decision-making across people and AI solutions | 19 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "Fabric IQ brings people, data, and AI together into a shared system of intelligence that enables everyone to see and act with the same context. With a unified semantic foundation, teams can accelerate insight to action with less friction. Context-rich dashboards and AI agents understand business concepts, relationships, and rules, helping users explore data naturally and focus on decisions rather than decoding tables or queries. This shared understanding delivers richer, more contextualized intelligence. People and AI can see how data points connect, what matters most, and the next best act..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 20,
+    "title": "Power AI agents that understand your business",
+    "body": "Fuel AI agents with business understanding: ground AI in semantic context so agents understand relationships between data types and can make smarter, more relevant decisions Scale automation with precision and trust: optimize operations by empowering AI agents to automate decisions confidently with semantics embedded across data, models, and systems Deploy AI agents that continuously learn: enable AI agents to observe data, refine ontologies, and capture and embed institutional knowledge so the business gets smarter over time | 20 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "Once a shared semantic foundation is in place, Fabric IQ empowers AI agents that truly understand the business. By grounding AI in semantic context, these agents can interpret relationships between data types, business entities, and processes. They make smarter, more relevant decisions that reflect real operational priorities and business goals. With semantics embedded across data, models, and systems, AI agents can automate with precision and trust. They optimize operations confidently, acting on live data and adapting in real time as conditions change. Over time, these agents continuously..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 21,
+    "title": "Microsoft Intune",
+    "body": "Microsoft Defender | Microsoft Sentinel | Microsoft Purview | Microsoft Entra | Copilot | Microsoft drives AI innovation and transformation | Microsoft Foundry | Microsoft Fabric | 21 | Microsoft Fabric",
+    "shapeCount": 23,
+    "pictureCount": 5,
+    "hasNotes": true,
+    "notes": "Microsoft enables organizations to turn connected data into meaningful intelligence, and intelligence into real business impact. Our ecosystem is designed to meet customers wherever they are on their AI journey. Microsoft Fabric provides the connected data foundation, bringing structured, unstructured, and real-time data together in one place. Microsoft Foundry enables model development and orchestration, so teams can build and deploy AI solutions faster. Copilot brings that intelligence directly into the flow of work, helping people reason and act with context. And surrounding these are tr..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 22,
+    "title": "The Fabric IQ Advantage",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "22"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 23,
+    "title": "The Fabric IQ advantage",
+    "body": "23 | Microsoft Fabric",
+    "shapeCount": 9,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "23"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 24,
+    "title": "Fabric IQ leads with connected intelligence for people and AI",
+    "body": "Cost-effective Lower costs by unifying data and analytics in one SaaS platform with built-in semantic modeling and AI capabilities, included with standard Fabric licensing – no additional expertise required | Built for all skill levels Empower everyone with no-/low-code experiences, allowing them to define data relationships and business concepts, and act from shared understanding without technical dependency | Natively-integrated ecosystem Connect ontology concepts to existing Power BI semantic models and scale across Microsoft’s trusted ecosystem, including Foundry while staying open and interoperable with other platforms | Immediate insights and accelerated time-to-value Surface business context-aware insights in near real-time, creating a self-optimizing system of intelligence, that drives faster, more accurate decision-making | 24 | Microsoft Fabric",
+    "shapeCount": 22,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "Fabric IQ leads with connected intelligence for people and AI, bringing together data, analytics, and automation in one unified SaaS platform. It’s cost-effective by design, unifying data and analytics solutions with built-in semantic modeling and AI capabilities. Everything is included with standard Fabric licensing, so no additional tools or expertise are required. It’s built for all skill levels, empowering everyone through no-code and low-code experiences. Teams can define data relationships and business concepts, acting from shared understanding without needing technical support or exp..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 25,
+    "title": "Microsoft Fabric IQ + Microsoft Foundry IQ",
+    "body": "Unify analytical, time-oriented, and geospatial data Provide a live, connected view of the enterprise using a semantic model of business entities and their relationships to create org-wide business context | Improve decision-making with context-rich insights Leverage a connected semantic foundation and context-aware experiences to accelerate insight discovery and optimize operational processes | Fabric | Foundry | Build AI agents that can search, reason, and learn across diverse sources | Unified business semantics across data, models, and systems | Enhance how AI agents access and interpret information Develop AI agents and applications that can search, reason, and learn continuously as they’re deployed across diverse, unstructured sources | OneLake serves as the connective tissue to build custom AI apps powered by your data | 25 | Microsoft Fabric",
+    "shapeCount": 21,
+    "pictureCount": 3,
+    "hasNotes": true,
+    "notes": "Fabric IQ provides unified business semantics across data, models, and systems creating a shared foundation that connects every part of the enterprise. Foundry IQ builds on that foundation to develop AI agents that can search, reason, and learn across diverse, unstructured sources. Together, they unify analytical, time-oriented, and geospatial data into one connected view of the business. This live, semantic model helps teams see how entities and relationships fit together to form a complete, organization-wide context. They also improve decision-making with context-rich insights, enabling f..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 26,
+    "title": "Drive better business outcomes with Fabric IQ and Foundry IQ",
+    "body": "Fabric IQ helps business users and analysts connect live data and actions to those entities so AI agents can monitor, reason, and act on them Foundry IQ assists developers as they build AI agents and applications that can search, reason, and learn across diverse, unstructured sources Use together for best results. Fabric IQ provides the live operational grounding, while Foundry IQ gives semantic depth and business context, so AI can make better decisions and drive superior outcomes | Drive better business outcomes with Fabric IQ and Foundry IQ | 26 | Microsoft Fabric",
+    "shapeCount": 8,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Fabric IQ focuses on the concrete entities an enterprise measures and manage like customers, products, orders, or assets. Business users and analysts connect live data and actions to those entities so AI agents can monitor performance, reason over outcomes, and act on real-time signals. Foundry IQ spans the broader enterprise knowledge graph, incorporating both concrete and abstract business concepts such as goals, policies, and strategies. Developers use it to build AI agents and applications that can search, reason, and continuously learn across diverse, unstructured, and dynamic data sou..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 27,
+    "title": "Fabric IQ in action",
+    "body": "Fabric IQ in action",
+    "shapeCount": 2,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "27"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 28,
+    "title": "28",
+    "body": "Microsoft Fabric",
+    "shapeCount": 3,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "28"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 29,
+    "title": "Placeholder: operations agents demo video",
+    "body": "29 | Microsoft Fabric",
+    "shapeCount": 4,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "29"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 30,
+    "title": "Capabilities",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Businesses are constantly striving to improve decision-making and streamline operations. But today’s data landscape is fragmented, with information spread across countless systems, flowing in real time, and rarely speaking the same language across teams. As a result, connection is lost, and meaning breaks down. Understanding what the data actually means is now the next major challenge. 30"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 31,
+    "title": "Microsoft Fabric",
+    "body": "The unified data platform for AI transformation | Data Agent | IQ | Fabric Platform | Governance | OneLake | Copilot | 31 | Microsoft Fabric",
+    "shapeCount": 28,
+    "pictureCount": 3,
+    "hasNotes": true,
+    "notes": "This is the blueprint. IQ is where semantics become a platform capability. You’ll see the core pieces: semantic models and ontology to define the language; digital twin builder to model real-world environments through that ontology; graph to compute over relationships; and then, importantly, agents: the data agent and the operations agent, which can reason over these business concepts and drive action Now let’s show what it looks like when this is not a concept, but something you build. 31"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 32,
+    "title": "From semantic models to ontologies",
+    "body": "Semantic models give data shared meaning and structure, forming the foundation for ontologies that enable connected, trustworthy intelligence | Leverage Fabric semantic models – trusted to provide an extensive semantic foundation Use semantic models as the base layer for ontologies that connect insights, actions, and AI systems Build ontologies with business concepts, processes and real-world relationships Extend semantic knowledge from BI into business process and real-time operations | 32 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Semantic models give data shared meaning and structure, forming the foundation for ontologies that connect insights, actions, and AI systems. With Fabric IQ, organizations can build on the most trusted semantic layer in the market with over 90% of BI semantic models powered by Microsoft. Teams can use these semantic models as the base layer for creating ontologies that bring together business concepts, processes, and real-world relationships. This extends semantic understanding beyond BI, allowing knowledge to flow into business processes and real-time operations to enable connected, trustw..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 33,
+    "title": "Ontology as a shared language and framework",
+    "body": "An ontology is the enterprise’s knowledge map – the foundation that makes connected intelligence and trustworthy AI possible | Gain a connected overview of your business, continuously grounded in organizational data Enrich ontologies with business logic, rules, and real-time actions Navigate insights through familiar business concepts specific to your line of business Overlay geospatial analytics on top of operational context (shaped by your ontology) Accelerate insight-to-action with less friction | 33 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "An ontology acts as the enterprise’s knowledge map that connects data, systems, and meaning so people and AI can work from the same understanding. With Fabric IQ, organizations can gain a connected view of their business that’s continuously grounded in live operational data. Ontologies can then be enriched with business logic, rules, and real-time actions to drive smarter outcomes. Teams can explore insights through familiar business concepts and even layer in geospatial or operational context shaped by the ontology itself. The result is a shared language for the enterprise that accelerates..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 34,
+    "title": "Out-of-the-box graphing experiences",
+    "body": "The force behind ontology, graph turns semantic relationships into visualized, structured graphs enabling richer graph analytics to reduce decision latency and operational risk | Key Capabilities: Analyze billions of relationships without bottlenecks Visually explore, discover, and analyze multi-hop relationships to understand how different entities connect Discover patterns, paths and relationships that shape performance Remove complexity and unlock seamless graph analysis and advanced insights at scale Optimize the way you query connected data to gain previously unrevealed insights. | 34 | Microsoft Fabric",
+    "shapeCount": 12,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Graph in Fabric IQ transforms semantic relationships into visual, structured insights that make complex data easier to understand and act on. Powered by ontology, IQ graph experiences let users analyze billions of relationships without bottlenecks, exploring how entities connect across systems, processes, and business lines. Teams can quickly uncover patterns, dependencies, and multi-hop relationships that reveal what drives performance or risk. By removing data complexity, IQ enables seamless graph analysis and deeper, real-time insights at scale, helping organizations optimize operations,..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 35,
+    "title": "Planning in Fabric IQ Make better decisions with planning and forecasting over your enterprise data",
+    "body": "Public Preview | Plan over the same trusted data, semantic models, and ontologies that power reporting, operations, and AI | Create plans and run what-if scenarios, enabling business and finance teams to plan with speed and precision | Write plan data directly back to Fabric, enabling closed-loop planning and operational alignment | Extends Fabric into a full decision platform, powered by Lumel natively integrated into Fabric IQ | 35 | Microsoft Fabric",
+    "shapeCount": 16,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "20 minutes left GIF length - 42 seconds Here, planning isn’t separate from the business. We run what‑if scenarios on the same data and ontology, then write plans directly back into Fabric, so decisions immediately align operations. 35"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 36,
+    "title": "Data agents deliver impactful responses and insights",
+    "body": "Data agents leverage business context and understanding from IQ to drive more accurate responses without needing extensive prompting | Ground natural language queries in the shared definitions of business entities, attributes, relationships, and metrics Formulate precise queries across tabular, graph, geospatial, and digital twin models Return responses in multiple formats, including textual explanations, charts, maps, trend lines, and relational graphs Data agents can be consumed inside and outside of Fabric, including Foundry Agent Service and Copilot Studio | 36 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Data agents in Fabric IQ use shared business context and understanding to deliver more accurate, relevant responses with minimal prompting. They ground natural language queries in consistent definitions of business entities, attributes, relationships, and metrics, ensuring that every response aligns with how the organization actually operates. Agents can formulate precise queries across tabular, graph, geospatial, and digital twin models, returning answers in multiple formats such as charts, maps, trend lines, and relational graphs. These agents can be used both inside and outside of Fabric..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 37,
+    "title": "Operations agents evolve ontologies as they learn",
+    "body": "Operations agents are virtual team members that observe signals at scale, monitoring, deciding, and taking corrective action in real time | Build agents for continuous monitoring and analytics on real-time operational data Train agents with actions, goals, and playbooks to guide decisions Deploy agents that learn constantly from experience and encode learnings into enterprise-wide ontology Leverage agent-generated telemetry and feedback loops to improve future behavior Keep humans in the loop by proposing actions for approve, refinement, or override | 37 | Microsoft Fabric",
+    "shapeCount": 10,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Operations agents act as virtual team members that continuously monitor real-time data, detect signals, and take corrective action at scale. They’re trained with defined actions, goals, and playbooks to guide decisions and can learn from every interaction, capturing those learnings directly into the enterprise-wide ontology. As they operate, agents generate telemetry and feedback loops that refine future behavior, improving accuracy and responsiveness over time. By keeping humans in the loop, agents propose actions for approval, refinement, or override, ensuring that every decision remains ..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 38,
+    "title": "Getting started",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "38"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 39,
+    "title": "Unlock your AI potential today",
+    "body": "Enrich employee experiences | Reinvent customer engagement | Reshape business processes | Bend the curve on innovation | 39 | Microsoft Fabric",
+    "shapeCount": 15,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "As we’ve seen, Microsoft Fabric provides the foundation to unlock your AI potential — unifying data, governance, and intelligence across every part of your organization. Whether you’re enriching employee experiences, reinventing customer engagement, reshaping business processes, or bending the curve on innovation, Fabric brings together the tools and intelligence to help you move faster, stay secure, and scale the impact of AI across your business. © Microsoft Corporation. All rights reserved. MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, AS TO THE INFORMATION IN THIS PRESEN..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 40,
+    "title": "Get started today",
+    "body": "Start your Fabric trial: aka.ms/try-fabric | Learn more about Fabric | Learn more about Fabric IQ: https://aka.ms/realtime-ignite-blog | Discuss Azure Accelerate with your Microsoft partner or team: aka.ms/Azure-Inn | Keep up to date on all the latest Fabric features: blog.fabric.microsoft.com | 40 | Microsoft Fabric",
+    "shapeCount": 15,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "There are also so many ways to learn more about Microsoft Fabric IQ. You can check out the Fabric website and all our resources by scanning this QR code. Thank you for your time and get started today! © Microsoft Corporation. All rights reserved. MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, AS TO THE INFORMATION IN THIS PRESENTATION. 17/08/2026 12:32 40"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 41,
+    "title": "Thank You",
+    "body": "",
+    "shapeCount": 3,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "41"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 42,
+    "title": "A real-time supply chain experience",
+    "body": "Fabric IQ in action | Wanting to move her team away from time-consuming, manual data analysis and processes alignment, Iris uses Fabric IQ to build an ontology using an existing Power BI semantic model tailored to her organization’s value chain. This gives her a connected view of operations and the ability to quickly identify optimization opportunities | 8:30 AM | Iris M. Senior Data Strategist | At-a-glance business context Iris opens FabricIQ and uses her ontology to gain an at-a-glance view of her org’s supply chain – fleet, shipments, drivers, and delivery routes – across all data sources She uses no-code, out-of-the-box capabilities to see how these entities impact one another | 12:32 PM | 12:31 PM | 12:30 PM | Value chain optimization Using the graph experience Iris builds a visualization showing fleet performance by route and customer tier Iris easily identifies hot spots where performance dips and need additional attention | 24/7 data monitoring with operations agents Iris receives an alert from an operations agent that certain trucks are showing a 12% increase in fuel consumption due to higher idling times at distribution centers The operations agent recommends Iris rer...",
+    "shapeCount": 34,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Wanting to move her team away from time-consuming, manual data analysis and process alignment, Iris M. uses Fabric IQ to build an ontology using an existing Power BI semantic model tailored to her organization’s value chain. By leveraging this trusted foundation, she connects data across systems and business processes to create a single, shared view of operations. This gives her real-time visibility into performance and the ability to quickly identify optimization opportunities across shipments, routes, and customer commitments. Instead of starting her day sorting through spreadsheets and r..."
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 43,
+    "title": "Fabric IQ and Foundry IQ",
+    "body": "Fabric IQ and Foundry IQ | Deliver stronger business outcomes with native integration | 43 | Microsoft Fabric",
+    "shapeCount": 8,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "43"
+  },
+  {
+    "deck": "Fabric IQ L100 Pitch Deck.PPTX",
+    "slide": 44,
+    "title": "Planning in Fabric",
+    "body": "Public preview | Enable enterprise planning in Fabric, powered by Lumel | Model budgets and forecasts with writeback to Fabric SQL | Unify goals, plans, and actuals on a shared semantic layer | Empower AI to reason ahead using plans—not just past data | 44 | Microsoft Fabric",
+    "shapeCount": 15,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Graph demo 44"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 1,
+    "title": "Slide 1",
+    "body": "",
+    "shapeCount": 2,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "1"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 2,
+    "title": "Agents",
+    "body": "Intelligence layer | Teams, roles, and workflows | Institutional knowledge | State and actions of the business",
+    "shapeCount": 23,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "2"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 3,
+    "title": "Microsoft IQ",
+    "body": "Unified intelligence for enterprise AI | Work IQ | Foundry IQ | Fabric IQ | “How your employees work” | “Your institutional knowledge” | “The state of your business” | Context on people, collaboration, and workflows | Context on policies, authoritative documents, and knowledge bases | Context on business entities, systems of record, and actions",
+    "shapeCount": 22,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "3"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 4,
+    "title": "Microsoft IQ",
+    "body": "Unified intelligence for enterprise AI | Work IQ | Foundry IQ | Fabric IQ | “How your employees work” | “Your institutional knowledge” | “The state of your business” | Context on people, collaboration, and workflows | Context on policies, authoritative documents, and knowledge bases | Context on business entities, systems of record, and actions",
+    "shapeCount": 23,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "4"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 5,
+    "title": "Microsoft Fabric",
+    "body": "The unified data platform for AI transformation | Data Factory | Real-Time Intelligence | Databases | Analytics | IQ | Power BI | Fabric Platform | Copilot | OneLake | Governance",
+    "shapeCount": 32,
+    "pictureCount": 6,
+    "hasNotes": true,
+    "notes": "5"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 6,
+    "title": "Unified Data",
+    "body": "Structured, Unstructured, Real-time, Graph | Fabric IQ",
+    "shapeCount": 8,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "6"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 7,
+    "title": "Unify data in OneLake with zero ETL",
+    "body": "Shortcut and mirroring sources",
+    "shapeCount": 4,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "7"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 8,
+    "title": "Unified Data",
+    "body": "Fabric IQ | Structured, Unstructured, Real-Time, Graph",
+    "shapeCount": 6,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "This is where Fabric IQ comes in. We have all the data there. We have tens of thousands of tables, sometimes 100,000 table in OneLake. We have all the information around the columns. You have millions and millions of columns, and you need to make sure that all the data that we have in OneLake can actually be understood. Now, it's hard! Like, take a human, throw them in front of the OneLake with all these millions of columns and hundred thousands of tables, they will struggle, the AI will struggle as well. This is where the semantics come in. 8"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 9,
+    "title": "Fabric IQ",
+    "body": "Unified Data | Structured, Unstructured, Real-Time, Graph",
+    "shapeCount": 9,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "And we have the semantic models of Power BI. You know, it's kind of amazing to see the journey we have there. Semantic models, you guys are all using Power BI. I know that. And you only have about 20 million semantic models, just over 20 million semantic models active right now, and they power every Power BI report. Every dashboard we have is all built on top of semantic model. 9"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 10,
+    "title": "Semantic Models",
+    "body": "Grounding BI and AI in trusted business knowledge | Expertly curated repositories of business data and metrics | Key AI enablers—with industries rushing for unified semantic layers | 35M+ users regularly using semantic models in Fabric",
+    "shapeCount": 10,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "And what the semantic models really allow humans and AI is to understand the tables, the meaning of the table, understand the meaning of the column, define measures that tells us how we quantify our achievements and where we're heading with that. We've been using that. It's been a journey, and it's getting better and better and better. There are more and more innovations around the semantic model in Power BI. But it's not enough. 10"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 11,
+    "title": "Fabric IQ",
+    "body": "Unified Data | Structured, Unstructured, Real-time, Graph",
+    "shapeCount": 9,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "It's not enough because as we go and we have the semantics there, they're great for reporting, they're great for analytics, but we want to move it to the next level to the world of operations. 11"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 12,
+    "title": "Fabric IQ",
+    "body": "Unified Data | Structured, Unstructured, Real-time, Graph",
+    "shapeCount": 12,
+    "pictureCount": 2,
+    "hasNotes": true,
+    "notes": "This is where we need to bring, not business intelligence, but operational intelligence, and this is where the ontologies are coming into play. Ontologies moves data from analytics to operations. Analytics is great, but we also want to run our business. So to do so, we need something that thinks and represents our business all up. We want to take all the analytical data together with the real-time data and to be able to act on it. 12"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 13,
+    "title": "Financial Services",
+    "body": "",
+    "shapeCount": 1,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "13"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 14,
+    "title": "Slide 14",
+    "body": "",
+    "shapeCount": 13,
+    "pictureCount": 10,
+    "hasNotes": true,
+    "notes": "14"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 15,
+    "title": "Entities",
+    "body": "Portfolios | Transactions | Holdings | ATMs | Interactions | Clients | Branches | Advisors",
+    "shapeCount": 28,
+    "pictureCount": 8,
+    "hasNotes": true,
+    "notes": "15"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 16,
+    "title": "Relationships",
+    "body": "Portfolios | Transactions | Holdings | ATMs | Interactions | Clients | Branches | Advisors",
+    "shapeCount": 41,
+    "pictureCount": 8,
+    "hasNotes": true,
+    "notes": "16"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 17,
+    "title": "Holdings",
+    "body": "Portfolios | Transactions | ATMs | Interactions | Branches | Clients | Advisors",
+    "shapeCount": 28,
+    "pictureCount": 8,
+    "hasNotes": true,
+    "notes": "17"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 18,
+    "title": "Objectives",
+    "body": "Holdings | Transactions | Portfolios | Clients | ATMs | Branches | Advisors | Interactions",
+    "shapeCount": 29,
+    "pictureCount": 8,
+    "hasNotes": true,
+    "notes": "18"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 19,
+    "title": "Microsoft Solutions",
+    "body": "AI Business Solutions | Cloud & AI Platforms | Security | Copilots on every device across every role | Microsoft Foundry Github Copilot and more! | Securing the cyber foundation | Copilot Studio and Agent 365 | Modernize & Migrate",
+    "shapeCount": 29,
+    "pictureCount": 9,
+    "hasNotes": true,
+    "notes": "19"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 20,
+    "title": "AI Business Solutions (Frontier Suite, Copilot, Agentic Work)",
+    "body": "Ericia Phong AI Business Lead",
+    "shapeCount": 3,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "20"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 21,
+    "title": "Microsoft 365 E7 The Frontier Suite",
+    "body": "General Availability May 1, 2026 | Microsoft 365 Copilot | Microsoft Agent 365 | Secure productive work | AI built for work | Control plane for agents | Work IQ | Available with or without Teams",
+    "shapeCount": 19,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Over the past decade, the way work gets done has fundamentally changed. Work is faster, more connected, and increasingly driven by AI. That’s why we’ve introduced Microsoft 365 E7 — built specifically for the pace and complexity of modern business. E7 isn’t just an upgrade for today. It’s a foundation designed to support what’s next — whether that’s new ways of working, new workloads, or new business models. For organizations looking to future‑proof their enterprise, this is the platform to build on. 21"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 22,
+    "title": "Microsoft 365 Copilot AI built for work",
+    "body": "Agentic Work | Work IQ | Multi-model | Agent Platform | Security & Management | The intelligence layer that personalizes Copilot to you and your organization | The best model for every task and workflow | Ecosystem of agents with agent building tools for everyone | Built-in security, management, and governance | AI in the flow of work to get real work done",
+    "shapeCount": 23,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "Let’s get started with Work IQ, the intelligence layer that personalizes Copilot to you and your organization. 22"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 23,
+    "title": "Most AI only sees snapshots – but work happens in context",
+    "body": "AI today | How work actually happens | Chat | Context gap | New priority | Email | File | Business Change | Updated information | Task update | Meeting | People | Continuous, evolving, connected | Connectors see fragments of data",
+    "shapeCount": 29,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Work unfolds across chats, meetings, files, org changes, and decisions over time. . AI is increasingly expected to help teams keep up — but most AI today doesn’t see work the way people do. It sees moments, not motion. This is because it works from snapshots: a prompt, a document, a transcript fragment. But work context lives across time and systems, And when you can’t see past all those fragments - you create a context gap. AI fills in the gap by guessing — owners, dependencies, what changed, and what’s next. The real opportunity is AI that can follow work as it’s happening in real-time. 23"
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 24,
+    "title": "How Work IQ works",
+    "body": "Experiences | Extensibility | M365 Copilot, M365 apps, D365 + LOB apps & pre-built agents | Custom-built agents through Copilot Studio, Foundry & GitHub | Skills and Tools | Skills | Tools | Context | Work IQ | Activity | Business understanding | Memory | Data | Microsoft 365 | Dynamics 365 + Power Apps | Power BI | Other business data | Multi-model | Multi-Model | Multi-model | Multi-model | Multi-model | OpenAI | Anthropic | Other models | Microsoft IQ",
+    "shapeCount": 35,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Work IQ explained in 5 key steps:​ ​ Ingests plenty of Microsoft 365 signals everyday. Outlook mail and calendars, Teams chats and meetings, SharePoint and OneDrive files, People and identity relationships​ 2. Constructs a semantic graph of work linking people, topics, projects, timelines​ 3. Builds a persistent memory over time. How you write, who you work with, what you work on. A “work chart” of your day-to-day matrix of activities​ 4. Understands and can predict based on these memories and context it can provide proactive next steps, better prompts and tools, better answers that reflect..."
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 25,
+    "title": "Agents need a new way of working",
+    "body": "",
+    "shapeCount": 2,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Right now, organizations are doing this the hard way. Before Work IQ, organizations had to manually stitch together tools, context, and orchestration—creating complexity, latency, and reliability challenges at scale Using connectors, an organization would do a bulk extraction of all their data and move it to storage in their own cloud infrastructure. This created a number of issues such as fragmented and siloed data, data that was stale or required ongoing syncs, leading to lower quality retrieval, A huge data footprint with a messy architecture, difficult for agents to reason over, And in ..."
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 26,
+    "title": "Introducing the Work IQ APIs",
+    "body": "",
+    "shapeCount": 2,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Work IQ is specifically designed to create a better solution. Work IQ is a workplace intelligence layer designed for the unique needs of agents. So what do we mean by intelligence? It’s a semantic index with ultra‑low latency, personal context, organizational skills, structured data, and domain-specific tuning. This enables agents to operate on highly relevant context with a deeper understanding of people, roles, and collaboration patterns Updates continuously to ensure context is fresh & relevant to your work patterns and flow It is efficient- by shifting processing into the Work IQ runtim..."
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 27,
+    "title": "The difference Work IQ delivers",
+    "body": "Work IQ shines when work depends on context, decisions, people, and time — not just documents.",
+    "shapeCount": 3,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Let’s talk about the core difference Work IQ makes. At a high level, Work IQ shifts AI from understanding documents to understanding work—which includes decisions, context, people, and time. 1) First, Work IQ helps AI understand real work, not just static content. Traditional RAG systems look at documents in isolation—they don’t capture how decisions evolve across meetings, chats, and collaboration. Work IQ brings together those signals—so instead of vague answers, you get decision-aware, context-rich responses grounded in how work actually happened.” “It’s connecting the story behind the d..."
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 28,
+    "title": "Data",
+    "body": "Context | Skills & Tools | Skills | Provide pre-defined, specialized instructions to Copilot & agents, so they perform everyday tasks with efficiency and accuracy. Adapt how Copilot responds by combining and adjusting skills based on the situation as work evolves. Customer-built agents that contain their own skills & tools can operate with Work IQ to create highly customized experiences for users and organizations. | Ongoing (rolling updates)",
+    "shapeCount": 10,
+    "pictureCount": 1,
+    "hasNotes": true,
+    "notes": "- Work IQ includes agentic skills that provide specialized instructions to Copilot & agents to drive highly customized, repeatable outputs. These Skills are designed to help Copilot perform specific tasks with more speed and accuracy. Microsoft is continuously adding skills to Work IQ that enable Copilot to deliver experiences that are highly tailored for specific tasks like “schedule a meeting”, “find and retrieve data from an external source”, or “access meeting details and transcripts”. For example, we have deployed skills designed to optimize retrieval of work content in response to com..."
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 29,
+    "title": "Data",
+    "body": "Context | Skills & Tools | Tools | Execute against the intent of skills invoked through Work IQ to provide responses to Copilot users. Provide trustworthy, repeatable outcomes based on structured and unstructured where inferenced responses are not appropriate. Customers can build agents and add skills and tools that, in combination with our orchestration services, can also be used with Work IQ. | Ongoing (rolling updates)",
+    "shapeCount": 9,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "If skills describe what to do, tools do it. We’re developing custom toolsets designed to execute against the intent of the agentic skills that power Work IQ experiences. We’re selecting the best-use tooling available – for example some of the things you see here on the slide - MCP server tools, agent flows, APIs and plugins – to help Copilot observe, retrieve, reason, and execute using the tool we create. Going back to our complex content retrieval query, these are the tools that when combined, help us search, open and find content as described by the skill. This supports faster and more ac..."
+  },
+  {
+    "deck": "NewPresentation_v1.pptx",
+    "slide": 30,
+    "title": "Cowork",
+    "body": "Built in partnership with Anthropic – bringing Claude‑class agentic capability into the Microsoft 365 system of work. Delegate real work, not prompts – plans tasks, reasons across tools/files, and keeps work moving over time. Observable and controllable – transparent actions, reviewable progress, with guardrails to guide or stop execution. Grounded in Work IQ – so it understands your work directly vs. connectors that try to stitch together context. Enterprise‑ready – operates within Microsoft security, identity, and governance for confident adoption at scale. | Rollout start to Public Preview Q1 2026 Currently excluded from the EU Data Boundary, and when applicable, in-country processing commitments Anthropic as a subprocessor for Microsoft Online Services | Microsoft Learn",
+    "shapeCount": 6,
+    "pictureCount": 0,
+    "hasNotes": true,
+    "notes": "Copilot Cowork brings long‑running, multi‑step work into M365 Copilot, moving beyond prompts and responses toward execution that unfolds over time. And, with Work IQ, it has the full context of your work, not just fragments of data, so it can reason over all relevant materials. Instead of asking Copilot to generate a single artifact, Cowork allows you to delegate meaningful work and stay in the loop as that work progresses. With Cowork, Copilot can break down complex requests into steps, reason across tools and files, and carry work forward with visible progress and opportunities to steer. ..."
+  }
+]

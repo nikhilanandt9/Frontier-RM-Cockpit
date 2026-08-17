@@ -1,0 +1,43 @@
+{
+  "id": "23808b6e-9fa2-5b3c-a476-561a1d65312e",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "houseview_id",
+        "targetPropertyId": "573936983146564151"
+      },
+      {
+        "sourceColumnName": "title",
+        "targetPropertyId": "744990856677224396"
+      },
+      {
+        "sourceColumnName": "as_of_date",
+        "targetPropertyId": "652958079430015688"
+      },
+      {
+        "sourceColumnName": "status",
+        "targetPropertyId": "203551932051945313"
+      },
+      {
+        "sourceColumnName": "cio_stance",
+        "targetPropertyId": "329735630583824983"
+      },
+      {
+        "sourceColumnName": "executive_summary",
+        "targetPropertyId": "595415191056178527"
+      },
+      {
+        "sourceColumnName": "document_path",
+        "targetPropertyId": "869786526400467221"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "cio_houseview_reports",
+      "sourceSchema": "silver"
+    }
+  }
+}

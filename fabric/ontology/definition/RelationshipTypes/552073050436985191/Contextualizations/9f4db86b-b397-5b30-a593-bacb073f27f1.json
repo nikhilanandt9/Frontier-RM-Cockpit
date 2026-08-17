@@ -1,0 +1,22 @@
+{
+  "id": "9f4db86b-b397-5b30-a593-bacb073f27f1",
+  "dataBindingTable": {
+    "sourceType": "LakehouseTable",
+    "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+    "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+    "sourceTableName": "customer_events",
+    "sourceSchema": "silver"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "customer_id",
+      "targetPropertyId": "628999339852629699"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "event_id",
+      "targetPropertyId": "754977298198172459"
+    }
+  ]
+}

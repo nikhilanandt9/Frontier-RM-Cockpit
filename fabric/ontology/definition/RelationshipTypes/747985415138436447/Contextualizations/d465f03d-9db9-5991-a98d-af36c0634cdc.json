@@ -1,0 +1,22 @@
+{
+  "id": "d465f03d-9db9-5991-a98d-af36c0634cdc",
+  "dataBindingTable": {
+    "sourceType": "LakehouseTable",
+    "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+    "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+    "sourceTableName": "opportunities",
+    "sourceSchema": "silver"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "customer_id",
+      "targetPropertyId": "628999339852629699"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "opportunity_id",
+      "targetPropertyId": "689845508083681329"
+    }
+  ]
+}

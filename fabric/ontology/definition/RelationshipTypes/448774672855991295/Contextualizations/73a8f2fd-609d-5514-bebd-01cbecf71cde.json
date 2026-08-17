@@ -1,0 +1,22 @@
+{
+  "id": "73a8f2fd-609d-5514-bebd-01cbecf71cde",
+  "dataBindingTable": {
+    "sourceType": "LakehouseTable",
+    "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+    "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+    "sourceTableName": "opportunities",
+    "sourceSchema": "silver"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "opportunity_id",
+      "targetPropertyId": "689845508083681329"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "event_id",
+      "targetPropertyId": "754977298198172459"
+    }
+  ]
+}

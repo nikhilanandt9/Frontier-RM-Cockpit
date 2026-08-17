@@ -1,0 +1,69 @@
+{
+  "id": "183078849292335670",
+  "namespace": "usertypes",
+  "name": "CustomerEvent",
+  "entityIdParts": [
+    "754977298198172459"
+  ],
+  "displayNamePropertyId": "792101215216746818",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "754977298198172459",
+      "name": "EventId",
+      "valueType": "String"
+    },
+    {
+      "id": "823739587291414438",
+      "name": "EventCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "852823112831590425",
+      "name": "EventAccountId",
+      "valueType": "String"
+    },
+    {
+      "id": "792101215216746818",
+      "name": "EventType",
+      "valueType": "String"
+    },
+    {
+      "id": "607900129210605544",
+      "name": "EventValue",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "842038975902421584",
+      "name": "EventCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "537978076419340111",
+      "name": "EventAt",
+      "valueType": "String"
+    },
+    {
+      "id": "510952200057787939",
+      "name": "EventSource",
+      "valueType": "String"
+    },
+    {
+      "id": "773833728767946951",
+      "name": "EventMaturityDate",
+      "valueType": "String"
+    },
+    {
+      "id": "73233439846667684",
+      "name": "EventObservationDays",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "261594827090787346",
+      "name": "EventWindowOpensDate",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

@@ -1,0 +1,45 @@
+/// Curated internal FAA-N16 demonstration controls with stable paragraph-level citations.
+table 'Regulatory Controls'
+
+	column 'Rule ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: regulatory_rule_id
+
+	column Paragraph
+		dataType: string
+		summarizeBy: none
+		sourceColumn: paragraph
+
+	column Title
+		dataType: string
+		summarizeBy: none
+		sourceColumn: title
+
+	column Summary
+		dataType: string
+		summarizeBy: none
+		sourceColumn: summary
+
+	column 'Applies To'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: applies_to
+
+	column Gate
+		dataType: string
+		summarizeBy: none
+		sourceColumn: gate
+
+	column Disclaimer
+		dataType: string
+		summarizeBy: none
+		sourceColumn: disclaimer
+
+	partition 'Regulatory Controls' = entity
+		mode: directLake
+		source
+			entityName: regulatory_control_register
+			schemaName: gold
+			expressionSource: 'DirectLake - FrontierRMLakehouse'

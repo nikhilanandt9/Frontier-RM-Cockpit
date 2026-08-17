@@ -1,0 +1,12 @@
+{
+  "namespace": "usertypes",
+  "id": "8759359531285065",
+  "name": "AFFECTED_BY",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "842918558810908915"
+  },
+  "target": {
+    "entityTypeId": "23908502075095012"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "756945612746866904",
+  "namespace": "usertypes",
+  "name": "Opportunity",
+  "entityIdParts": [
+    "689845508083681329"
+  ],
+  "displayNamePropertyId": "421019782181965377",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "689845508083681329",
+      "name": "OpportunityId",
+      "valueType": "String"
+    },
+    {
+      "id": "420583508887029060",
+      "name": "OpportunityCustomerId",
+      "valueType": "String"
+    },
+    {
+      "id": "653040362903641411",
+      "name": "OpportunityEventId",
+      "valueType": "String"
+    },
+    {
+      "id": "787240477246906342",
+      "name": "OpportunityRmId",
+      "valueType": "String"
+    },
+    {
+      "id": "866943574536147455",
+      "name": "OpportunityType",
+      "valueType": "String"
+    },
+    {
+      "id": "421019782181965377",
+      "name": "OpportunityTitle",
+      "valueType": "String"
+    },
+    {
+      "id": "371583432844519096",
+      "name": "OpportunityStatus",
+      "valueType": "String"
+    },
+    {
+      "id": "619027520143902428",
+      "name": "OpportunityPriority",
+      "valueType": "String"
+    },
+    {
+      "id": "684825846205561762",
+      "name": "OpportunityEstValue",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "210875828231381639",
+      "name": "OpportunityCurrency",
+      "valueType": "String"
+    },
+    {
+      "id": "393161490598188577",
+      "name": "OpportunityConfidence",
+      "valueType": "BigInt"
+    },
+    {
+      "id": "345847959181981860",
+      "name": "OpportunityCreatedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}

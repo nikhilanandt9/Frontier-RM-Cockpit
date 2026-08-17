@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "run": {
+    "id": "run-daniel-lim-rehearsal",
+    "clientId": "client-lim",
+    "clientName": "Daniel Lim",
+    "status": "completed",
+    "mode": "deterministic-rehearsal",
+    "startedAt": "2026-08-12T08:24:10+08:00",
+    "completedAt": "2026-08-12T08:24:22+08:00",
+    "dataSnapshotAt": "2026-08-12T08:20:00+08:00",
+    "provider": "contract-rehearsal",
+    "traceId": "trace-rehearsal-daniel-001"
+  },
+  "agents": [
+    { "id": "orchestrator", "name": "RM Orchestrator", "role": "Plans, delegates and verifies", "status": "completed" },
+    { "id": "customer-intelligence", "name": "Customer Intelligence", "role": "Retrieves governed relationship context", "status": "completed" },
+    { "id": "market-context", "name": "Market Context", "role": "Frames relevant market considerations", "status": "completed" },
+    { "id": "meeting-preparation", "name": "Meeting Preparation", "role": "Builds the human-reviewed brief", "status": "completed" }
+  ],
+  "events": [
+    { "sequence": 1, "timestamp": "2026-08-12T08:24:10+08:00", "type": "Run.Status", "agentId": "orchestrator", "summary": "Meeting-preparation run started for Daniel Lim." },
+    { "sequence": 2, "timestamp": "2026-08-12T08:24:11+08:00", "type": "Agent.Plan", "agentId": "orchestrator", "summary": "Plan relationship, market and meeting-preparation work in parallel.", "detail": "The verifier requires relationship context, current need signals, contact consent and mandatory checks before completing the brief." },
+    { "sequence": 3, "timestamp": "2026-08-12T08:24:12+08:00", "type": "Agent.Delegation", "agentId": "orchestrator", "summary": "Delegated governed customer context to Customer Intelligence." },
+    { "sequence": 4, "timestamp": "2026-08-12T08:24:13+08:00", "type": "Agent.ToolCall", "agentId": "customer-intelligence", "summary": "Queried the meeting-context contract for Daniel Lim.", "detail": "Rehearsal fixture mirrors the future read-only Fabric Data Agent response; no live Fabric call occurred." },
+    { "sequence": 5, "timestamp": "2026-08-12T08:24:14+08:00", "type": "Agent.Evidence", "agentId": "customer-intelligence", "summary": "Resolved relationship value, maturity, liquidity and consent evidence.", "evidenceIds": ["REL-DL-001", "MAT-DL-012", "LIQ-DL-090", "CONSENT-DL-001"] },
+    { "sequence": 6, "timestamp": "2026-08-12T08:24:15+08:00", "type": "Agent.Delegation", "agentId": "orchestrator", "summary": "Delegated relevant context framing to Market Context." },
+    { "sequence": 7, "timestamp": "2026-08-12T08:24:16+08:00", "type": "Agent.Evidence", "agentId": "market-context", "summary": "Confirmed that the conversation must avoid forecasts and guaranteed-return comparisons.", "evidenceIds": ["KNOW-FD-008"] },
+    { "sequence": 8, "timestamp": "2026-08-12T08:24:17+08:00", "type": "Agent.Delegation", "agentId": "orchestrator", "summary": "Delegated evidence synthesis to Meeting Preparation." },
+    { "sequence": 9, "timestamp": "2026-08-12T08:24:19+08:00", "type": "Agent.Output", "agentId": "meeting-preparation", "summary": "Produced a needs-led meeting brief and editable opening.", "evidenceIds": ["REL-DL-001", "MAT-DL-012", "LIQ-DL-090", "CONSENT-DL-001", "KNOW-FD-008"] },
+    { "sequence": 10, "timestamp": "2026-08-12T08:24:20+08:00", "type": "Agent.Status", "agentId": "orchestrator", "summary": "Verification checked evidence coverage and mandatory safeguards." },
+    { "sequence": 11, "timestamp": "2026-08-12T08:24:21+08:00", "type": "Agent.Output", "agentId": "orchestrator", "summary": "Verification completed with five evidence references and no unsupported claims.", "evidenceIds": ["REL-DL-001", "MAT-DL-012", "LIQ-DL-090", "CONSENT-DL-001", "KNOW-FD-008"] },
+    { "sequence": 12, "timestamp": "2026-08-12T08:24:22+08:00", "type": "Run.Status", "agentId": "orchestrator", "summary": "Run completed and is ready for John Doe's review." }
+  ],
+  "outcome": {
+    "verificationStatus": "verified",
+    "evidenceCount": 5,
+    "meetingBrief": "Daniel has an S$650K fixed deposit maturing in 12 days, sustained idle cash of S$210K and a portfolio review at 11:30. Start with liquidity needs and upcoming commitments, then review deposit and investment alternatives separately. Reconfirm risk objectives before any personalised investment discussion.",
+    "unresolvedQuestions": [
+      "How much liquidity does Daniel expect to need over the next 12 months?"
+    ],
+    "recommendedActions": [
+      "Confirm objectives and liquidity needs at the start of the meeting.",
+      "Reconfirm the current risk profile before discussing investments.",
+      "Present alternatives without implying guaranteed returns."
+    ]
+  }
+}

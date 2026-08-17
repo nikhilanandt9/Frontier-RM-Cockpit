@@ -1,0 +1,52 @@
+/// Customers whose KYC or suitability profile requires review.
+table 'Compliance Due'
+
+	/// Number of customer profiles requiring compliance review.
+	measure '# Compliance Reviews' = COUNTROWS('Compliance Due')
+		formatString: #,##0
+		displayFolder: Measures\Counts
+
+	/// Customer foreign key for the profile requiring review.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Customer name associated with the profile.
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	/// Current know-your-customer profile status.
+	column 'KYC Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: kyc_status
+
+	/// Date when the customer profile is due for review.
+	column 'KYC Due Date'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: kyc_due_date
+
+	/// Whether the current profile supports suitability discussion.
+	column 'Suitability Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: suitability_status
+
+	/// Relationship manager assigned to the customer.
+	column 'Relationship Manager ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: rm_id
+
+	partition 'Compliance Due' = entity
+		mode: directLake
+		source
+			entityName: compliance_due
+			schemaName: gold
+			expressionSource: 'DirectLake - FrontierRMLakehouse'

@@ -1,0 +1,47 @@
+{
+  "id": "8978a756-d634-55bd-9f53-8a5670b1b14b",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "rm_id",
+        "targetPropertyId": "344933184946449000"
+      },
+      {
+        "sourceColumnName": "display_name",
+        "targetPropertyId": "532755591626321238"
+      },
+      {
+        "sourceColumnName": "initials",
+        "targetPropertyId": "213482656189264867"
+      },
+      {
+        "sourceColumnName": "role",
+        "targetPropertyId": "698813549354139544"
+      },
+      {
+        "sourceColumnName": "team",
+        "targetPropertyId": "220104663479414784"
+      },
+      {
+        "sourceColumnName": "location",
+        "targetPropertyId": "677032038615403704"
+      },
+      {
+        "sourceColumnName": "active",
+        "targetPropertyId": "562612003702804640"
+      },
+      {
+        "sourceColumnName": "created_at",
+        "targetPropertyId": "32959545909201562"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "67764587-fefa-43e9-ad2e-66b47e7ea18d",
+      "itemId": "a86aee8e-0382-4105-bd78-457af69d8830",
+      "sourceTableName": "relationship_managers",
+      "sourceSchema": "silver"
+    }
+  }
+}

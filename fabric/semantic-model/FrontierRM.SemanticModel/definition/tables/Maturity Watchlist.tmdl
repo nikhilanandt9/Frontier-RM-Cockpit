@@ -1,0 +1,60 @@
+/// Fixed-deposit maturities requiring a needs-led RM conversation.
+table 'Maturity Watchlist'
+
+	/// Total value of deposits on the maturity watchlist.
+	measure 'Maturing Value' = SUM('Maturity Watchlist'[Event Value])
+		formatString: S$#,##0
+		displayFolder: Measures\Value
+
+	/// Stable lifecycle-event identifier.
+	column 'Event ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: event_id
+
+	/// Customer foreign key for the maturing deposit.
+	column 'Customer ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: customer_id
+
+	/// Customer name associated with the maturity.
+	column 'Customer Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: full_name
+
+	/// Maturing deposit value; use Maturing Value for aggregation.
+	column 'Event Value'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: event_value
+
+	/// ISO currency code for maturity value.
+	column Currency
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency
+
+	/// Scheduled fixed-deposit maturity date.
+	column 'Maturity Date'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: maturity_date
+
+	/// Relationship manager assigned to the customer.
+	column 'Relationship Manager ID'
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: rm_id
+
+	partition 'Maturity Watchlist' = entity
+		mode: directLake
+		source
+			entityName: maturity_watchlist
+			schemaName: gold
+			expressionSource: 'DirectLake - FrontierRMLakehouse'

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0",
+  "document": {
+    "id": "regdoc-faa-n16-demo",
+    "title": "Frontier Regulatory Control Pack — FAA-N16 Demo Extract",
+    "sourceTitle": "Notice on Recommendations on Investment Products",
+    "sourceAuthority": "Monetary Authority of Singapore",
+    "sourceIssueDate": "2011-07-28",
+    "sourceLastUpdated": "2025-12-29",
+    "status": "internal-demo-extract",
+    "disclaimer": "Curated fictional internal demonstration control pack. Not the official MAS notice, not legal advice, and not proof of regulatory compliance. Consult the authoritative notice and Compliance or Legal owners."
+  },
+  "rules": [
+    {"id":"FAA-N16-P08","paragraph":"8","title":"Reasonable basis","summary":"Give due consideration to the client’s investment objectives, financial situation and particular needs.","appliesTo":["all-recommendations"],"gate":"objectives-financial-situation-needs"},
+    {"id":"FAA-N16-P11","paragraph":"11","title":"Collect and document client information","summary":"Collect and document objectives, risk tolerance, employment, financial situation, income, commitments, current portfolio and investment materiality, subject to applicable exceptions.","appliesTo":["all-recommendations"],"gate":"profile-completeness"},
+    {"id":"FAA-N16-P12","paragraph":"12","title":"Confirm no material change","summary":"Prior information may be relied upon only where the client confirms there are no material changes at the time of transaction.","appliesTo":["prior-profile-reliance"],"gate":"material-change-confirmation"},
+    {"id":"FAA-N16-P14","paragraph":"14","title":"Incomplete information warning","summary":"Highlight that client information forms the recommendation basis and inaccurate or incomplete information may affect suitability.","appliesTo":["all-recommendations"],"gate":"information-warning"},
+    {"id":"FAA-N16-P16","paragraph":"16","title":"Customer Knowledge Assessment","summary":"Conduct a Customer Knowledge Assessment before recommending an applicable unlisted Specified Investment Product, subject to the notice.","appliesTo":["unlisted-sip"],"gate":"cka-current"},
+    {"id":"FAA-N16-P27E","paragraph":"27E","title":"Customer Account Review","summary":"Conduct a Customer Account Review before recommending an applicable Listed Specified Investment Product, subject to the notice.","appliesTo":["listed-sip"],"gate":"car-current"},
+    {"id":"FAA-N16-P28","paragraph":"28","title":"Needs analysis","summary":"Analyze client information and identify a suitable product based on the information obtained.","appliesTo":["all-recommendations"],"gate":"needs-analysis"},
+    {"id":"FAA-N16-P29","paragraph":"29","title":"Product suitability factors","summary":"Consider product nature, key risks, tenor, fees and required liquidity when determining suitability.","appliesTo":["all-recommendations"],"gate":"product-risk-liquidity"},
+    {"id":"FAA-N16-P30","paragraph":"30","title":"No suitable product","summary":"Inform the client where no suitable product can be identified.","appliesTo":["all-recommendations"],"gate":"no-suitable-product"},
+    {"id":"FAA-N16-P31","paragraph":"31","title":"Explain and document basis","summary":"Explain the basis for the recommendation and document that basis.","appliesTo":["all-recommendations"],"gate":"documented-basis"},
+    {"id":"FAA-N16-P35","paragraph":"35","title":"Recommendation documentation","summary":"Document objectives, financial situation and needs, the reasonable basis, and disadvantages based on the client’s circumstances.","appliesTo":["all-recommendations"],"gate":"documented-disadvantages"},
+    {"id":"FAA-N16-P36","paragraph":"36","title":"Client recommendation document","summary":"Furnish a summary of information gathered and the recommendation and its basis when making an investment recommendation, subject to the notice.","appliesTo":["all-recommendations"],"gate":"client-document"},
+    {"id":"FAA-N16-P41","paragraph":"41","title":"Communication records","summary":"Maintain records of advisory communications for applicable Listed Specified Investment Products.","appliesTo":["listed-sip"],"gate":"communication-record"},
+    {"id":"FAA-N16-P41K","paragraph":"41K","title":"Selected-client pre-transaction checks","summary":"Complete applicable documentation review and call-back controls before the effective date for selected clients or clients of selected representatives.","appliesTo":["selected-client-transaction"],"gate":"pre-transaction-checks"},
+    {"id":"FAA-N16-P41Q","paragraph":"41Q","title":"Pre-transaction records","summary":"Keep records of applicable pre-transaction processes, methods, assessments and determinations for at least five years.","appliesTo":["recommended-transaction"],"gate":"pre-transaction-records"}
+  ]
+}

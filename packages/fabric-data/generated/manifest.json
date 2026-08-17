@@ -1,0 +1,30 @@
+{
+  "declaration": "Entirely fictional synthetic data for internal demonstration use only.",
+  "generatedAt": "2026-08-12T08:30:00+08:00",
+  "rowCounts": {
+    "accounts": 40,
+    "cio_houseview_reports": 2,
+    "cio_houseview_sections": 8,
+    "client_advisory_profiles": 20,
+    "client_investment_activity": 20,
+    "compliance_profiles": 20,
+    "customer_events": 21,
+    "customers": 20,
+    "holdings": 40,
+    "households": 20,
+    "interactions": 20,
+    "market_snapshots": 3,
+    "observed_behaviour_history": 20,
+    "opportunities": 20,
+    "products": 8,
+    "regulatory_documents": 1,
+    "regulatory_rules": 15,
+    "relationship_managers": 1,
+    "risk_profile_history": 20,
+    "rm_actions": 20,
+    "transactions": 60
+  },
+  "schemaVersion": "1.0",
+  "seed": 20260812,
+  "synthetic": true
+}

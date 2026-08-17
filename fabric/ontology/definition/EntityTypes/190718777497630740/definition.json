@@ -1,0 +1,54 @@
+{
+  "id": "190718777497630740",
+  "namespace": "usertypes",
+  "name": "RelationshipManager",
+  "entityIdParts": [
+    "344933184946449000"
+  ],
+  "displayNamePropertyId": "532755591626321238",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "344933184946449000",
+      "name": "RmId",
+      "valueType": "String"
+    },
+    {
+      "id": "532755591626321238",
+      "name": "RmDisplayName",
+      "valueType": "String"
+    },
+    {
+      "id": "213482656189264867",
+      "name": "RmInitials",
+      "valueType": "String"
+    },
+    {
+      "id": "698813549354139544",
+      "name": "RmRole",
+      "valueType": "String"
+    },
+    {
+      "id": "220104663479414784",
+      "name": "RmTeam",
+      "valueType": "String"
+    },
+    {
+      "id": "677032038615403704",
+      "name": "RmLocation",
+      "valueType": "String"
+    },
+    {
+      "id": "562612003702804640",
+      "name": "RmActive",
+      "valueType": "Boolean"
+    },
+    {
+      "id": "32959545909201562",
+      "name": "RmCreatedAt",
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": []
+}
