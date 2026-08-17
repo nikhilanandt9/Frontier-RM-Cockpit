@@ -54,9 +54,13 @@ const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (character)
 const clientById = (id) => state.data.clients.find((client) => client.id === id);
 const opportunityByClient = (id) => state.data.opportunities.find((item) => item.clientId === id);
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const pageLoadedAt = new Date();
 const todayDisplayDate = new Intl.DateTimeFormat('en-SG', {
   weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Asia/Singapore',
-}).format(new Date());
+}).format(pageLoadedAt);
+const liveDisplayTime = new Intl.DateTimeFormat('en-SG', {
+  hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Singapore',
+}).format(pageLoadedAt);
 
 function persist() {
   sessionStorage.setItem('frontier-prepared', JSON.stringify([...state.prepared]));
@@ -72,7 +76,7 @@ function showToast(message, tone = 'default') {
 }
 
 function pageHeading(eyebrow, title, description, action = '') {
-  return `<div class="page-heading"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1><p>${description}</p></div>${action || `<span class="as-of live-asof"><i></i> Live · 08:30 SGT</span>`}</div>`;
+  return `<div class="page-heading"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1><p>${description}</p></div>${action || `<span class="as-of live-asof"><i></i> Live · ${liveDisplayTime} SGT</span>`}</div>`;
 }
 
 function renderNav() {

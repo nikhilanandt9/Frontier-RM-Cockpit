@@ -20,12 +20,12 @@ class ProjectPolicyTests(unittest.TestCase):
         self.assertEqual(config["resourceGroupStatus"], "verified-existing-deployed")
         self.assertTrue(config["resourceGroupDeploymentValidated"])
         self.assertEqual(config["deployment"]["azureOpenAIDeployment"], "frontier-gpt-4-1-mini")
-        self.assertEqual(config["deployment"]["apiImage"], "frontier-rm-api:0.8.1")
+        self.assertEqual(config["deployment"]["apiImage"], "frontier-rm-api:0.8.2")
         self.assertEqual(
             config["deployment"]["apiImageDigest"],
-            "sha256:b967345a0f816d6e98f169fb96a35860b53d15737a1b0512a6dd74e003b7d66a",
+            "sha256:712242625b8ce426e60e2a5bcc0bde02bc0ababfe30ba88fe393e172088a6edb",
         )
-        self.assertEqual(config["deployment"]["apiRevision"], "ca-frontier-rm-api-kqo7o4bgpiiay--0000011")
+        self.assertEqual(config["deployment"]["apiRevision"], "ca-frontier-rm-api-kqo7o4bgpiiay--0000012")
         self.assertEqual(config["deployment"]["apiRevisionStatus"], "healthy-100-percent-traffic")
         self.assertEqual(config["deployment"]["teamsCatalogStatus"], "manual-sideload-required-missing-graph-scope")
         fabric = config["deployment"]["fabric"]
