@@ -3,7 +3,7 @@ targetScope = 'resourceGroup'
 param location string = resourceGroup().location
 param owner string
 param expiry string
-param imageTag string = '0.8.1'
+param imageTag string = '0.8.2'
 
 var suffix = toLower(uniqueString(subscription().id, resourceGroup().id))
 var commonTags = {

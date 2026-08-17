@@ -26,11 +26,20 @@ class FrontendStorytellingTests(unittest.TestCase):
 
     def test_today_uses_current_singapore_date_without_changing_snapshot_date(self):
         self.assertNotIn("Wednesday, 12 August", self.javascript)
+        self.assertIn("const pageLoadedAt = new Date()", self.javascript)
         self.assertIn("const todayDisplayDate = new Intl.DateTimeFormat('en-SG'", self.javascript)
         self.assertIn("weekday: 'long', day: 'numeric', month: 'long'", self.javascript)
         self.assertIn("timeZone: 'Asia/Singapore'", self.javascript)
+        self.assertIn("}).format(pageLoadedAt)", self.javascript)
         self.assertIn("pageHeading(todayDisplayDate", self.javascript)
         self.assertIn("state.data.asOf || '12 Aug 2026'", self.javascript)
+
+    def test_shared_live_badge_uses_current_singapore_load_time(self):
+        self.assertNotIn("Live · 08:30 SGT", self.javascript)
+        self.assertIn("const liveDisplayTime = new Intl.DateTimeFormat('en-SG'", self.javascript)
+        self.assertIn("hour: '2-digit', minute: '2-digit', hour12: false", self.javascript)
+        self.assertIn("Live · ${liveDisplayTime} SGT", self.javascript)
+        self.assertIn("SNAPSHOT 08:30 SGT", self.javascript)
 
     def test_shell_uses_sources_and_persistent_copilot(self):
         self.assertIn("['sources', 'Sources']", self.javascript)
