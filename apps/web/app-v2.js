@@ -54,6 +54,9 @@ const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (character)
 const clientById = (id) => state.data.clients.find((client) => client.id === id);
 const opportunityByClient = (id) => state.data.opportunities.find((item) => item.clientId === id);
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const todayDisplayDate = new Intl.DateTimeFormat('en-SG', {
+  weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Asia/Singapore',
+}).format(new Date());
 
 function persist() {
   sessionStorage.setItem('frontier-prepared', JSON.stringify([...state.prepared]));
@@ -152,7 +155,7 @@ function renderToday() {
       <div class="hero-content"><p class="hero-kicker"><i></i> FRONTIER RM · LIVE DAY</p><h1>A relationship manager's day,<br><em>orchestrated around client needs.</em></h1><p>John starts with 128 households, four material signals and one hour before his first client conversation.</p><div class="hero-actions"><button class="hero-primary" data-start-story>▶ Start the guided story <span>60 sec</span></button><button class="hero-secondary" data-open-client="client-lim">Open Daniel's brief →</button></div></div>
       <div class="hero-pulse"><div class="pulse-ring" style="--score:${complete / 5 * 360}deg"><span><strong>${complete}/5</strong><small>day plan</small></span></div><p>AI prioritised · RM controlled</p></div>
     </section>
-    ${pageHeading('Wednesday, 12 August', `Good morning, ${state.data.rm.name.split(' ')[0]}`, 'Your day is sequenced around client commitments, consent and mandatory checks.')}
+    ${pageHeading(todayDisplayDate, `Good morning, ${state.data.rm.name.split(' ')[0]}`, 'Your day is sequenced around client commitments, consent and mandatory checks.')}
     <section class="panel briefing motion-rise"><div class="panel-body"><div class="briefing-copy"><span class="briefing-icon">☀</span><div><h2>Morning portfolio pulse</h2><p>Daniel's maturity is the most time-sensitive need. Mei's profile refresh must precede any portfolio discussion. Two service windows opened overnight.</p></div></div><div class="briefing-stats"><div class="briefing-stat"><strong>4</strong><span>material signals</span></div><div class="briefing-stat"><strong>1h 45m</strong><span>time returned</span></div></div></div></section>
     ${renderMetrics()}
     ${renderWorkflowStories()}

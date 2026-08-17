@@ -111,12 +111,13 @@ If custom app upload is unavailable, a Teams administrator must enable the tenan
 - Opportunities provides briefing, fictional-product recommendation, and email/CRM draft actions with public evidence-and-rationale traces.
 - Opportunities defaults to **With Fabric IQ** and offers a **Without Fabric IQ** comparison beside the shared `gpt-4.1-mini · managed identity` badge. Artifacts are isolated by client, mode and stage. General mode excludes enterprise citations, Houseview, activity and regulatory-control context while retaining mandatory human review and non-execution boundaries.
 - Client presentation uses Client 360 only; Household 360 is not shown.
+- The Today heading resolves the current calendar date in `Asia/Singapore` when the URL loads; Fabric snapshot labels retain their historical timestamp.
 - The guided story has seven timed scenes with pause, resume, previous, next, direct-scene, keyboard and restart-safe controls.
 - Model: `gpt-4.1-mini`, version `2025-04-14`, GlobalStandard capacity 10.
 - API and Teams Container App revisions are healthy with one replica.
-- API image: `frontier-rm-api:0.8.0`
-- API image digest: `sha256:085fdd348c2195b1285a948c936687508bd1c3458cc7e7c30eae6799dbd7da36`
-- API revision: `<RM_CONTAINER_APP_NAME>--0000010`, healthy with one replica and 100% traffic
+- API image: `frontier-rm-api:0.8.1`
+- API image digest: `sha256:b967345a0f816d6e98f169fb96a35860b53d15737a1b0512a6dd74e003b7d66a`
+- API revision: `<RM_CONTAINER_APP_NAME>--0000011`, healthy with one replica and 100% traffic
 - Foundry Customer Intelligence: `frontier-customer-intelligence:3`, with the `<FOUNDRY_FABRIC_CONNECTION_NAME>` project connection.
 - Captured-live default: `run-daniel-lim-live-20260812173016-success`; controlled revision: `run-daniel-lim-live-20260812172824-revision`.
 - Teams bot uses a user-assigned managed identity and rejects unauthenticated messages with HTTP 401.

@@ -24,6 +24,14 @@ class FrontendStorytellingTests(unittest.TestCase):
         self.assertIn("openMetricReport", self.javascript)
         self.assertIn(".report-table", self.styles)
 
+    def test_today_uses_current_singapore_date_without_changing_snapshot_date(self):
+        self.assertNotIn("Wednesday, 12 August", self.javascript)
+        self.assertIn("const todayDisplayDate = new Intl.DateTimeFormat('en-SG'", self.javascript)
+        self.assertIn("weekday: 'long', day: 'numeric', month: 'long'", self.javascript)
+        self.assertIn("timeZone: 'Asia/Singapore'", self.javascript)
+        self.assertIn("pageHeading(todayDisplayDate", self.javascript)
+        self.assertIn("state.data.asOf || '12 Aug 2026'", self.javascript)
+
     def test_shell_uses_sources_and_persistent_copilot(self):
         self.assertIn("['sources', 'Sources']", self.javascript)
         self.assertNotIn("['knowledge', 'Knowledge']", self.javascript)
