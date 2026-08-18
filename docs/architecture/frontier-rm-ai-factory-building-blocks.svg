@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier RM AI Factory building blocks</title>
+  <desc id="desc">Layered Microsoft data and agentic AI framework distinguishing deployed Frontier RM components from wider Azure and Microsoft platform capabilities.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #132433; }
+      .title { font-size: 52px; font-weight: 700; }
+      .subtitle { font-size: 22px; fill: #526474; }
+      .section { font-size: 19px; font-weight: 700; letter-spacing: 1px; }
+      .layer-title { font-size: 27px; font-weight: 700; }
+      .layer-sub { font-size: 17px; fill: #3f5363; }
+      .block-title { font-size: 24px; font-weight: 700; }
+      .block-sub { font-size: 16px; fill: #3f5363; }
+      .status { font-size: 14px; font-weight: 700; fill: #ffffff; letter-spacing: .5px; }
+      .side { font-size: 25px; font-weight: 700; }
+      .footer-title { font-size: 20px; font-weight: 700; }
+      .footer-sub { font-size: 15px; fill: #536575; }
+      .legend { font-size: 16px; fill: #34495a; }
+    </style>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#8ba4bd" opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="2400" height="1350" fill="#ffffff"/>
+  <rect x="0" y="0" width="2400" height="14" fill="#b4233a"/>
+
+  <text class="section" x="70" y="65" fill="#9a6b00">FRONTIER RM · MICROSOFT DATA + AGENTIC AI</text>
+  <text class="title" x="70" y="130">Frontier RM AI Factory: Microsoft Data and Agentic AI Building Blocks</text>
+  <text class="subtitle" x="70" y="173">A governed Microsoft platform that turns enterprise data, business meaning, and work context into evidence-backed RM actions</text>
+
+  <!-- Sidebars -->
+  <rect x="70" y="230" width="100" height="880" rx="10" fill="#6798d4"/>
+  <text class="side" transform="translate(132 670) rotate(-90)" text-anchor="middle">Identity · Security · Governance · Responsible AI</text>
+  <rect x="2230" y="230" width="100" height="880" rx="10" fill="#6798d4"/>
+  <text class="side" transform="translate(2288 670) rotate(90)" text-anchor="middle">Observability · Evaluation · Agent Operations</text>
+
+  <!-- Layer 1 -->
+  <rect x="190" y="230" width="2020" height="118" rx="11" fill="#f2a37d" stroke="#c96743" stroke-width="3"/>
+  <rect x="207" y="245" width="104" height="25" rx="12" fill="#9a3412"/><text class="status" x="223" y="263">DEPLOYED</text>
+  <text class="layer-title" x="1200" y="282" text-anchor="middle">RM Experiences and Channels</text>
+  <text class="layer-sub" x="1200" y="318" text-anchor="middle">Frontier RM Web Cockpit · Today · Client 360 · Opportunities · Sources · Operations · Houseview · Frontier Copilot · Teams bot · Power BI</text>
+
+  <!-- Layer 2 -->
+  <rect x="190" y="360" width="2020" height="118" rx="11" fill="#f2a37d" stroke="#c96743" stroke-width="3"/>
+  <rect x="207" y="375" width="104" height="25" rx="12" fill="#9a3412"/><text class="status" x="223" y="393">DEPLOYED</text>
+  <text class="layer-title" x="1200" y="412" text-anchor="middle">Agent Orchestration and Workflow Runtime</text>
+  <text class="layer-sub" x="1200" y="448" text-anchor="middle">RM Orchestrator · Customer Intelligence · Market Context · Meeting Preparation · deterministic verification · RM approval</text>
+
+  <!-- Layer 3 split -->
+  <rect x="190" y="490" width="620" height="150" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="208" y="505" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="224" y="523">DEPLOYED</text>
+  <text class="block-title" x="500" y="553" text-anchor="middle">AI Access, Routing and Safety</text>
+  <text class="block-sub" x="500" y="584" text-anchor="middle">Python API · managed identity · model routing</text>
+  <text class="block-sub" x="500" y="611" text-anchor="middle">structured output · grounding mode · deterministic fallback</text>
+
+  <rect x="825" y="490" width="680" height="150" rx="10" fill="#d9b2e4" stroke="#9b5cad" stroke-width="3"/>
+  <rect x="843" y="505" width="104" height="25" rx="12" fill="#7e3f91"/><text class="status" x="859" y="523">DEPLOYED</text>
+  <text class="block-title" x="1165" y="553" text-anchor="middle">Agent Tools and Governed Actions</text>
+  <text class="block-sub" x="1165" y="584" text-anchor="middle">Fabric Data Agent · validated DAX · source APIs</text>
+  <text class="block-sub" x="1165" y="611" text-anchor="middle">Houseview + control APIs · read-only evidence tools</text>
+
+  <rect x="1520" y="490" width="690" height="150" rx="10" fill="#d9b2e4" stroke="#9b5cad" stroke-width="3"/>
+  <rect x="1538" y="505" width="104" height="25" rx="12" fill="#7e3f91"/><text class="status" x="1554" y="523">DEPLOYED</text>
+  <text class="block-title" x="1865" y="553" text-anchor="middle">Enterprise Context and Knowledge</text>
+  <text class="block-sub" x="1865" y="584" text-anchor="middle">Client 360 · Semantic Model · Fabric IQ Ontology</text>
+  <text class="block-sub" x="1865" y="611" text-anchor="middle">CIO Houseview · authored M365-style sources · FAA-N16 controls</text>
+
+  <!-- Layer 4 split -->
+  <rect x="190" y="652" width="485" height="144" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="207" y="667" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="223" y="685">DEPLOYED</text>
+  <text class="block-title" x="432" y="720" text-anchor="middle">Azure AI Services</text>
+  <text class="block-sub" x="432" y="751" text-anchor="middle">Azure OpenAI · gpt-4.1-mini</text>
+  <text class="block-sub" x="432" y="777" text-anchor="middle">Wider: AI Search · Document Intelligence · Content Safety</text>
+
+  <rect x="690" y="652" width="485" height="144" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="707" y="667" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="723" y="685">DEPLOYED</text>
+  <text class="block-title" x="932" y="720" text-anchor="middle">Foundry and Agent Engineering</text>
+  <text class="block-sub" x="932" y="751" text-anchor="middle">Foundry project · agent versions · Fabric connection</text>
+  <text class="block-sub" x="932" y="777" text-anchor="middle">Wider: model catalog · prompt flow · fine-tuning</text>
+
+  <rect x="1190" y="652" width="485" height="144" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="1207" y="667" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="1223" y="685">DEPLOYED</text>
+  <text class="block-title" x="1432" y="720" text-anchor="middle">Foundation Models</text>
+  <text class="block-sub" x="1432" y="751" text-anchor="middle">Azure OpenAI model deployment</text>
+  <text class="block-sub" x="1432" y="777" text-anchor="middle">Wider: multi-model routing and partner models</text>
+
+  <rect x="1690" y="652" width="520" height="144" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="1707" y="667" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="1723" y="685">DEPLOYED</text>
+  <text class="block-title" x="1950" y="720" text-anchor="middle">Evaluation and Responsible AI</text>
+  <text class="block-sub" x="1950" y="751" text-anchor="middle">Evidence checks · policy tests · revision scenarios</text>
+  <text class="block-sub" x="1950" y="777" text-anchor="middle">Wider: Foundry evals · red teaming · RAI dashboard</text>
+
+  <!-- Layer 5 -->
+  <rect x="190" y="808" width="2020" height="92" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="207" y="823" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="223" y="841">DEPLOYED</text>
+  <text class="layer-title" x="1200" y="850" text-anchor="middle">Microsoft IQ and Business Intelligence Layer</text>
+  <text class="layer-sub" x="1200" y="882" text-anchor="middle">Fabric IQ · Direct Lake Semantic Model · Ontology · Power BI · Fabric Data Agent · wider: Work IQ + Foundry IQ</text>
+
+  <!-- Layer 6 -->
+  <rect x="190" y="912" width="2020" height="82" rx="10" fill="#6d9ed8" stroke="#326cae" stroke-width="3"/>
+  <rect x="207" y="927" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="223" y="945">DEPLOYED</text>
+  <text class="layer-title" x="1200" y="948" text-anchor="middle">Azure Application and AI Infrastructure</text>
+  <text class="layer-sub" x="1200" y="978" text-anchor="middle">Container Apps · Entra ID · managed identity · ACR · Azure OpenAI · Application Insights · Log Analytics</text>
+
+  <!-- Layer 7 -->
+  <rect x="190" y="1006" width="2020" height="104" rx="10" fill="url(#dots)" stroke="#326cae" stroke-width="3"/>
+  <rect x="207" y="1021" width="104" height="25" rx="12" fill="#205b9a"/><text class="status" x="223" y="1039">DEPLOYED</text>
+  <text class="layer-title" x="1200" y="1048" text-anchor="middle">Microsoft Fabric and OneLake Data Foundation</text>
+  <text class="layer-sub" x="1200" y="1080" text-anchor="middle">OneLake · schema-enabled Lakehouse · 21 Bronze · 21 Silver · 12 Gold · notebook · SQL endpoint · Direct Lake</text>
+  <text class="layer-sub" x="1200" y="1103" text-anchor="middle">Wider: Data Factory · Warehouse · Real-Time Intelligence · Mirroring · Shortcuts · Purview</text>
+
+  <!-- Landscape footer -->
+  <text class="section" x="190" y="1143" fill="#475569">ENTERPRISE DEPLOYMENT LANDSCAPE</text>
+  <rect x="190" y="1160" width="490" height="76" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2"/>
+  <text class="footer-title" x="435" y="1192" text-anchor="middle">Microsoft SaaS</text>
+  <text class="footer-sub" x="435" y="1218" text-anchor="middle">Microsoft 365 · Teams · Power BI · Fabric · Dynamics 365</text>
+
+  <rect x="695" y="1160" width="490" height="76" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2" stroke-dasharray="12 7"/>
+  <text class="footer-title" x="940" y="1192" text-anchor="middle">Hybrid and Multicloud</text>
+  <text class="footer-sub" x="940" y="1218" text-anchor="middle">Shortcuts · Mirroring · Azure Arc · gateways · partner platforms</text>
+
+  <rect x="1200" y="1160" width="490" height="76" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2"/>
+  <text class="footer-title" x="1445" y="1192" text-anchor="middle">Azure</text>
+  <text class="footer-sub" x="1445" y="1218" text-anchor="middle">Container Apps · Azure AI · Foundry · Entra · data services</text>
+
+  <rect x="1705" y="1160" width="505" height="76" rx="8" fill="#e5e7eb" stroke="#9ca3af" stroke-width="2" stroke-dasharray="12 7"/>
+  <text class="footer-title" x="1957" y="1192" text-anchor="middle">Core Banking and On-premises</text>
+  <text class="footer-sub" x="1957" y="1218" text-anchor="middle">Customer master · transactions · holdings · CRM · policy stores</text>
+
+  <!-- Legend -->
+  <rect x="70" y="1260" width="2260" height="62" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="92" y="1278" width="34" height="24" rx="4" fill="#6d9ed8"/><text class="legend" x="140" y="1296">Shared Microsoft platform</text>
+  <rect x="430" y="1278" width="34" height="24" rx="4" fill="#d9b2e4"/><text class="legend" x="478" y="1296">Configurable / workload-specific</text>
+  <rect x="840" y="1278" width="34" height="24" rx="4" fill="#f2a37d"/><text class="legend" x="888" y="1296">Frontier RM solution</text>
+  <rect x="1212" y="1278" width="34" height="24" rx="4" fill="#ffffff" stroke="#4d7c0f" stroke-width="3"/><text class="legend" x="1260" y="1296">Governance / human control</text>
+  <rect x="1590" y="1278" width="34" height="24" rx="4" fill="#ffffff" stroke="#64748b" stroke-width="3" stroke-dasharray="7 5"/><text class="legend" x="1638" y="1296">Wider capability / target state</text>
+  <text x="2300" y="1296" text-anchor="end" font-size="15" font-weight="700" fill="#b4233a">Nothing transacted · nothing sent · nothing committed to CRM</text>
+</svg>

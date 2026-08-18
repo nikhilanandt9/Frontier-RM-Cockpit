@@ -4,6 +4,8 @@
 
 - `frontier-rm-logical-architecture.svg` — editable 16:9 vector source.
 - `frontier-rm-logical-architecture.png` — presentation-ready 1920×1080 render.
+- `frontier-rm-ai-factory-building-blocks.svg` — editable layered framework covering the demo and wider Microsoft ecosystem.
+- `frontier-rm-ai-factory-building-blocks.png` — presentation-ready 4K render of the layered framework.
 - `../../scripts/render_logical_architecture.ps1` — reproducible SVG-to-PNG renderer.
 
 The PNG is designed for the reference-architecture placeholder on slide 38 of `../Frontier_RM_Microsoft_Data_M365_A365_IQ_EBC.pptx`.
@@ -28,4 +30,8 @@ Authored Outlook-style correspondence, SharePoint-style documents, CIO Houseview
 
 ```powershell
 pwsh -NoProfile -File .\scripts\render_logical_architecture.ps1
+pwsh -NoProfile -File .\scripts\render_logical_architecture.ps1 `
+	-Source .\docs\architecture\frontier-rm-ai-factory-building-blocks.svg `
+	-Output .\docs\architecture\frontier-rm-ai-factory-building-blocks.png `
+	-Width 3840 -Height 2160
 ```
