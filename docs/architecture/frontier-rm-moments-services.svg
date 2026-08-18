@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier RM moments that matter with Microsoft services</title>
+  <desc id="desc">Five-stage relationship manager workflow showing the demo activity and Microsoft data and AI services used at each stage.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #252329; }
+      .title { font-size: 54px; font-weight: 700; }
+      .subtitle { font-size: 23px; fill: #625f66; }
+      .number { font-size: 16px; font-weight: 700; }
+      .stage { font-size: 27px; font-weight: 700; }
+      .label { font-size: 16px; font-weight: 700; letter-spacing: .6px; }
+      .body { font-size: 18px; fill: #3f3c43; }
+      .service { font-size: 17px; fill: #3f3c43; }
+      .arrow { font-size: 33px; font-weight: 700; fill: #5f5c63; }
+      .footer { font-size: 27px; font-weight: 700; fill: #8f172d; }
+      .note { font-size: 16px; fill: #6b6870; }
+    </style>
+  </defs>
+  <rect width="2400" height="1350" fill="#ffffff"/>
+  <rect x="0" y="0" width="2400" height="14" fill="#b4233a"/>
+  <text class="title" x="70" y="105">The moments that matter</text>
+  <text class="subtitle" x="70" y="165">The RM workflow mapped to the Frontier demo and the Microsoft data and AI services behind each stage.</text>
+
+  <!-- Stage 1 -->
+  <rect x="55" y="255" width="410" height="650" rx="30" fill="#fffdfd" stroke="#cf1734" stroke-width="3"/>
+  <text class="number" x="85" y="300" fill="#cf1734">01</text>
+  <text class="stage" x="260" y="355" text-anchor="middle">Triage</text>
+  <line x1="85" y1="390" x2="435" y2="390" stroke="#f0c4cc" stroke-width="2"/>
+  <text class="label" x="85" y="435" fill="#a5112a">ACTIVITY</text>
+  <text class="body" x="85" y="474"><tspan x="85" dy="0">• Today surfaces priority needs,</tspan><tspan x="85" dy="30">  reviews and material signals.</tspan></text>
+  <text class="label" x="85" y="565" fill="#a5112a">MICROSOFT SERVICES</text>
+  <text class="service" x="85" y="606"><tspan x="85" dy="0">• Microsoft Fabric + OneLake</tspan><tspan x="85" dy="28">• Direct Lake Semantic Model</tspan><tspan x="85" dy="28">• Power BI measures</tspan><tspan x="85" dy="28">• Azure Container Apps</tspan></text>
+
+  <!-- arrow -->
+  <text class="arrow" x="487" y="590">→</text>
+
+  <!-- Stage 2 -->
+  <rect x="515" y="255" width="410" height="650" rx="30" fill="#fbfdff" stroke="#0078d4" stroke-width="3"/>
+  <text class="number" x="545" y="300" fill="#0078d4">02</text>
+  <text class="stage" x="720" y="355" text-anchor="middle">Understand</text>
+  <line x1="545" y1="390" x2="895" y2="390" stroke="#bfddf5" stroke-width="2"/>
+  <text class="label" x="545" y="435" fill="#0064ad">ACTIVITY</text>
+  <text class="body" x="545" y="474"><tspan x="545" dy="0">• Client 360 and Sources connect</tspan><tspan x="545" dy="30">  profile, activity and client voice.</tspan></text>
+  <text class="label" x="545" y="565" fill="#0064ad">MICROSOFT SERVICES</text>
+  <text class="service" x="545" y="606"><tspan x="545" dy="0">• Fabric IQ Ontology</tspan><tspan x="545" dy="28">• Fabric Data Agent</tspan><tspan x="545" dy="28">• Direct Lake + validated DAX</tspan><tspan x="545" dy="28">• Microsoft 365-style context</tspan></text>
+
+  <text class="arrow" x="947" y="590">→</text>
+
+  <!-- Stage 3 -->
+  <rect x="975" y="255" width="410" height="650" rx="30" fill="#fbffff" stroke="#008da8" stroke-width="3"/>
+  <text class="number" x="1005" y="300" fill="#008da8">03</text>
+  <text class="stage" x="1180" y="355" text-anchor="middle">Prepare</text>
+  <line x1="1005" y1="390" x2="1355" y2="390" stroke="#bce8ee" stroke-width="2"/>
+  <text class="label" x="1005" y="435" fill="#00758b">ACTIVITY</text>
+  <text class="body" x="1005" y="474"><tspan x="1005" dy="0">• Generate the meeting briefing,</tspan><tspan x="1005" dy="30">  talk track and discovery questions.</tspan></text>
+  <text class="label" x="1005" y="565" fill="#00758b">MICROSOFT SERVICES</text>
+  <text class="service" x="1005" y="606"><tspan x="1005" dy="0">• Microsoft Foundry agents</tspan><tspan x="1005" dy="28">• Azure OpenAI · gpt-4.1-mini</tspan><tspan x="1005" dy="28">• Fabric Data Agent evidence</tspan><tspan x="1005" dy="28">• Managed identity</tspan></text>
+
+  <text class="arrow" x="1407" y="590">→</text>
+
+  <!-- Stage 4 -->
+  <rect x="1435" y="255" width="410" height="650" rx="30" fill="#fffbff" stroke="#bd25d1" stroke-width="3"/>
+  <text class="number" x="1465" y="300" fill="#bd25d1">04</text>
+  <text class="stage" x="1640" y="355" text-anchor="middle">Decide</text>
+  <line x1="1465" y1="390" x2="1815" y2="390" stroke="#e9c4ee" stroke-width="2"/>
+  <text class="label" x="1465" y="435" fill="#9e1eb0">ACTIVITY</text>
+  <text class="body" x="1465" y="474"><tspan x="1465" dy="0">• Compare fictional candidates with</tspan><tspan x="1465" dy="30">  Houseview, risks and controls.</tspan></text>
+  <text class="label" x="1465" y="565" fill="#9e1eb0">MICROSOFT SERVICES</text>
+  <text class="service" x="1465" y="606"><tspan x="1465" dy="0">• Fabric IQ business context</tspan><tspan x="1465" dy="28">• Semantic Model + Power BI</tspan><tspan x="1465" dy="28">• Azure OpenAI</tspan><tspan x="1465" dy="28">• Deterministic policy services</tspan></text>
+
+  <text class="arrow" x="1867" y="590">→</text>
+
+  <!-- Stage 5 -->
+  <rect x="1895" y="255" width="450" height="650" rx="30" fill="#fbfffc" stroke="#16834b" stroke-width="3"/>
+  <text class="number" x="1925" y="300" fill="#16834b">05</text>
+  <text class="stage" x="2120" y="355" text-anchor="middle">Follow up</text>
+  <line x1="1925" y1="390" x2="2315" y2="390" stroke="#bce1ca" stroke-width="2"/>
+  <text class="label" x="1925" y="435" fill="#116b3d">ACTIVITY</text>
+  <text class="body" x="1925" y="474"><tspan x="1925" dy="0">• Prepare editable client email and</tspan><tspan x="1925" dy="30">  CRM opportunity drafts.</tspan></text>
+  <text class="label" x="1925" y="565" fill="#116b3d">MICROSOFT SERVICES</text>
+  <text class="service" x="1925" y="606"><tspan x="1925" dy="0">• Frontier RM on Container Apps</tspan><tspan x="1925" dy="28">• Microsoft Teams bot</tspan><tspan x="1925" dy="28">• Application Insights</tspan><tspan x="1925" dy="28">• Wider: Dynamics 365 / Power Automate</tspan></text>
+
+  <rect x="260" y="980" width="1880" height="105" rx="18" fill="#fff2f4" stroke="#d9a0aa" stroke-width="2"/>
+  <text class="footer" x="1200" y="1026" text-anchor="middle">John remains accountable at every transition.</text>
+  <text class="note" x="1200" y="1062" text-anchor="middle">Fabric IQ adds governed context and provenance; it does not replace suitability checks or human approval.</text>
+
+  <rect x="70" y="1160" width="2260" height="105" rx="16" fill="#f7f8fa" stroke="#d6d9df" stroke-width="2"/>
+  <text class="label" x="98" y="1195" fill="#475569">SCOPE NOTE</text>
+  <text class="note" x="98" y="1230">Current demo uses authored Outlook/SharePoint-style sources and draft-only email/CRM artifacts. Dynamics 365 and Power Automate are wider integration options, not active write paths.</text>
+</svg>
