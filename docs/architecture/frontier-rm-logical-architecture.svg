@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier RM logical application architecture</title>
+  <desc id="desc">Logical flow across browser and Teams channels, Azure Container Apps, Azure OpenAI and Microsoft Foundry, Microsoft Fabric data and semantic models, Fabric IQ Ontology, governance, observability, and human review.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #1f2937; }
+      .title { font-size: 40px; font-weight: 700; fill: #ffffff; }
+      .subtitle { font-size: 18px; fill: #cbd5e1; }
+      .zone-title { font-size: 17px; font-weight: 700; letter-spacing: 1.2px; }
+      .node-title { font-size: 18px; font-weight: 700; }
+      .node-subtitle { font-size: 14px; fill: #475569; }
+      .small { font-size: 12px; fill: #64748b; }
+      .tiny { font-size: 11px; fill: #64748b; }
+      .pill { font-size: 11px; font-weight: 700; fill: #ffffff; letter-spacing: .4px; }
+      .white { fill: #ffffff; }
+      .runtime { stroke: #0284c7; stroke-width: 4; fill: none; marker-end: url(#arrow-runtime); }
+      .captured { stroke: #8b5cf6; stroke-width: 3; stroke-dasharray: 12 8; fill: none; marker-end: url(#arrow-captured); }
+      .snapshot { stroke: #0f766e; stroke-width: 3; stroke-dasharray: 4 7; fill: none; marker-end: url(#arrow-snapshot); }
+      .deferred { stroke: #a855f7; stroke-width: 3; stroke-dasharray: 2 8; fill: none; marker-end: url(#arrow-deferred); }
+      .governance { stroke: #4d7c0f; stroke-width: 2; fill: none; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrow-runtime" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#0284c7"/></marker>
+    <marker id="arrow-captured" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/></marker>
+    <marker id="arrow-snapshot" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/></marker>
+    <marker id="arrow-deferred" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#a855f7"/></marker>
+    <linearGradient id="header" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f2430"/><stop offset="1" stop-color="#173847"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8fafc"/>
+  <rect width="1920" height="122" fill="url(#header)"/>
+  <text class="title" x="44" y="58">Frontier RM · Logical Application Architecture</text>
+  <text class="subtitle" x="44" y="91">Microsoft Fabric + Fabric IQ + Foundry agents + Azure application services · governed evidence to human-approved RM action</text>
+
+  <!-- Governance band -->
+  <rect x="44" y="142" width="1832" height="54" rx="12" fill="#eff6e8" stroke="#65a30d" stroke-width="2"/>
+  <text x="66" y="164" font-size="14" font-weight="700" fill="#3f6212">CROSS-CUTTING GOVERNANCE</text>
+  <text x="66" y="185" font-size="13" fill="#4d7c0f">Microsoft Entra ID · user-assigned managed identity · least privilege · stable evidence IDs · deterministic policy gates · public rationale · human review</text>
+
+  <!-- Zone backgrounds -->
+  <rect x="44" y="218" width="275" height="692" rx="18" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="339" y="218" width="480" height="692" rx="18" fill="#eff6ff" stroke="#0284c7" stroke-width="2"/>
+  <rect x="839" y="218" width="435" height="692" rx="18" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="1294" y="218" width="582" height="692" rx="18" fill="#ecfeff" stroke="#0f766e" stroke-width="2"/>
+
+  <text class="zone-title" x="64" y="250" fill="#b45309">CHANNELS &amp; PEOPLE</text>
+  <text class="zone-title" x="359" y="250" fill="#0369a1">AZURE APPLICATION TIER · EAST US</text>
+  <text class="zone-title" x="859" y="250" fill="#7c3aed">AI &amp; ORCHESTRATION</text>
+  <text class="zone-title" x="1314" y="250" fill="#0f766e">MICROSOFT FABRIC + FABRIC IQ · AUSTRALIA EAST</text>
+
+  <!-- Channels -->
+  <g>
+    <rect x="70" y="290" width="223" height="118" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="88" y="307" width="72" height="23" rx="11" fill="#b45309"/><text class="pill" x="105" y="323">WEB</text>
+    <text class="node-title" x="88" y="355">Relationship Manager</text>
+    <text class="node-subtitle" x="88" y="379">Browser · Frontier RM cockpit</text>
+    <text class="small" x="88" y="397">Today · Client 360 · Opportunities</text>
+  </g>
+  <g>
+    <rect x="70" y="438" width="223" height="112" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="88" y="455" width="76" height="23" rx="11" fill="#c2410c"/><text class="pill" x="100" y="471">TEAMS</text>
+    <text class="node-title" x="88" y="504">Microsoft Teams</text>
+    <text class="node-subtitle" x="88" y="528">Authenticated bot channel</text>
+  </g>
+  <g>
+    <rect x="70" y="604" width="223" height="152" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="88" y="621" width="102" height="23" rx="11" fill="#9a3412"/><text class="pill" x="100" y="637">RM OUTPUTS</text>
+    <text class="node-title" x="88" y="672">Human-approved artifacts</text>
+    <text class="node-subtitle" x="88" y="698">Briefing · recommendations</text>
+    <text class="node-subtitle" x="88" y="720">Email + CRM drafts</text>
+    <text class="small" x="88" y="743">Nothing sent or committed</text>
+  </g>
+
+  <!-- Azure app tier -->
+  <g>
+    <rect x="365" y="282" width="428" height="225" rx="16" fill="#ffffff" stroke="#0284c7" stroke-width="2.5"/>
+    <rect x="386" y="300" width="174" height="25" rx="12" fill="#0369a1"/><text class="pill" x="400" y="317">AZURE CONTAINER APPS</text>
+    <text class="node-title" x="386" y="354">Frontier RM Web + API · image 0.8.2</text>
+    <text class="node-subtitle" x="386" y="380">Static browser frontend + Python HTTP API</text>
+    <rect x="386" y="402" width="181" height="76" rx="10" fill="#e0f2fe" stroke="#38bdf8"/>
+    <text x="400" y="425" font-size="14" font-weight="700">Web frontend</text>
+    <text class="small" x="400" y="448">HTML · CSS · app-v2.js</text>
+    <text class="small" x="400" y="466">Six tabs + persistent Copilot</text>
+    <rect x="585" y="402" width="186" height="76" rx="10" fill="#e0f2fe" stroke="#38bdf8"/>
+    <text x="599" y="425" font-size="14" font-weight="700">API + policy services</text>
+    <text class="small" x="599" y="448">Knowledge · opportunities · sources</text>
+    <text class="small" x="599" y="466">Advisory gates · run replay</text>
+  </g>
+
+  <g>
+    <rect x="365" y="532" width="204" height="118" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+    <text class="node-title" x="383" y="562">Teams Container App</text>
+    <text class="node-subtitle" x="383" y="588">Bot Framework endpoint</text>
+    <text class="small" x="383" y="611">Azure Bot + Teams channel</text>
+    <text class="small" x="383" y="631">Calls Frontier RM API</text>
+  </g>
+  <g>
+    <rect x="589" y="532" width="204" height="118" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+    <text class="node-title" x="607" y="562">Managed identity</text>
+    <text class="node-subtitle" x="607" y="588">No local Azure AI keys</text>
+    <text class="small" x="607" y="611">ACR pull + OpenAI user role</text>
+    <text class="small" x="607" y="631">Microsoft Entra ID</text>
+  </g>
+  <g>
+    <rect x="365" y="675" width="428" height="116" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+    <text class="node-title" x="386" y="705">Observability + delivery</text>
+    <text class="node-subtitle" x="386" y="731">Application Insights · Log Analytics · Azure Container Registry</text>
+    <text class="small" x="386" y="756">Health probes · one active revision · captured service status</text>
+  </g>
+  <g>
+    <rect x="365" y="812" width="428" height="70" rx="14" fill="#ecfdf5" stroke="#0f766e" stroke-width="2"/>
+    <text class="node-title" x="386" y="840">Packaged validated Fabric snapshot</text>
+    <text class="node-subtitle" x="386" y="864">20 clients · API stays available without a live SQL call per page</text>
+  </g>
+
+  <!-- AI and orchestration -->
+  <g>
+    <rect x="865" y="282" width="383" height="112" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="884" y="300" width="108" height="23" rx="11" fill="#7c3aed"/><text class="pill" x="899" y="316">AZURE AI</text>
+    <text class="node-title" x="884" y="350">Azure OpenAI · gpt-4.1-mini</text>
+    <text class="node-subtitle" x="884" y="375">Live wording over deterministic baselines · managed identity</text>
+  </g>
+
+  <g>
+    <rect x="865" y="420" width="383" height="345" rx="16" fill="#ffffff" stroke="#8b5cf6" stroke-width="2.5"/>
+    <rect x="884" y="438" width="152" height="23" rx="11" fill="#6d28d9"/><text class="pill" x="898" y="454">MICROSOFT FOUNDRY</text>
+    <text class="node-title" x="884" y="489">Captured specialist-agent workflow</text>
+    <text class="small" x="884" y="511">Authenticated operator runs; replayed in Operations</text>
+
+    <rect x="884" y="535" width="164" height="78" rx="10" fill="#ede9fe" stroke="#8b5cf6"/>
+    <text x="898" y="558" font-size="14" font-weight="700">RM Orchestrator v2</text>
+    <text class="small" x="898" y="580">Plan · delegate · verify</text>
+    <text class="small" x="898" y="598">Preserve evidence + gaps</text>
+
+    <rect x="1066" y="535" width="164" height="78" rx="10" fill="#ede9fe" stroke="#8b5cf6"/>
+    <text x="1080" y="558" font-size="14" font-weight="700">Customer Intel v3</text>
+    <text class="small" x="1080" y="580">Fabric Data Agent</text>
+    <text class="small" x="1080" y="598">Governed client context</text>
+
+    <rect x="884" y="631" width="164" height="78" rx="10" fill="#ede9fe" stroke="#8b5cf6"/>
+    <text x="898" y="654" font-size="14" font-weight="700">Market Context v2</text>
+    <text class="small" x="898" y="676">Houseview + boundaries</text>
+    <text class="small" x="898" y="694">No market forecast</text>
+
+    <rect x="1066" y="631" width="164" height="78" rx="10" fill="#ede9fe" stroke="#8b5cf6"/>
+    <text x="1080" y="654" font-size="14" font-weight="700">Meeting Prep v2</text>
+    <text class="small" x="1080" y="676">Brief · questions · draft</text>
+    <text class="small" x="1080" y="694">Human review required</text>
+  </g>
+  <g>
+    <rect x="865" y="790" width="383" height="92" rx="14" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+    <text class="node-title" x="884" y="820">Deterministic advisory + verification</text>
+    <text class="node-subtitle" x="884" y="846">Risk, liquidity, consent, evidence and regulatory gates</text>
+    <text class="small" x="884" y="867">Reject unsupported claims · retain unresolved checks</text>
+  </g>
+
+  <!-- Fabric and IQ -->
+  <g>
+    <rect x="1320" y="282" width="530" height="184" rx="16" fill="#ffffff" stroke="#0f766e" stroke-width="2.5"/>
+    <rect x="1340" y="300" width="178" height="23" rx="11" fill="#0f766e"/><text class="pill" x="1355" y="316">ONELAKE + LAKEHOUSE</text>
+    <text class="node-title" x="1340" y="351">FrontierRMLakehouse · Fabric F4</text>
+    <text class="node-subtitle" x="1340" y="376">Schema-enabled medallion architecture · notebook orchestration</text>
+    <rect x="1340" y="400" width="145" height="44" rx="8" fill="#e0f2fe" stroke="#0284c7"/><text x="1369" y="428" font-size="14" font-weight="700">21 Bronze</text>
+    <rect x="1502" y="400" width="145" height="44" rx="8" fill="#ccfbf1" stroke="#0f766e"/><text x="1534" y="428" font-size="14" font-weight="700">21 Silver</text>
+    <rect x="1664" y="400" width="166" height="44" rx="8" fill="#ecfccb" stroke="#65a30d"/><text x="1702" y="428" font-size="14" font-weight="700">12 Gold</text>
+  </g>
+
+  <g>
+    <rect x="1320" y="490" width="255" height="150" rx="14" fill="#ffffff" stroke="#0284c7" stroke-width="2"/>
+    <rect x="1338" y="507" width="110" height="23" rx="11" fill="#0369a1"/><text class="pill" x="1353" y="523">DIRECT LAKE</text>
+    <text class="node-title" x="1338" y="558">Semantic Model</text>
+    <text class="node-subtitle" x="1338" y="584">12 tables · 11 measures</text>
+    <text class="small" x="1338" y="607">Relationships · business meaning</text>
+    <text class="small" x="1338" y="627">Validated DAX authority</text>
+  </g>
+
+  <g>
+    <rect x="1595" y="490" width="255" height="150" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+    <rect x="1613" y="507" width="105" height="23" rx="11" fill="#7c3aed"/><text class="pill" x="1629" y="523">POWER BI</text>
+    <text class="node-title" x="1613" y="558">Analytics experience</text>
+    <text class="node-subtitle" x="1613" y="584">Measures · reports · BI</text>
+    <text class="small" x="1613" y="607">Shared semantic contract</text>
+    <text class="small" x="1613" y="627">Human + AI grounding</text>
+  </g>
+
+  <g>
+    <rect x="1320" y="666" width="255" height="160" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+    <rect x="1338" y="683" width="122" height="23" rx="11" fill="#0f766e"/><text class="pill" x="1353" y="699">DATA AGENT</text>
+    <text class="node-title" x="1338" y="736">Frontier RM Data Agent</text>
+    <text class="node-subtitle" x="1338" y="762">Semantic-model-only routing</text>
+    <text class="small" x="1338" y="786">Governed categorical context</text>
+    <text class="small" x="1338" y="808">Used in captured operator runs</text>
+  </g>
+
+  <g>
+    <rect x="1595" y="666" width="255" height="160" rx="14" fill="#ffffff" stroke="#a855f7" stroke-width="2"/>
+    <rect x="1613" y="683" width="126" height="23" rx="11" fill="#9333ea"/><text class="pill" x="1628" y="699">FABRIC IQ</text>
+    <text class="node-title" x="1613" y="736">Ontology definition</text>
+    <text class="node-subtitle" x="1613" y="762">15 entities · 13 relationships</text>
+    <text class="small" x="1613" y="786">15 bindings · readback validated</text>
+    <text class="small" x="1613" y="808">Graph routing deferred</text>
+  </g>
+
+  <g>
+    <rect x="1320" y="848" width="530" height="34" rx="10" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+    <text x="1338" y="870" font-size="12" font-weight="700" fill="#0f766e">OneLake files: CIO Houseview PDFs · internal regulatory control pack · source data</text>
+  </g>
+
+  <!-- Primary flows -->
+  <path class="runtime" d="M293 349 H365"/>
+  <path class="runtime" d="M293 494 H365"/>
+  <path class="runtime" d="M569 591 H585 V483"/>
+  <path class="runtime" d="M793 355 H865"/>
+  <path class="runtime" d="M1055 394 V420"/>
+  <path class="runtime" d="M865 835 H793 V460"/>
+  <path class="runtime" d="M365 846 H319 V680 H293"/>
+
+  <!-- Data and captured flows -->
+  <path class="snapshot" d="M1320 374 H1275 V847 H793"/>
+  <path class="captured" d="M1320 565 H1248"/>
+  <path class="captured" d="M1320 746 H1248 V574"/>
+  <path class="captured" d="M1066 574 H1048"/>
+  <path class="captured" d="M865 592 H819 V735 H793"/>
+  <path class="runtime" d="M1575 565 H1595"/>
+  <path class="runtime" d="M1448 466 V490"/>
+  <path class="captured" d="M1448 640 V666"/>
+  <path class="deferred" d="M1722 666 V640 H1575"/>
+
+  <!-- Flow labels -->
+  <rect x="303" y="327" width="60" height="20" rx="10" fill="#e0f2fe"/><text class="tiny" x="315" y="341" fill="#0369a1">HTTPS</text>
+  <rect x="804" y="327" width="72" height="20" rx="10" fill="#e0f2fe"/><text class="tiny" x="816" y="341" fill="#0369a1">LIVE API</text>
+  <rect x="1112" y="508" width="127" height="20" rx="10" fill="#ede9fe"/><text class="tiny" x="1123" y="522" fill="#7c3aed">CAPTURED RUN</text>
+  <rect x="1104" y="886" width="136" height="20" rx="10" fill="#ccfbf1"/><text class="tiny" x="1115" y="900" fill="#0f766e">PACKAGED SNAPSHOT</text>
+
+  <!-- Authored sources -->
+  <rect x="44" y="932" width="1030" height="105" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  <text class="zone-title" x="64" y="960" fill="#b45309">AUTHORED DEMONSTRATION KNOWLEDGE</text>
+  <text class="node-title" x="64" y="990">Outlook-style correspondence · SharePoint-style documents · CIO Houseview · FAA-N16 demo control pack</text>
+  <text class="node-subtitle" x="64" y="1018">Read-only allowlisted content · no live Microsoft 365 retrieval · no email send, document write, transaction, or CRM commit</text>
+  <path class="runtime" d="M580 932 V882"/>
+  <path class="snapshot" d="M1074 984 H1290 V866 H1320"/>
+
+  <!-- Legend -->
+  <rect x="1100" y="932" width="776" height="105" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text class="zone-title" x="1120" y="960" fill="#334155">FLOW LEGEND &amp; BOUNDARIES</text>
+  <line x1="1120" y1="984" x2="1185" y2="984" class="runtime"/><text class="small" x="1198" y="989">Interactive runtime</text>
+  <line x1="1360" y1="984" x2="1425" y2="984" class="captured"/><text class="small" x="1438" y="989">Captured operator flow / replay</text>
+  <line x1="1640" y1="984" x2="1705" y2="984" class="deferred"/><text class="small" x="1718" y="989">Deferred graph route</text>
+  <text class="tiny" x="1120" y="1018">Solid runtime uses deterministic controls + Azure OpenAI. Foundry/Data Agent events are captured and replayed in Operations.</text>
+</svg>
