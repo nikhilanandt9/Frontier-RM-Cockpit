@@ -81,7 +81,7 @@ The deck contains 18 labeled native screenshot zones named `SCREENSHOT_ZONE_Sxx`
 | 30 | Agent 365 observability, evaluation, or lifecycle view |
 | 34 | Fabric IQ Ontology definition, entity map, or graph view |
 | 37 | Fabric Data Agent, Foundry project, or verified Agent 365 evidence |
-| 38 | Detailed end-to-end reference architecture |
+| 38 | Detailed end-to-end reference architecture; use `architecture/frontier-rm-logical-architecture.png` |
 
 To replace a zone:
 
