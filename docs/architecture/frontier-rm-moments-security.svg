@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier RM moments that matter with security and governance</title>
+  <desc id="desc">Five-stage RM workflow with demo activity, Microsoft data and AI services, and stage-aligned security and governance controls.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #252329; }
+      .title { font-size: 52px; font-weight: 700; }
+      .subtitle { font-size: 22px; fill: #625f66; }
+      .number { font-size: 15px; font-weight: 700; }
+      .stage { font-size: 25px; font-weight: 700; }
+      .label { font-size: 14px; font-weight: 700; letter-spacing: .5px; }
+      .body { font-size: 16px; fill: #3f3c43; }
+      .security-title { font-size: 19px; font-weight: 700; fill: #365314; }
+      .security-body { font-size: 15px; fill: #41552d; }
+      .arrow { font-size: 30px; font-weight: 700; fill: #5f5c63; }
+      .footer { font-size: 24px; font-weight: 700; fill: #8f172d; }
+    </style>
+  </defs>
+  <rect width="2400" height="1350" fill="#ffffff"/>
+  <rect x="0" y="0" width="2400" height="14" fill="#b4233a"/>
+  <text class="title" x="70" y="100">The moments that matter — secured and governed</text>
+  <text class="subtitle" x="70" y="155">The RM workflow, Microsoft data and AI services, and the security controls applied at each stage.</text>
+
+  <!-- Stage cards -->
+  <g>
+    <rect x="55" y="220" width="410" height="500" rx="28" fill="#fffdfd" stroke="#cf1734" stroke-width="3"/>
+    <text class="number" x="84" y="260" fill="#cf1734">01</text><text class="stage" x="260" y="308" text-anchor="middle">Triage</text>
+    <text class="label" x="84" y="357" fill="#a5112a">ACTIVITY</text><text class="body" x="84" y="391"><tspan x="84">• Priorities, reviews and signals</tspan><tspan x="84" dy="26">  surfaced in Today.</tspan></text>
+    <text class="label" x="84" y="470" fill="#a5112a">MICROSOFT SERVICES</text><text class="body" x="84" y="504"><tspan x="84">• Fabric + OneLake</tspan><tspan x="84" dy="26">• Semantic Model + Power BI</tspan><tspan x="84" dy="26">• Container Apps</tspan></text>
+  </g>
+  <text class="arrow" x="487" y="475">→</text>
+  <g>
+    <rect x="515" y="220" width="410" height="500" rx="28" fill="#fbfdff" stroke="#0078d4" stroke-width="3"/>
+    <text class="number" x="544" y="260" fill="#0078d4">02</text><text class="stage" x="720" y="308" text-anchor="middle">Understand</text>
+    <text class="label" x="544" y="357" fill="#0064ad">ACTIVITY</text><text class="body" x="544" y="391"><tspan x="544">• Client 360 connects profile,</tspan><tspan x="544" dy="26">  activity and source evidence.</tspan></text>
+    <text class="label" x="544" y="470" fill="#0064ad">MICROSOFT SERVICES</text><text class="body" x="544" y="504"><tspan x="544">• Fabric IQ Ontology</tspan><tspan x="544" dy="26">• Data Agent + validated DAX</tspan><tspan x="544" dy="26">• M365-style context</tspan></text>
+  </g>
+  <text class="arrow" x="947" y="475">→</text>
+  <g>
+    <rect x="975" y="220" width="410" height="500" rx="28" fill="#fbffff" stroke="#008da8" stroke-width="3"/>
+    <text class="number" x="1004" y="260" fill="#008da8">03</text><text class="stage" x="1180" y="308" text-anchor="middle">Prepare</text>
+    <text class="label" x="1004" y="357" fill="#00758b">ACTIVITY</text><text class="body" x="1004" y="391"><tspan x="1004">• Meeting briefing, talk track</tspan><tspan x="1004" dy="26">  and discovery questions.</tspan></text>
+    <text class="label" x="1004" y="470" fill="#00758b">MICROSOFT SERVICES</text><text class="body" x="1004" y="504"><tspan x="1004">• Microsoft Foundry agents</tspan><tspan x="1004" dy="26">• Azure OpenAI</tspan><tspan x="1004" dy="26">• Managed identity</tspan></text>
+  </g>
+  <text class="arrow" x="1407" y="475">→</text>
+  <g>
+    <rect x="1435" y="220" width="410" height="500" rx="28" fill="#fffbff" stroke="#bd25d1" stroke-width="3"/>
+    <text class="number" x="1464" y="260" fill="#bd25d1">04</text><text class="stage" x="1640" y="308" text-anchor="middle">Decide</text>
+    <text class="label" x="1464" y="357" fill="#9e1eb0">ACTIVITY</text><text class="body" x="1464" y="391"><tspan x="1464">• Candidates, Houseview, risks</tspan><tspan x="1464" dy="26">  and controls compared.</tspan></text>
+    <text class="label" x="1464" y="470" fill="#9e1eb0">MICROSOFT SERVICES</text><text class="body" x="1464" y="504"><tspan x="1464">• Fabric IQ context</tspan><tspan x="1464" dy="26">• Semantic Model + Power BI</tspan><tspan x="1464" dy="26">• Azure OpenAI + policy gates</tspan></text>
+  </g>
+  <text class="arrow" x="1867" y="475">→</text>
+  <g>
+    <rect x="1895" y="220" width="450" height="500" rx="28" fill="#fbfffc" stroke="#16834b" stroke-width="3"/>
+    <text class="number" x="1924" y="260" fill="#16834b">05</text><text class="stage" x="2120" y="308" text-anchor="middle">Follow up</text>
+    <text class="label" x="1924" y="357" fill="#116b3d">ACTIVITY</text><text class="body" x="1924" y="391"><tspan x="1924">• Editable client email and</tspan><tspan x="1924" dy="26">  CRM opportunity drafts.</tspan></text>
+    <text class="label" x="1924" y="470" fill="#116b3d">MICROSOFT SERVICES</text><text class="body" x="1924" y="504"><tspan x="1924">• Container Apps</tspan><tspan x="1924" dy="26">• Teams bot + App Insights</tspan><tspan x="1924" dy="26">• Wider: Dynamics 365</tspan></text>
+  </g>
+
+  <!-- Security and governance band -->
+  <rect x="55" y="755" width="2290" height="52" rx="14" fill="#4d7c0f"/>
+  <text x="1200" y="790" text-anchor="middle" font-size="21" font-weight="700" fill="#ffffff">SECURITY, GOVERNANCE AND RESPONSIBLE AI BY STAGE</text>
+
+  <rect x="55" y="825" width="410" height="270" rx="20" fill="#f4f9ee" stroke="#65a30d" stroke-width="2"/>
+  <text class="security-title" x="84" y="865">Secure triage</text>
+  <text class="security-body" x="84" y="902"><tspan x="84">• Entra ID + managed identity</tspan><tspan x="84" dy="27">• Fabric workspace RBAC</tspan><tspan x="84" dy="27">• Power BI semantic permissions</tspan><tspan x="84" dy="27">• Lineage and audit telemetry</tspan></text>
+
+  <rect x="515" y="825" width="410" height="270" rx="20" fill="#f4f9ee" stroke="#65a30d" stroke-width="2"/>
+  <text class="security-title" x="544" y="865">Governed understanding</text>
+  <text class="security-body" x="544" y="902"><tspan x="544">• Allowlisted source IDs</tspan><tspan x="544" dy="27">• Consent and profile boundaries</tspan><tspan x="544" dy="27">• Least-privilege data access</tspan><tspan x="544" dy="27">• Purview: wider governance option</tspan></text>
+
+  <rect x="975" y="825" width="410" height="270" rx="20" fill="#f4f9ee" stroke="#65a30d" stroke-width="2"/>
+  <text class="security-title" x="1004" y="865">Controlled preparation</text>
+  <text class="security-body" x="1004" y="902"><tspan x="1004">• Managed identity to Azure AI</tspan><tspan x="1004" dy="27">• Scoped Foundry tools</tspan><tspan x="1004" dy="27">• Structured-output validation</tspan><tspan x="1004" dy="27">• No credentials in agent output</tspan></text>
+
+  <rect x="1435" y="825" width="410" height="270" rx="20" fill="#f4f9ee" stroke="#65a30d" stroke-width="2"/>
+  <text class="security-title" x="1464" y="865">Governed decision support</text>
+  <text class="security-body" x="1464" y="902"><tspan x="1464">• Deterministic policy gates</tspan><tspan x="1464" dy="27">• Citation and evidence validation</tspan><tspan x="1464" dy="27">• Public rationale, not chain-of-thought</tspan><tspan x="1464" dy="27">• Human suitability review</tspan></text>
+
+  <rect x="1895" y="825" width="450" height="270" rx="20" fill="#f4f9ee" stroke="#65a30d" stroke-width="2"/>
+  <text class="security-title" x="1924" y="865">Protected follow-up</text>
+  <text class="security-body" x="1924" y="902"><tspan x="1924">• Draft-only action boundary</tspan><tspan x="1924" dy="27">• RM approval before external use</tspan><tspan x="1924" dy="27">• App Insights + Log Analytics</tspan><tspan x="1924" dy="27">• Defender / DLP: wider options</tspan></text>
+
+  <rect x="285" y="1150" width="1830" height="105" rx="18" fill="#fff2f4" stroke="#d9a0aa" stroke-width="2"/>
+  <text class="footer" x="1200" y="1195" text-anchor="middle">John remains accountable at every transition.</text>
+  <text x="1200" y="1230" text-anchor="middle" font-size="16" fill="#6b6870">Nothing transacted · nothing sent · nothing committed to CRM</text>
+</svg>
