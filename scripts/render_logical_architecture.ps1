@@ -1,6 +1,8 @@
 param(
     [string]$Source = (Join-Path $PSScriptRoot '..\docs\architecture\frontier-rm-logical-architecture.svg'),
-    [string]$Output = (Join-Path $PSScriptRoot '..\docs\architecture\frontier-rm-logical-architecture.png')
+    [string]$Output = (Join-Path $PSScriptRoot '..\docs\architecture\frontier-rm-logical-architecture.png'),
+    [int]$Width = 1920,
+    [int]$Height = 1080
 )
 
 $ErrorActionPreference = 'Stop'
@@ -25,7 +27,7 @@ try {
     $presentation.PageSetup.SlideHeight = 540
     $slide = $presentation.Slides.Add(1, 12)
     $picture = $slide.Shapes.AddPicture($sourcePath, 0, -1, 0, 0, 960, 540)
-    $presentation.Export($temporaryDirectory, 'PNG', 1920, 1080)
+    $presentation.Export($temporaryDirectory, 'PNG', $Width, $Height)
 
     $rendered = Join-Path $temporaryDirectory 'Slide1.PNG'
     if (-not (Test-Path -LiteralPath $rendered -PathType Leaf)) {
