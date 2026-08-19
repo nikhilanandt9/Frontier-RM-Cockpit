@@ -106,6 +106,7 @@ If custom app upload is unavailable, a Teams administrator must enable the tenan
 - Unit Trust content is conversation preparation only: no named fund, suitability conclusion, guaranteed return, or transaction instruction.
 - Today exposes four report-style metric dialogs and four RM workflow journeys.
 - Operations exposes selectable captured runs and presenter-safe details for all four agents.
+- Review Agents in Action identifies captures through the selector; the duplicate selected-run status/timestamp chip is intentionally omitted.
 - Frontier Copilot persists as a collapsible right-side panel across every view.
 - Sources provides six authored Outlook/SharePoint-style items across three fictional clients with stable citations.
 - Opportunities provides briefing, fictional-product recommendation, and email/CRM draft actions with public evidence-and-rationale traces.
@@ -115,9 +116,9 @@ If custom app upload is unavailable, a Teams administrator must enable the tenan
 - The guided story has seven timed scenes with pause, resume, previous, next, direct-scene, keyboard and restart-safe controls.
 - Model: `gpt-4.1-mini`, version `2025-04-14`, GlobalStandard capacity 10.
 - API and Teams Container App revisions are healthy with one replica.
-- API image: `frontier-rm-api:0.8.2`
-- API image digest: `sha256:712242625b8ce426e60e2a5bcc0bde02bc0ababfe30ba88fe393e172088a6edb`
-- API revision: `ca-frontier-rm-api-kqo7o4bgpiiay--0000012`, healthy with one replica and 100% traffic
+- API image: `frontier-rm-api:0.8.3`
+- API image digest: `sha256:b4e741093e83de6cf7f105381f87143163f3f14b376cb8df42350eeefeafb2bc`
+- API revision: `ca-frontier-rm-api-kqo7o4bgpiiay--0000013`, healthy with one replica and 100% traffic
 - Foundry Customer Intelligence: `frontier-customer-intelligence:3`, with the `frontier-rm-fabric` project connection.
 - Captured-live default: `run-daniel-lim-live-20260812173016-success`; controlled revision: `run-daniel-lim-live-20260812172824-revision`.
 - Teams bot uses a user-assigned managed identity and rejects unauthenticated messages with HTTP 401.
