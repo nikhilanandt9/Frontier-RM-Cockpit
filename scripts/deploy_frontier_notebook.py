@@ -9,6 +9,8 @@ import time
 from pathlib import Path
 from urllib import error, request
 
+from topology_config import render_bytes, require_local_environment
+
 
 ROOT = Path(__file__).resolve().parents[1]
 FABRIC_API = "https://api.fabric.microsoft.com/v1"
@@ -79,7 +81,7 @@ def update_notebook(workspace_id: str, notebook_id: str, notebook_path: Path, to
             "parts": [
                 {
                     "path": "notebook-content.ipynb",
-                    "payload": base64.b64encode(notebook_path.read_bytes()).decode("ascii"),
+                        "payload": base64.b64encode(render_bytes(notebook_path.read_bytes())).decode("ascii"),
                     "payloadType": "InlineBase64",
                 }
             ],
@@ -108,6 +110,7 @@ def main() -> None:
     parser.add_argument("--notebook-id", required=True)
     parser.add_argument("--notebook", type=Path, default=DEFAULT_NOTEBOOK)
     args = parser.parse_args()
+    require_local_environment()
     update_notebook(args.workspace_id, args.notebook_id, args.notebook.resolve(), access_token())
 
 

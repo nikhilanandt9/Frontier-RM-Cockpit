@@ -1,0 +1,59 @@
+{
+  "project": "frontier-rm-cockpit",
+  "environment": "dev",
+  "resourceGroup": "<AZURE_RESOURCE_GROUP>",
+  "confirmedSubscription": {
+    "name": "<AZURE_SUBSCRIPTION_NAME>",
+    "id": "<AZURE_SUBSCRIPTION_ID>",
+    "tenantId": "<AZURE_TENANT_ID>"
+  },
+  "plannedLocation": "<AZURE_REGION>",
+  "fabricLocation": "<FABRIC_REGION>",
+  "deployment": {
+    "apiUrl": "<RM_CONTAINER_APP_URL>",
+    "teamsBotUrl": "<TEAMS_BOT_URL>",
+    "insurance": {
+      "apiUrl": "<INSURANCE_CONTAINER_APP_URL>",
+      "containerApp": "<INSURANCE_CONTAINER_APP_NAME>",
+      "image": "frontier-underwriting-api:<IMAGE_TAG>",
+      "revision": "<INSURANCE_REVISION_NAME>",
+      "fabric": {
+        "workspaceName": "<FABRIC_WORKSPACE_NAME>",
+        "workspaceId": "<FABRIC_WORKSPACE_ID>",
+        "lakehouseName": "<FABRIC_LAKEHOUSE_NAME>",
+        "lakehouseId": "<FABRIC_LAKEHOUSE_ID>",
+        "semanticModelName": "Frontier Insurance Underwriting Model",
+        "semanticModelId": "<INSURANCE_SEMANTIC_MODEL_ID>",
+        "ontologyName": "Frontier_Underwriting_Ontology",
+        "ontologyId": "<INSURANCE_ONTOLOGY_ID>",
+        "dataAgentName": "Frontier Underwriting Data Agent",
+        "dataAgentId": "<INSURANCE_DATA_AGENT_ID>",
+        "foundryAgentName": "frontier-underwriting-intelligence",
+        "foundryAgentVersion": "<FOUNDRY_AGENT_VERSION>"
+      }
+    },
+    "fabric": {
+      "capacityName": "<FABRIC_CAPACITY_NAME>",
+      "capacityId": "<FABRIC_CAPACITY_ID>",
+      "workspaceName": "<FABRIC_WORKSPACE_NAME>",
+      "workspaceId": "<FABRIC_WORKSPACE_ID>",
+      "lakehouseName": "<FABRIC_LAKEHOUSE_NAME>",
+      "lakehouseId": "<FABRIC_LAKEHOUSE_ID>",
+      "sqlEndpointId": "<FABRIC_SQL_ENDPOINT_ID>",
+      "sqlEndpoint": "<FABRIC_SQL_ENDPOINT_HOST>",
+      "semanticModelName": "Frontier RM Semantic Model",
+      "semanticModelId": "<RM_SEMANTIC_MODEL_ID>",
+      "ontologyName": "Frontier_RM_Ontology",
+      "ontologyId": "<RM_ONTOLOGY_ID>",
+      "dataAgentName": "Frontier RM Data Agent",
+      "dataAgentArtifactId": "<RM_DATA_AGENT_ID>"
+    },
+    "foundry": {
+      "accountName": "<FOUNDRY_ACCOUNT_NAME>",
+      "projectName": "<FOUNDRY_PROJECT_NAME>",
+      "projectEndpoint": "<FOUNDRY_PROJECT_ENDPOINT>",
+      "modelDeployment": "<FOUNDRY_MODEL_DEPLOYMENT>",
+      "fabricConnectionName": "<FOUNDRY_FABRIC_CONNECTION_NAME>"
+    }
+  }
+}

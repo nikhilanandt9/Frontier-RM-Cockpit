@@ -7,10 +7,12 @@ import subprocess
 from pathlib import Path
 from urllib import error, parse, request
 
+from topology_config import require_resolved, resolve_or_placeholder
+
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_WORKSPACE_ID = "<FABRIC_WORKSPACE_ID>"
-DEFAULT_LAKEHOUSE_ID = "<FABRIC_LAKEHOUSE_ID>"
+DEFAULT_WORKSPACE_ID = resolve_or_placeholder("<FABRIC_WORKSPACE_ID>")
+DEFAULT_LAKEHOUSE_ID = resolve_or_placeholder("<FABRIC_LAKEHOUSE_ID>")
 
 
 def azure_cli() -> str:
@@ -91,6 +93,7 @@ def main() -> None:
     parser.add_argument("--workspace-id", default=DEFAULT_WORKSPACE_ID)
     parser.add_argument("--lakehouse-id", default=DEFAULT_LAKEHOUSE_ID)
     args = parser.parse_args()
+    require_resolved(workspace_id=args.workspace_id, lakehouse_id=args.lakehouse_id)
 
     generated = ROOT / "packages" / "fabric-data" / "generated"
     landing = "Files/bronze/landing/seed=20260812"

@@ -14,14 +14,19 @@ try:
 except ModuleNotFoundError:
     from scripts.deploy_frontier_semantic_model import POWER_BI_API, POWER_BI_RESOURCE, access_token, call
 
+try:
+    from topology_config import require_resolved, resolve_or_placeholder
+except ModuleNotFoundError:
+    from scripts.topology_config import require_resolved, resolve_or_placeholder
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNS_ROOT = ROOT / "packages" / "demo-data" / "agent-runs"
 MANIFEST_PATH = ROOT / "packages" / "fabric-data" / "generated" / "manifest.json"
-DEFAULT_ENDPOINT = "https://<FOUNDRY_ACCOUNT_HOST>/api/projects/<FOUNDRY_PROJECT_NAME>"
-DATA_AGENT_ARTIFACT_ID = "<RM_DATA_AGENT_ID>"
-WORKSPACE_ID = "<FABRIC_WORKSPACE_ID>"
-SEMANTIC_MODEL_ID = "<RM_SEMANTIC_MODEL_ID>"
+DEFAULT_ENDPOINT = resolve_or_placeholder("<FOUNDRY_PROJECT_ENDPOINT>")
+DATA_AGENT_ARTIFACT_ID = resolve_or_placeholder("<RM_DATA_AGENT_ID>")
+WORKSPACE_ID = resolve_or_placeholder("<FABRIC_WORKSPACE_ID>")
+SEMANTIC_MODEL_ID = resolve_or_placeholder("<RM_SEMANTIC_MODEL_ID>")
 AGENT_NAMES = {
     "orchestrator": "frontier-rm-orchestrator",
     "customer-intelligence": "frontier-customer-intelligence",
@@ -139,6 +144,12 @@ def validate_bundle(bundle: dict, expected_verification: str) -> None:
 
 
 def capture(endpoint: str, revision: bool) -> dict:
+    require_resolved(
+        endpoint=endpoint,
+        data_agent_id=DATA_AGENT_ARTIFACT_ID,
+        workspace_id=WORKSPACE_ID,
+        semantic_model_id=SEMANTIC_MODEL_ID,
+    )
     started_at = utc_now()
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="ascii"))
     semantic_evidence, semantic_request_id = query_semantic_evidence()

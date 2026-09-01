@@ -10,6 +10,8 @@ import time
 from pathlib import Path
 from urllib import error, request
 
+from topology_config import render_bytes, require_local_environment
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MODEL_DIR = ROOT / "fabric" / "semantic-model" / "FrontierRM.SemanticModel"
@@ -78,7 +80,7 @@ def definition_parts(model_dir: Path) -> list[dict]:
     return [
         {
             "path": path.relative_to(model_dir).as_posix(),
-            "payload": base64.b64encode(path.read_bytes()).decode("ascii"),
+            "payload": base64.b64encode(render_bytes(path.read_bytes())).decode("ascii"),
             "payloadType": "InlineBase64",
         }
         for path in paths
@@ -259,6 +261,7 @@ def main() -> None:
             raise SystemExit("--model-id is required with --validate-only")
         model_id = args.model_id
     elif args.update:
+        require_local_environment()
         matches = list_models(args.workspace_id, fabric_token)
         if len(matches) != 1:
             raise SystemExit(f"--update requires exactly one {MODEL_NAME!r} model, found {len(matches)}")
@@ -266,6 +269,7 @@ def main() -> None:
         update_model(args.workspace_id, model_id, args.model_dir.resolve(), fabric_token)
         refresh_model(args.workspace_id, model_id, power_bi_token)
     else:
+        require_local_environment()
         model_id = create_model(args.workspace_id, args.model_dir.resolve(), fabric_token)
         refresh_model(args.workspace_id, model_id, power_bi_token)
     validate_model(args.workspace_id, model_id, power_bi_token)

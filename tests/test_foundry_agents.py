@@ -87,28 +87,13 @@ class FoundryAgentTests(unittest.TestCase):
         self.assertEqual([item["name"] for item in deployed], [CUSTOMER_INTELLIGENCE_NAME])
         self.assertEqual(project.agents.create_version.call_count, 1)
 
-    def test_environment_records_live_fabric_agent_and_graph_blocker(self) -> None:
-        environment = json.loads((ROOT / "infra" / "environment.json").read_text(encoding="utf-8"))
+    def test_public_environment_example_has_no_live_foundry_topology(self) -> None:
+        environment = json.loads((ROOT / "infra" / "environment.example.json").read_text(encoding="utf-8"))
         foundry = environment["deployment"]["foundry"]
-        self.assertEqual(foundry["agentsStatus"], "customer-intelligence-v3-live-semantic-model-only")
-        self.assertEqual(
-            set(foundry["agents"].values()),
-            {
-                "frontier-rm-orchestrator:2",
-                "frontier-customer-intelligence:3",
-                "frontier-market-context:2",
-                "frontier-meeting-preparation:2",
-            },
-        )
-        self.assertEqual(foundry["fabricConnectionStatus"], "verified")
-        self.assertEqual(foundry["fabricAggregateValidationStatus"], "completed-20-customers")
-        self.assertEqual(foundry["fabricDetailValidationStatus"], "semantic-model-and-direct-dax-validated")
-        self.assertEqual(foundry["ontologyRoutingStatus"], "disabled-pending-graph-repair")
-        self.assertEqual(foundry["capturedLiveRunId"], "run-daniel-lim-live-20260812173016-success")
-        self.assertEqual(
-            environment["deployment"]["fabric"]["ontologyGraphValidationStatus"],
-            "blocked-graph-model-not-ready",
-        )
+        self.assertEqual(foundry["accountName"], "<FOUNDRY_ACCOUNT_NAME>")
+        self.assertEqual(foundry["projectName"], "<FOUNDRY_PROJECT_NAME>")
+        self.assertEqual(foundry["projectEndpoint"], "<FOUNDRY_PROJECT_ENDPOINT>")
+        self.assertEqual(foundry["fabricConnectionName"], "<FOUNDRY_FABRIC_CONNECTION_NAME>")
 
 
 if __name__ == "__main__":

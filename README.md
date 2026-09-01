@@ -42,6 +42,8 @@ Live cockpit: `https://<RM_CONTAINER_APP_HOST>`
 
 Guided EBC story: add `?present=1` to launch the seven-scene presenter experience. It includes continuous signal motion, client context, visible evidence stages, live Azure AI recommendation generation, grounded governance, RM approval, and end-of-day outcomes. Arrow keys navigate, Space pauses/resumes, and Escape closes.
 
+For tenant-neutral public deployments, copy `infra/environment.example.json` to your local configuration and follow the [public repository configuration guide](docs/public-repository-configuration.md).
+
 The Teams sideload ZIP is `apps/teams/appPackage/build/frontier-rm.dev.zip`. Automated catalog upload is blocked because the signed-in Graph token lacks `AppCatalog.Submit` or `AppCatalog.ReadWrite.All`; use Teams **Apps > Manage your apps > Upload an app > Upload a custom app**, or obtain one of those delegated scopes.
 
 Local implementation and validation do not require Azure.

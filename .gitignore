@@ -4,6 +4,9 @@ __pycache__/
 .env
 .env.*
 !.env.example
+infra/environment.local.json
+infra/deployment-manifest.local.json
+fabric/generated-local/
 !env/.env.playground
 !env/.env.dev
 env/.env.*.user

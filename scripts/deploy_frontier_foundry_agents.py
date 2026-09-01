@@ -14,10 +14,12 @@ from azure.ai.projects.models import (
 )
 from azure.identity import AzureCliCredential
 
+from topology_config import require_resolved, resolve_or_placeholder
 
-DEFAULT_ENDPOINT = "https://<FOUNDRY_ACCOUNT_HOST>/api/projects/<FOUNDRY_PROJECT_NAME>"
+
+DEFAULT_ENDPOINT = resolve_or_placeholder("<FOUNDRY_PROJECT_ENDPOINT>")
 DEFAULT_MODEL = "frontier-gpt-4-1-mini"
-DEFAULT_FABRIC_CONNECTION_NAME = "<FOUNDRY_FABRIC_CONNECTION_NAME>"
+DEFAULT_FABRIC_CONNECTION_NAME = resolve_or_placeholder("<FOUNDRY_FABRIC_CONNECTION_NAME>")
 CUSTOMER_INTELLIGENCE_NAME = "frontier-customer-intelligence"
 
 
@@ -157,6 +159,7 @@ def main() -> None:
         print(json.dumps(proposal, indent=2))
         return
 
+    require_resolved(endpoint=args.endpoint, fabric_connection_name=args.fabric_connection_name)
     result, connection_id = deploy(args.endpoint, args.model, args.fabric_connection_name)
     print(json.dumps({**preview(args.endpoint, args.model, connection_id), "deployed": result}, indent=2))
 

@@ -17,6 +17,8 @@ SKILL_HEADER = "fabriciq-ontology-cli"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from deploy_frontier_semantic_model import FABRIC_RESOURCE, access_token, call as shared_call  # noqa: E402
+from topology_config import render_bytes  # noqa: E402
+from topology_config import require_local_environment  # noqa: E402
 
 
 def call(method: str, url: str, token: str, body: dict | None = None) -> tuple[int, dict, dict]:
@@ -44,7 +46,7 @@ def definition_parts() -> list[dict]:
     return [
         {
             "path": path.relative_to(DEFINITION_ROOT).as_posix(),
-            "payload": base64.b64encode(path.read_bytes()).decode("ascii"),
+            "payload": base64.b64encode(render_bytes(path.read_bytes())).decode("ascii"),
             "payloadType": "InlineBase64",
         }
         for path in files
@@ -160,6 +162,7 @@ def main() -> None:
     if not args.yes:
         raise SystemExit("Ontology apply requires --yes after explicit preview confirmation")
 
+    require_local_environment()
     token = access_token(FABRIC_RESOURCE)
     ontology_id = create_ontology(args.workspace_id, token)
     verify_definition(args.workspace_id, ontology_id, token)
